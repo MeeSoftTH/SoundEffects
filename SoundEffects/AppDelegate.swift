@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  SoundEffects
+//  SoundEffect
 //
-//  Created by Pawarit_Bunrith on 6/5/2558 BE.
-//  Copyright (c) 2558 Pawarit_Bunrith. All rights reserved.
+//  Created by Pawarit Bunrith on 5/18/2558 BE.
+//  Copyright (c) 2558 Pawarit Bunrith. All rights reserved.
 //
 
 import UIKit
@@ -16,8 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = UIColor.blackColor()
+        navigationBarAppearace.barTintColor = UIColor.greenColor()
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
+        
+        UIBarButtonItem.appearance().tintColor = UIColor.blackColor()
+        
+        var pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
+        pageControl.currentPageIndicatorTintColor = UIColor.blueColor()
+        pageControl.backgroundColor = UIColor.whiteColor()
+        
         return true
     }
+    
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

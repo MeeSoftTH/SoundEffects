@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller1-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController1" customModule="SoundEffects_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="gBx-us-Yee">
+                            <items>
+                                <group width="1" alignment="center" id="gR9-mg-a4y">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="cif-Wq-BKw">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="Briefcase" id="qoH-mW-XCE">
+                                                    <connections>
+                                                        <action selector="Action1" destination="AgC-eL-Hgc" id="hf4-sV-bJZ"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="ssb-eT-gYf">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="analytics" id="u35-go-SYc">
+                                                    <connections>
+                                                        <action selector="Action2" destination="AgC-eL-Hgc" id="VDD-Tr-O4O"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="rdn-bq-bcj">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="2vK-dO-nMA">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="box" id="dtT-N7-F64">
+                                                    <connections>
+                                                        <action selector="Action3" destination="AgC-eL-Hgc" id="vep-ue-VIm"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="hvG-LS-vbM">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="browser" id="wzY-YO-EzR">
+                                                    <connections>
+                                                        <action selector="Action4" destination="AgC-eL-Hgc" id="Wp7-SX-0nK"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="1Vn-lk-SSr">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="WDg-mx-CNN">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="bubbles" id="Via-HO-rO6">
+                                                    <connections>
+                                                        <action selector="Action5" destination="AgC-eL-Hgc" id="0Ev-Kv-ftz"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="zl2-sj-9sS">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="clock" id="7Cm-OP-j6p">
+                                                    <connections>
+                                                        <action selector="Action6" destination="AgC-eL-Hgc" id="J2o-bR-wmo"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="ENh-Ca-WH3" kind="relationship" relationship="nextPage" id="4pi-IX-wBH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller2-->
+        <scene sceneID="KC8-ky-PCs">
+            <objects>
+                <controller id="ENh-Ca-WH3" customClass="InterfaceController2" customModule="SoundEffects_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="aGe-MT-lab">
+                            <items>
+                                <group width="1" alignment="center" id="eNU-Qj-K5j">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="mGs-79-SZA">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="diamond" id="gI8-GA-J9Z">
+                                                    <connections>
+                                                        <action selector="Action1" destination="ENh-Ca-WH3" id="AFk-LW-VSK"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="cmn-9x-6t1">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="graph" id="XNx-wZ-apn">
+                                                    <connections>
+                                                        <action selector="Action2" destination="ENh-Ca-WH3" id="06S-M3-p4C"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="6UQ-QE-cQE">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="2wE-sI-p38">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="imac" id="VK3-Wt-ezo">
+                                                    <connections>
+                                                        <action selector="Action3" destination="ENh-Ca-WH3" id="tHd-l3-s2t"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="cIP-5L-dQl">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="joypad" id="aCY-XK-Y2I">
+                                                    <connections>
+                                                        <action selector="Action4" destination="ENh-Ca-WH3" id="W7e-iD-nFg"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="5F7-Wn-DGj">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="VgZ-OJ-BPd">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="keyboards" id="z9R-87-WIV">
+                                                    <connections>
+                                                        <action selector="Action5" destination="ENh-Ca-WH3" id="yBo-rL-uYd"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="bTj-Vf-IjU">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="map" id="bD9-mb-2hS">
+                                                    <connections>
+                                                        <action selector="Action6" destination="ENh-Ca-WH3" id="pwe-co-qJ1"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="1va-RH-Iz1" kind="relationship" relationship="nextPage" id="Yl8-2l-p3l"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="446" y="345"/>
+        </scene>
+        <!--Interface Controller3-->
+        <scene sceneID="AVG-pu-zlp">
+            <objects>
+                <controller id="1va-RH-Iz1" customClass="InterfaceController3" customModule="SoundEffects_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="nWG-kS-Woh">
+                            <items>
+                                <group width="1" alignment="center" id="t8Z-Oc-DDR">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="e7m-Qx-TmU">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="open-box" id="3Vl-PL-PTI">
+                                                    <connections>
+                                                        <action selector="Action1" destination="1va-RH-Iz1" id="kPf-36-xCf"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="iJa-fn-dc3">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="package" id="cP2-7E-mE0">
+                                                    <connections>
+                                                        <action selector="Action2" destination="1va-RH-Iz1" id="dO1-h5-8YG"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="oc1-T0-FU4">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="Ego-aE-eom">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="settings" id="gfS-oa-bwh">
+                                                    <connections>
+                                                        <action selector="Action3" destination="1va-RH-Iz1" id="kbj-TS-BCF"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="lF4-pw-s5g">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="speakers" id="ACR-lv-j0w">
+                                                    <connections>
+                                                        <action selector="Action4" destination="1va-RH-Iz1" id="YYe-97-qAv"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="2zR-At-e1Z">
+                                    <items>
+                                        <group width="0.50000000000000011" alignment="left" id="wFR-XG-PyH">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="target" id="YH6-6Q-jCG">
+                                                    <connections>
+                                                        <action selector="Action5" destination="1va-RH-Iz1" id="0Dg-ga-oCG"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.50000000000000011" alignment="left" id="Peb-gt-VtZ">
+                                            <items>
+                                                <button width="45" height="45" alignment="center" verticalAlignment="center" backgroundImage="wine" id="dCt-om-hy7">
+                                                    <connections>
+                                                        <action selector="Action6" destination="1va-RH-Iz1" id="1TI-i2-1nl"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="661" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SoundEffects_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
