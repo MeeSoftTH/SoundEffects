@@ -12,7 +12,6 @@ import Foundation
 class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     var identifiers: NSArray = ["ItemViewController1", "ItemViewController2", "ItemViewController3"]
-    var currentIndex:UInt = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +29,6 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
     }
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {
-        
-       currentIndex = UInt(index)
         
         if index == 0 {
             
@@ -57,8 +54,6 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
             UIViewController
             
         }
-        
-        
         
         return nil
     }
