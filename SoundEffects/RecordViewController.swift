@@ -20,16 +20,21 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     @IBOutlet weak var statusLabel: UILabel!
     
     var meterTimer:NSTimer!
-    
-    let fileName = "demo.caf"
+    var fileName: String?
     
     @IBAction func ActionCancel(segue:UIStoryboardSegue) {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    
+    @IBAction func SaveAction(sender: UIBarButtonItem) {
+         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRecorder()
+        playButton.enabled = false
+        nameSetting()
     }
     
     @IBAction func recordSound(sender: UIButton) {
@@ -60,11 +65,44 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         }
     }
     
+    func nameSetting() {
+        println("NAME SETTING")
+        var alert = UIAlertController(title: "Save", message: "Edit you audio name", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "Save", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
+            let textField = alert.textFields![0] as! UITextField
+            self.fileName = String(_cocoaString: textField) + ".m4a"
+            self.setupRecorder()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: {
+            (action: UIAlertAction!) in
+            var format = NSDateFormatter()
+            format.dateFormat="yyyy-MM-dd-HH-mm-ss"
+            var currentFileName = "recording-\(format.stringFromDate(NSDate()))"
+            println(currentFileName)
+            self.fileName = currentFileName + ".m4a"
+            self.setupRecorder()
+        }))
+        
+        alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+            //textField.placeholder = self.fileName
+            textField.placeholder = "Type you audio name"
+            textField.secureTextEntry = false
+        })
+        
+        delay(0.5) {
+           self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
     // MARK:- AVRecorder Setup
     
     func setupRecorder() {
         
-        //set the settings for recorder
+        var audioSession:AVAudioSession = AVAudioSession.sharedInstance()
+        audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
+        audioSession.setActive(true, error: nil)
         
         var recordSettings = [
             AVFormatIDKey: kAudioFormatAppleLossless,
@@ -129,11 +167,10 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     }
     
     func getFileURL() -> NSURL {
-        
-        let path =  getCacheDirectory().stringByAppendingPathComponent(fileName)
-        let filePath = NSURL(fileURLWithPath: path)
-         println("The sound path is \(path)")
-        
+        var documents: AnyObject = NSSearchPathForDirectoriesInDomains( NSSearchPathDirectory.DocumentDirectory,  NSSearchPathDomainMask.UserDomainMask, true)[0]
+        var str =  documents.stringByAppendingPathComponent(fileName!)
+        let filePath = NSURL(fileURLWithPath: str)
+        println("The sound path is \(filePath)")
         return filePath!
     }
     
@@ -157,6 +194,15 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     
     func audioRecorderEncodeErrorDidOccur(recorder: AVAudioRecorder!, error: NSError!) {
         println("Error while recording audio \(error.localizedDescription)")
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
     
     // MARK:- didReceiveMemoryWarning
