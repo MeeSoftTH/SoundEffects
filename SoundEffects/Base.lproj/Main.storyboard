@@ -193,13 +193,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn9-4N-Vyq">
-                                <rect key="frame" x="0.0" y="227" width="320" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o9-Iy-SBc">
-                                <rect key="frame" x="0.0" y="273" width="320" height="33"/>
+                                <rect key="frame" x="0.0" y="227" width="320" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -225,7 +219,7 @@
                                                 <action selector="ActionCancel:" destination="EEY-C3-tWW" id="6Wv-BY-8EM"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yLC-ce-obB"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yLC-ce-obB"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -253,6 +247,12 @@
                                     <action selector="playSound:" destination="EEY-C3-tWW" eventType="touchUpInside" id="KdC-bW-Lzx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o9-Iy-SBc">
+                                <rect key="frame" x="0.0" y="285" width="320" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -262,6 +262,7 @@
                     <connections>
                         <outlet property="playButton" destination="k0s-sJ-UZZ" id="x29-mw-6MY"/>
                         <outlet property="recordButton" destination="T3w-Y3-aZl" id="6zU-jn-NAw"/>
+                        <outlet property="statusLabel" destination="kn9-4N-Vyq" id="aEm-I7-45Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1b-73-BQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -311,8 +312,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMz-FD-KJi">
-                                <rect key="frame" x="80" y="114" width="144" height="160"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMz-FD-KJi">
+                                <rect key="frame" x="88" y="113" width="144" height="160"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Briefcase" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-yo-2i4">
                                         <rect key="frame" x="8" y="8" width="128" height="144"/>
@@ -390,19 +391,6 @@
                                     <constraint firstItem="xTy-c7-j1P" firstAttribute="baseline" secondItem="2XM-zJ-pZ1" secondAttribute="firstBaseline" id="uzT-Mx-Bqa"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXz-tY-kzY">
-                                <rect key="frame" x="80" y="458" width="144" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="5JG-yl-hLK"/>
-                                </constraints>
-                                <state key="normal" title="Browse">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ActionCancel:" destination="gWR-n2-NwC" eventType="touchUpInside" id="Yxg-KG-L8n"/>
-                                    <segue destination="4VB-cu-V4S" kind="unwind" unwindAction="ActionCancel:" id="CcS-yt-XPV"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpZ-Go-GPm">
                                 <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
                                 <items>
@@ -418,10 +406,23 @@
                                                 <action selector="ActionCancel:" destination="gWR-n2-NwC" id="Jel-es-an7"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qjT-U2-V3h"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qjT-U2-V3h"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXz-tY-kzY">
+                                <rect key="frame" x="88" y="459" width="144" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="5JG-yl-hLK"/>
+                                </constraints>
+                                <state key="normal" title="Browse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ActionCancel:" destination="gWR-n2-NwC" eventType="touchUpInside" id="Yxg-KG-L8n"/>
+                                    <segue destination="4VB-cu-V4S" kind="unwind" unwindAction="ActionCancel:" id="CcS-yt-XPV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

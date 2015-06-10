@@ -11,31 +11,37 @@ import AVFoundation
 
 class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
     
+    var soundRecorder: AVAudioRecorder!
+    var soundPlayer:AVAudioPlayer!
+    
+    
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var statusLabel: UILabel!
     
+    var meterTimer:NSTimer!
+    
+    let fileName = "demo.caf"
     
     @IBAction func ActionCancel(segue:UIStoryboardSegue) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    var soundRecorder: AVAudioRecorder!
-    var soundPlayer:AVAudioPlayer!
-    
-    let fileName = "demo.caf"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRecorder()
     }
     
-    
-    
     @IBAction func recordSound(sender: UIButton) {
         if (sender.titleLabel?.text == "RECORD"){
             soundRecorder.record()
             sender.setTitle("STOP", forState: .Normal)
             playButton.enabled = false
+            self.meterTimer = NSTimer.scheduledTimerWithTimeInterval(0.1,
+                target:self,
+                selector:"updateAudioMeter:",
+                userInfo:nil,
+                repeats:true)
         } else {
             soundRecorder.stop()
             sender.setTitle("RECORD", forState: .Normal)
@@ -80,6 +86,23 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         }
     }
     
+    func updateAudioMeter(timer:NSTimer) {
+        
+        if soundRecorder.recording {
+            let sec = Int(soundRecorder.currentTime % 60)
+            statusLabel.text = String(sec)
+            soundRecorder.updateMeters()
+            
+            println("This time is \(sec)")
+            
+            if sec == 10 {
+                soundRecorder.stop()
+                recordButton.setTitle("RECORD", forState: .Normal)
+                println("This time is CLICK")
+            }
+        }
+    }
+    
     // MARK:- Prepare AVPlayer
     
     func preparePlayer() {
@@ -109,6 +132,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         
         let path =  getCacheDirectory().stringByAppendingPathComponent(fileName)
         let filePath = NSURL(fileURLWithPath: path)
+         println("The sound path is \(path)")
         
         return filePath!
     }
