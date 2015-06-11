@@ -70,8 +70,15 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         var alert = UIAlertController(title: "Save", message: "Edit you audio name", preferredStyle: UIAlertControllerStyle.Alert)
         
         alert.addAction(UIAlertAction(title: "Save", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
-            let textField = alert.textFields![0] as! UITextField
-            self.fileName = String(_cocoaString: textField) + ".m4a"
+            let input = alert.textFields![0] as! UITextField
+            
+            if input.text == "" {
+                input.text = "sample-record"
+            }
+            println("this input is \(input.text)")
+            
+            self.fileName = input.text + ".m4a"
+            
             self.setupRecorder()
         }))
         
@@ -79,7 +86,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
             (action: UIAlertAction!) in
             var format = NSDateFormatter()
             format.dateFormat="yyyy-MM-dd-HH-mm-ss"
-            var currentFileName = "recording-\(format.stringFromDate(NSDate()))"
+            var currentFileName = "sample-record-\(format.stringFromDate(NSDate()))"
             println(currentFileName)
             self.fileName = currentFileName + ".m4a"
             self.setupRecorder()
