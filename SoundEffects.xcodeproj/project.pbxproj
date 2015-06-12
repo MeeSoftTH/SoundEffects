@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0BC43E1B2A972B004DC2BD /* InterfaceController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BC43D1B2A972B004DC2BD /* InterfaceController4.swift */; };
 		6B5471F21B220233002BE808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F11B220233002BE808 /* AppDelegate.swift */; };
 		6B5471F41B220233002BE808 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F31B220233002BE808 /* ViewController.swift */; };
 		6B5471F71B220233002BE808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5471F51B220233002BE808 /* Main.storyboard */; };
@@ -127,6 +128,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B0BC43D1B2A972B004DC2BD /* InterfaceController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController4.swift; sourceTree = "<group>"; };
 		6B5471EC1B220233002BE808 /* SoundEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5471F01B220233002BE808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B5471F11B220233002BE808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				6BC004E81B22050A0048630B /* InterfaceController1.swift */,
 				6BC005091B2206490048630B /* InterfaceController2.swift */,
 				6BC0050C1B2206590048630B /* InterfaceController3.swift */,
+				6B0BC43D1B2A972B004DC2BD /* InterfaceController4.swift */,
 				6BC004EA1B22050A0048630B /* NotificationController.swift */,
 				6BC004EC1B22050A0048630B /* Images.xcassets */,
 				6BC004E51B22050A0048630B /* Supporting Files */,
@@ -632,6 +635,7 @@
 				6BC0050E1B2206590048630B /* InterfaceController3.swift in Sources */,
 				6BC004E91B22050A0048630B /* InterfaceController1.swift in Sources */,
 				6BC0050B1B2206490048630B /* InterfaceController2.swift in Sources */,
+				6B0BC43E1B2A972B004DC2BD /* InterfaceController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

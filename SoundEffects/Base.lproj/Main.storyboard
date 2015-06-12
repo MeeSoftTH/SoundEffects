@@ -35,9 +35,9 @@
                                 <rect key="frame" x="85" y="105" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="analytics" id="Ipv-R7-PGn">
-                                        <rect key="frame" x="20" y="20" width="110" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaplin_icon" id="Ipv-R7-PGn">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,122 +103,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="Emi-qE-HJk">
-                                <rect key="frame" x="0.0" y="72" width="320" height="476"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="I2v-kF-tjg">
+                                <rect key="frame" x="0.0" y="46" width="320" height="476"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yTq-xM-jYd">
-                                        <rect key="frame" x="16" y="20" width="140" height="140"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AgM-84-XG6">
+                                        <rect key="frame" x="8" y="8" width="140" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ADD">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="70"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="Action1:" destination="xFD-mB-njk" eventType="touchUpInside" id="NyQ-AC-fhL"/>
-                                            <action selector="Add1:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="cHT-BG-1M6"/>
+                                            <action selector="Action1:" destination="xFD-mB-njk" eventType="touchUpInside" id="uW7-TI-XUb"/>
+                                            <action selector="Add1:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="vdr-vy-8hB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pnh-Ze-bgn">
-                                        <rect key="frame" x="164" y="20" width="140" height="140"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2AS-m6-0us">
+                                        <rect key="frame" x="172" y="8" width="140" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ADD">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="70"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="Action1:" destination="xFD-mB-njk" eventType="touchUpInside" id="RrH-WH-Bfy"/>
-                                            <action selector="Add2:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="flm-X2-DR3"/>
+                                            <action selector="Action2:" destination="xFD-mB-njk" eventType="touchUpInside" id="jIX-oF-mi7"/>
+                                            <action selector="Add2:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="4CY-Z1-qEf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k3G-dg-pf9">
-                                        <rect key="frame" x="16" y="168" width="140" height="140"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Ec-vg-lZG">
+                                        <rect key="frame" x="8" y="328" width="140" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ADD">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="70"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="Action1:" destination="xFD-mB-njk" eventType="touchUpInside" id="egk-2W-PPY"/>
-                                            <action selector="Add3:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="SpA-Ar-Y6Q"/>
+                                            <action selector="Action5:" destination="xFD-mB-njk" eventType="touchUpInside" id="pcD-lO-rqi"/>
+                                            <action selector="Add5:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="5EC-zz-gvI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2ne-LN-kHO">
-                                        <rect key="frame" x="164" y="168" width="140" height="140"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zeG-Pb-iWL">
+                                        <rect key="frame" x="8" y="168" width="140" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ADD">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="70"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="Action1:" destination="xFD-mB-njk" eventType="touchUpInside" id="Wt5-vE-SWo"/>
-                                            <action selector="Add4:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="8s7-nQ-U7l"/>
+                                            <action selector="Action3:" destination="xFD-mB-njk" eventType="touchUpInside" id="geT-Ji-zH3"/>
+                                            <action selector="Add3:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="oJd-2d-gJ2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i7C-Z2-wZc">
-                                        <rect key="frame" x="16" y="316" width="140" height="140"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cps-uT-7Sc">
+                                        <rect key="frame" x="172" y="168" width="140" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ADD">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="70"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="Action1:" destination="xFD-mB-njk" eventType="touchUpInside" id="ulZ-m6-04u"/>
-                                            <action selector="Add5:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="Z48-M9-CI1"/>
+                                            <action selector="Action4:" destination="xFD-mB-njk" eventType="touchUpInside" id="lCq-yM-5YH"/>
+                                            <action selector="Add4:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="TIX-ka-A8p"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="faF-J1-D3E">
-                                        <rect key="frame" x="164" y="316" width="140" height="140"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c2F-au-0Bc">
+                                        <rect key="frame" x="172" y="328" width="140" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ADD">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="70"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="Action1:" destination="xFD-mB-njk" eventType="touchUpInside" id="D8k-Vn-dxp"/>
-                                            <action selector="Add6:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="45u-Jj-nN9"/>
+                                            <action selector="Action6:" destination="xFD-mB-njk" eventType="touchUpInside" id="pYd-lL-oHE"/>
+                                            <action selector="Add6:" destination="AfH-dl-Ezz" eventType="touchUpInside" id="xrd-mY-jlO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -474,12 +426,11 @@
                                 <rect key="frame" x="80" y="113" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Briefcase" id="eTL-yo-2i4">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaplin_icon" id="eTL-yo-2i4">
                                         <rect key="frame" x="8" y="8" width="144" height="144"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
@@ -761,10 +712,12 @@
     </scenes>
     <resources>
         <image name="Briefcase" width="128" height="128"/>
+        <image name="add_icon" width="128" height="128"/>
         <image name="analytics" width="128" height="128"/>
         <image name="box" width="128" height="128"/>
         <image name="browser" width="128" height="128"/>
         <image name="bubbles" width="128" height="128"/>
+        <image name="chaplin_icon" width="128" height="128"/>
         <image name="clock" width="128" height="128"/>
         <image name="diamond" width="128" height="128"/>
         <image name="graph" width="128" height="128"/>

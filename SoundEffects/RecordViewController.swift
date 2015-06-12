@@ -34,7 +34,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     override func viewDidLoad() {
         super.viewDidLoad()
         playButton.enabled = false
-        nameSetting()
+        setupRecorder()
     }
     
     @IBAction func recordSound(sender: UIButton) {
@@ -65,44 +65,6 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         }
     }
     
-    func nameSetting() {
-        println("NAME SETTING")
-        var alert = UIAlertController(title: "Save", message: "Edit you audio name", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        alert.addAction(UIAlertAction(title: "Save", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
-            let input = alert.textFields![0] as! UITextField
-            
-            if input.text == "" {
-                input.text = "sample-record"
-            }
-            println("this input is \(input.text)")
-            
-            self.fileName = input.text + ".m4a"
-            
-            self.setupRecorder()
-        }))
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: {
-            (action: UIAlertAction!) in
-            var format = NSDateFormatter()
-            format.dateFormat="yyyy-MM-dd-HH-mm-ss"
-            var currentFileName = "sample-record-\(format.stringFromDate(NSDate()))"
-            println(currentFileName)
-            self.fileName = currentFileName + ".m4a"
-            self.setupRecorder()
-        }))
-        
-        alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
-            //textField.placeholder = self.fileName
-            textField.placeholder = "Type you audio name"
-            textField.secureTextEntry = false
-        })
-        
-        delay(0.5) {
-           self.presentViewController(alert, animated: true, completion: nil)
-        }
-    }
-    
     // MARK:- AVRecorder Setup
     
     func setupRecorder() {
@@ -110,6 +72,12 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         var audioSession:AVAudioSession = AVAudioSession.sharedInstance()
         audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
         audioSession.setActive(true, error: nil)
+        
+        var format = NSDateFormatter()
+        format.dateFormat="yyyy-MM-dd-HH-mm-ss"
+        var currentFileName = "record-\(format.stringFromDate(NSDate()))"
+        println(currentFileName)
+        self.fileName = currentFileName + ".m4a"
         
         var recordSettings = [
             AVFormatIDKey: kAudioFormatAppleLossless,

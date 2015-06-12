@@ -18,9 +18,7 @@ class InterfaceController1: WKInterfaceController {
     let ActionSound2 = NSBundle.mainBundle().URLForResource("baby2", withExtension: "mp3")!
     let ActionSound3 = NSBundle.mainBundle().URLForResource("baby3", withExtension: "mp3")!
     let ActionSound4 = NSBundle.mainBundle().URLForResource("baby4", withExtension: "mp3")!
-    let ActionSound5 = NSBundle.mainBundle().URLForResource("baby5", withExtension: "mp3")!
-    let ActionSound6 = NSBundle.mainBundle().URLForResource("baby6", withExtension: "mp3")!
-
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -51,14 +49,6 @@ class InterfaceController1: WKInterfaceController {
     
     @IBAction func Action4() {
         soundPlayer(ActionSound4)
-    }
-    
-    @IBAction func Action5() {
-        soundPlayer(ActionSound5)
-    }
-    
-    @IBAction func Action6() {
-        soundPlayer(ActionSound6)
     }
     
     func soundPlayer(path: NSURL) {
