@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller1-->
+        <!--Controller1-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController1" customModule="SoundEffects_WatchKit_Extension">
+                <controller identifier="Controller1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SoundEffects_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="gBx-us-Yee">
                             <items>
@@ -18,7 +18,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="Briefcase" id="qoH-mW-XCE">
                                                     <connections>
-                                                        <action selector="Action1" destination="AgC-eL-Hgc" id="8SS-sS-oZd"/>
+                                                        <action selector="Action1" destination="AgC-eL-Hgc" id="iM7-Z8-PRd"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -27,7 +27,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="analytics" id="u35-go-SYc">
                                                     <connections>
-                                                        <action selector="Action2" destination="AgC-eL-Hgc" id="FOu-GP-YoA"/>
+                                                        <action selector="Action2" destination="AgC-eL-Hgc" id="HLT-Ml-vhA"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -40,7 +40,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="box" id="dtT-N7-F64">
                                                     <connections>
-                                                        <action selector="Action3" destination="AgC-eL-Hgc" id="pNc-2M-P2J"/>
+                                                        <action selector="Action3" destination="AgC-eL-Hgc" id="jo2-N4-I4Q"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -49,7 +49,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="browser" id="wzY-YO-EzR">
                                                     <connections>
-                                                        <action selector="Action4" destination="AgC-eL-Hgc" id="1nN-zf-oq6"/>
+                                                        <action selector="Action4" destination="AgC-eL-Hgc" id="OOL-Sq-GFC"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -64,12 +64,12 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="144" y="316"/>
+            <point key="canvasLocation" x="142" y="316"/>
         </scene>
-        <!--Interface Controller2-->
+        <!--Controller2-->
         <scene sceneID="KC8-ky-PCs">
             <objects>
-                <controller id="ENh-Ca-WH3" customClass="InterfaceController2" customModule="SoundEffects_WatchKit_Extension">
+                <controller identifier="Controller2" id="ENh-Ca-WH3" customClass="InterfaceController" customModule="SoundEffects_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="NIA-Dn-pkz">
                             <items>
@@ -79,7 +79,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="bubbles" id="nND-u7-845">
                                                     <connections>
-                                                        <action selector="Action1" destination="ENh-Ca-WH3" id="6aU-0V-vo4"/>
+                                                        <action selector="Action5" destination="ENh-Ca-WH3" id="w1q-M2-N4k"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -88,7 +88,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="clock" id="SHR-vV-o3I">
                                                     <connections>
-                                                        <action selector="Action2" destination="ENh-Ca-WH3" id="bbg-Qp-cK5"/>
+                                                        <action selector="Action6" destination="ENh-Ca-WH3" id="I53-eq-tr0"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -101,7 +101,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="diamond" id="YdT-xj-Pdx">
                                                     <connections>
-                                                        <action selector="Action3" destination="ENh-Ca-WH3" id="cBf-xj-hI6"/>
+                                                        <action selector="Action7" destination="ENh-Ca-WH3" id="6th-mB-FQt"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -110,7 +110,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="graph" id="iYz-cb-4pL">
                                                     <connections>
-                                                        <action selector="Action4" destination="ENh-Ca-WH3" id="H9l-53-46a"/>
+                                                        <action selector="Action8" destination="ENh-Ca-WH3" id="bo4-6x-WCs"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="370" y="316"/>
         </scene>
-        <!--Interface Controller3-->
+        <!--Controller3-->
         <scene sceneID="AVG-pu-zlp">
             <objects>
-                <controller id="1va-RH-Iz1" customClass="InterfaceController3" customModule="SoundEffects_WatchKit_Extension">
+                <controller identifier="Controller3" id="1va-RH-Iz1" customClass="InterfaceController" customModule="SoundEffects_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="nof-x7-g5d">
                             <items>
@@ -140,7 +140,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="imac" id="VC7-9A-h1O">
                                                     <connections>
-                                                        <action selector="Action1" destination="1va-RH-Iz1" id="dls-hI-BFO"/>
+                                                        <action selector="Action9" destination="1va-RH-Iz1" id="DM6-Y5-uft"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -149,7 +149,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="joypad" id="P7z-up-73I">
                                                     <connections>
-                                                        <action selector="Action2" destination="1va-RH-Iz1" id="sES-BO-O0c"/>
+                                                        <action selector="Action10" destination="1va-RH-Iz1" id="jTO-jq-f3H"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -162,7 +162,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="keyboards" id="m7l-GG-Uin">
                                                     <connections>
-                                                        <action selector="Action3" destination="1va-RH-Iz1" id="6M0-1y-kuE"/>
+                                                        <action selector="Action11" destination="1va-RH-Iz1" id="160-bs-rwp"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -171,7 +171,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="map" id="zwQ-mU-qVR">
                                                     <connections>
-                                                        <action selector="Action4" destination="1va-RH-Iz1" id="4FJ-GG-g4P"/>
+                                                        <action selector="Action12" destination="1va-RH-Iz1" id="tKS-Yi-F85"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -207,14 +207,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SoundEffects_WatchKit_App" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SoundEffects" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
-        <!--Interface Controller4-->
+        <!--Controller4-->
         <scene sceneID="m1t-0B-YXT">
             <objects>
-                <controller id="LRN-5y-JrG" customClass="InterfaceController4" customModule="SoundEffects_WatchKit_Extension">
+                <controller identifier="Controller4" id="LRN-5y-JrG" customClass="InterfaceController" customModule="SoundEffects_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="VhR-TS-bQn">
                             <items>
@@ -224,7 +224,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="open-box" id="ohT-d8-Sal">
                                                     <connections>
-                                                        <action selector="Action1" destination="LRN-5y-JrG" id="Qfz-1m-fGL"/>
+                                                        <action selector="Action13" destination="LRN-5y-JrG" id="9mN-eI-5Hs"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -233,7 +233,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="package" id="paQ-F2-gby">
                                                     <connections>
-                                                        <action selector="Action2" destination="LRN-5y-JrG" id="ikR-wC-5Ha"/>
+                                                        <action selector="Action14" destination="LRN-5y-JrG" id="BnK-t3-8q0"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -246,7 +246,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="settings" id="IoM-62-SaF">
                                                     <connections>
-                                                        <action selector="Action3" destination="LRN-5y-JrG" id="qj1-QH-bOo"/>
+                                                        <action selector="Action15" destination="LRN-5y-JrG" id="3pY-90-3a1"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -255,7 +255,7 @@
                                             <items>
                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="speakers" id="dXK-nm-Dpb">
                                                     <connections>
-                                                        <action selector="Action4" destination="LRN-5y-JrG" id="RIE-J8-elc"/>
+                                                        <action selector="Action16" destination="LRN-5y-JrG" id="pzK-za-q0a"/>
                                                     </connections>
                                                 </button>
                                             </items>

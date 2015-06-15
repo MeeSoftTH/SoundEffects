@@ -456,10 +456,10 @@
             </objects>
             <point key="canvasLocation" x="839" y="201"/>
         </scene>
-        <!--Item View Controller1-->
+        <!--Item View Controller-->
         <scene sceneID="KKM-Sk-NH3">
             <objects>
-                <viewController storyboardIdentifier="ItemViewController1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xFD-mB-njk" customClass="ItemViewController1" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemViewController1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xFD-mB-njk" customClass="ItemViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OtO-N4-1rS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,10 +542,10 @@
             </objects>
             <point key="canvasLocation" x="420.26666666666665" y="-1072.5733333333333"/>
         </scene>
-        <!--Item View Controller2-->
+        <!--Item View Controller-->
         <scene sceneID="SF6-bS-uLc">
             <objects>
-                <viewController storyboardIdentifier="ItemViewController2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aDc-1R-SHf" customClass="ItemViewController2" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemViewController2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aDc-1R-SHf" customClass="ItemViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ts2-mL-lbk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,6 +562,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Action1:" destination="aDc-1R-SHf" eventType="touchUpInside" id="aof-rH-UIJ"/>
+                                            <action selector="Action7:" destination="aDc-1R-SHf" eventType="touchUpInside" id="kyg-hh-ZRG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PSe-fk-3Q4">
@@ -572,6 +573,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Action2:" destination="aDc-1R-SHf" eventType="touchUpInside" id="U3s-pj-t8u"/>
+                                            <action selector="Action8:" destination="aDc-1R-SHf" eventType="touchUpInside" id="Ud3-Eq-6GB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k2W-6T-1D8">
@@ -582,6 +584,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Action3:" destination="aDc-1R-SHf" eventType="touchUpInside" id="73X-gI-jQg"/>
+                                            <action selector="Action9:" destination="aDc-1R-SHf" eventType="touchUpInside" id="cvg-bj-8fd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JlO-4h-6ke">
@@ -591,6 +594,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action11:" destination="aDc-1R-SHf" eventType="touchUpInside" id="eOG-FH-Bce"/>
                                             <action selector="Action5:" destination="aDc-1R-SHf" eventType="touchUpInside" id="UE7-OG-ta7"/>
                                         </connections>
                                     </button>
@@ -601,6 +605,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action12:" destination="aDc-1R-SHf" eventType="touchUpInside" id="iaJ-wq-YR1"/>
                                             <action selector="Action6:" destination="aDc-1R-SHf" eventType="touchUpInside" id="dBt-cN-NaT"/>
                                         </connections>
                                     </button>
@@ -611,6 +616,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action10:" destination="aDc-1R-SHf" eventType="touchUpInside" id="r1l-Ub-A8w"/>
                                             <action selector="Action4:" destination="aDc-1R-SHf" eventType="touchUpInside" id="Q5q-dl-X9G"/>
                                         </connections>
                                     </button>
@@ -628,10 +634,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="-1073"/>
         </scene>
-        <!--Item View Controller3-->
+        <!--Item View Controller-->
         <scene sceneID="HT3-ph-PBf">
             <objects>
-                <viewController storyboardIdentifier="ItemViewController3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XzT-WS-ccW" customClass="ItemViewController3" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemViewController3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XzT-WS-ccW" customClass="ItemViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5TC-2B-mdH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -647,6 +653,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action13:" destination="XzT-WS-ccW" eventType="touchUpInside" id="bJP-mR-LYH"/>
                                             <action selector="Action1:" destination="XzT-WS-ccW" eventType="touchUpInside" id="htT-SU-mIE"/>
                                             <action selector="Action2:" destination="XzT-WS-ccW" eventType="touchUpInside" id="rvb-gA-w8n"/>
                                         </connections>
@@ -658,6 +665,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action14:" destination="XzT-WS-ccW" eventType="touchUpInside" id="THh-Aq-bRn"/>
                                             <action selector="Action2:" destination="XzT-WS-ccW" eventType="touchUpInside" id="KCF-t8-znd"/>
                                         </connections>
                                     </button>
@@ -668,6 +676,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action15:" destination="XzT-WS-ccW" eventType="touchUpInside" id="ylp-rt-o0U"/>
                                             <action selector="Action3:" destination="XzT-WS-ccW" eventType="touchUpInside" id="w3a-eX-Iio"/>
                                         </connections>
                                     </button>
@@ -678,6 +687,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action16:" destination="XzT-WS-ccW" eventType="touchUpInside" id="1Rd-is-wfG"/>
                                             <action selector="Action4:" destination="XzT-WS-ccW" eventType="touchUpInside" id="KNS-Z1-GM3"/>
                                         </connections>
                                     </button>
@@ -688,6 +698,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action17:" destination="XzT-WS-ccW" eventType="touchUpInside" id="ubJ-Tx-Us7"/>
                                             <action selector="Action5:" destination="XzT-WS-ccW" eventType="touchUpInside" id="sgJ-cm-21y"/>
                                         </connections>
                                     </button>
@@ -698,6 +709,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Action18:" destination="XzT-WS-ccW" eventType="touchUpInside" id="0go-Mt-ubq"/>
                                             <action selector="Action6:" destination="XzT-WS-ccW" eventType="touchUpInside" id="ETL-G1-d3P"/>
                                         </connections>
                                     </button>
