@@ -35,9 +35,15 @@
                                 <rect key="frame" x="85" y="105" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaplin_icon" id="Ipv-R7-PGn">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beanIcon" id="Ipv-R7-PGn">
+                                        <rect key="frame" x="3" y="2" width="145" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -714,10 +720,11 @@
         <image name="Briefcase" width="128" height="128"/>
         <image name="add_icon" width="128" height="128"/>
         <image name="analytics" width="128" height="128"/>
+        <image name="beanIcon" width="180" height="180"/>
         <image name="box" width="128" height="128"/>
         <image name="browser" width="128" height="128"/>
         <image name="bubbles" width="128" height="128"/>
-        <image name="chaplin_icon" width="128" height="128"/>
+        <image name="chaplin_icon" width="192" height="40"/>
         <image name="clock" width="128" height="128"/>
         <image name="diamond" width="128" height="128"/>
         <image name="graph" width="128" height="128"/>
