@@ -32,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.currentPageIndicatorTintColor = UIColor.blueColor()
         pageControl.backgroundColor = UIColor.whiteColor()
         
+        DataSettingAndShare().defindSetting()
+        
         return true
     }
     
