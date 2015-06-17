@@ -12,6 +12,9 @@ import UIKit
 
 class DataSettingAndShare {
     
+    struct MyDefaultVariables {
+        static var isAddItem:Bool! = false
+    }
     
     func defindSetting() {
         

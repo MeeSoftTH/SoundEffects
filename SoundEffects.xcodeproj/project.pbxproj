@@ -10,6 +10,9 @@
 		6B481AAC1B3169FC00EF52AE /* ItemViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AAB1B3169FC00EF52AE /* ItemViewController2.swift */; };
 		6B481AAE1B316A0F00EF52AE /* ItemViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AAD1B316A0F00EF52AE /* ItemViewController3.swift */; };
 		6B481AB21B31706400EF52AE /* DataSettingAndShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AB11B31706400EF52AE /* DataSettingAndShare.swift */; };
+		6B481AB41B31740300EF52AE /* WatchItemViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AB31B31740300EF52AE /* WatchItemViewController1.swift */; };
+		6B481AB61B31741700EF52AE /* WatchItemViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AB51B31741700EF52AE /* WatchItemViewController2.swift */; };
+		6B481AB81B31742E00EF52AE /* WatchItemViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AB71B31742E00EF52AE /* WatchItemViewController3.swift */; };
 		6B5471F21B220233002BE808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F11B220233002BE808 /* AppDelegate.swift */; };
 		6B5471F41B220233002BE808 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F31B220233002BE808 /* ViewController.swift */; };
 		6B5471F71B220233002BE808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5471F51B220233002BE808 /* Main.storyboard */; };
@@ -129,6 +132,9 @@
 		6B481AAB1B3169FC00EF52AE /* ItemViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController2.swift; sourceTree = "<group>"; };
 		6B481AAD1B316A0F00EF52AE /* ItemViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController3.swift; sourceTree = "<group>"; };
 		6B481AB11B31706400EF52AE /* DataSettingAndShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSettingAndShare.swift; sourceTree = "<group>"; };
+		6B481AB31B31740300EF52AE /* WatchItemViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController1.swift; sourceTree = "<group>"; };
+		6B481AB51B31741700EF52AE /* WatchItemViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController2.swift; sourceTree = "<group>"; };
+		6B481AB71B31742E00EF52AE /* WatchItemViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController3.swift; sourceTree = "<group>"; };
 		6B5471EC1B220233002BE808 /* SoundEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5471F01B220233002BE808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B5471F11B220233002BE808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +230,9 @@
 			isa = PBXGroup;
 			children = (
 				6BF06E721B2F046500CE7A62 /* AddWatchViewController.swift */,
+				6B481AB31B31740300EF52AE /* WatchItemViewController1.swift */,
+				6B481AB51B31741700EF52AE /* WatchItemViewController2.swift */,
+				6B481AB71B31742E00EF52AE /* WatchItemViewController3.swift */,
 			);
 			name = AddToWatchControl;
 			sourceTree = "<group>";
@@ -634,10 +643,13 @@
 				6B481AB21B31706400EF52AE /* DataSettingAndShare.swift in Sources */,
 				6BEE53C71B2433720045B4AE /* BrowseViewController.swift in Sources */,
 				6B481AAE1B316A0F00EF52AE /* ItemViewController3.swift in Sources */,
+				6B481AB41B31740300EF52AE /* WatchItemViewController1.swift in Sources */,
 				6B5471F21B220233002BE808 /* AppDelegate.swift in Sources */,
 				6BC2BC451B25930600C804D5 /* CustomViewController.swift in Sources */,
 				6BF06E731B2F046500CE7A62 /* AddWatchViewController.swift in Sources */,
 				6BEE53CB1B2433720045B4AE /* MainViewController.swift in Sources */,
+				6B481AB61B31741700EF52AE /* WatchItemViewController2.swift in Sources */,
+				6B481AB81B31742E00EF52AE /* WatchItemViewController3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

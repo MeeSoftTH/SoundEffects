@@ -31,7 +31,7 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
         
         if index == 0 {
             
-            println("This class is = ItemViewController1 \n ---------------------------------------------------------")
+            println("This class is = AddWatch1 \n ---------------------------------------------------------")
             
             return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch1") as!
             UIViewController
@@ -39,7 +39,7 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
             
         }else if index == 1 {
             
-            println("This class is = ItemViewController2 \n ---------------------------------------------------------")
+            println("This class is = AddWatch2 \n ---------------------------------------------------------")
             
             return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch2") as!
             UIViewController
@@ -47,7 +47,7 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
             
         }else if index == 2 {
             
-            println("This class is = ItemViewController3 \n ---------------------------------------------------------")
+            println("This class is = AddWatch3 \n ---------------------------------------------------------")
             
             return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch3") as!
             UIViewController

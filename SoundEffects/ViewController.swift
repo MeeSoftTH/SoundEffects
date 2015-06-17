@@ -15,17 +15,15 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         self.title = "Category"
-        //self.navigationController?.navigationItem.backBarButtonItem?.title = "Back"
+        
         self.dataSource = self
         self.delegate = self
         
         let startingViewController = self.viewControllerAtIndex(0)
         let viewControllers: Array = [startingViewController]
         self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
-        
-        
-        
     }
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {

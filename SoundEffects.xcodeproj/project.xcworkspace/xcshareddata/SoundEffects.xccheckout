@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9ECEBCE7-6BEC-418E-980B-7C49BB383060</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SoundEffects</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>595032E7EE8758E969CD21D9C372933E1048A795</key>
 		<string>https://github.com/Pawarit88/SoundEffects.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SoundEffects.xcodeproj</string>
+	<string>SoundEffects.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>595032E7EE8758E969CD21D9C372933E1048A795</key>

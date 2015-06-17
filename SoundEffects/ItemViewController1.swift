@@ -12,7 +12,6 @@ import AVFoundation
 class ItemViewController1: UIViewController {
     var soundPlayer = AVAudioPlayer()
     
-    
     @IBOutlet weak var image1: UIButton!
     @IBOutlet weak var image2: UIButton!
     @IBOutlet weak var image3: UIButton!
@@ -28,10 +27,9 @@ class ItemViewController1: UIViewController {
     var ActionSound5 =  String()
     var ActionSound6 =  String()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        println(DataSettingAndShare.MyDefaultVariables.isAddItem)
         updatePath()
     }
     
