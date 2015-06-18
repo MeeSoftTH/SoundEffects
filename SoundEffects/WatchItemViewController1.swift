@@ -9,6 +9,9 @@
 import UIKit
 
 class WatchItemViewController1: UIViewController {
+    
+    var index: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,8 +24,17 @@ class WatchItemViewController1: UIViewController {
     }
     
     @IBAction func button1(sender: AnyObject) {
-        DataSettingAndShare.MyDefaultVariables.isAddItem = true
+        self.index = 1
+        openAddItemView()
     }
     
     
+    func openAddItemView() {
+        
+        DataSettingAndShare.MyDefaultVariables.isAddItem = true
+        
+        let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! ViewController
+        
+        self.navigationController!.pushViewController(secondViewController, animated: true)
+    }
 }

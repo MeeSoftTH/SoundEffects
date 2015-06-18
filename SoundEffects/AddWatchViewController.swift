@@ -23,8 +23,15 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
         let viewControllers: Array = [startingViewController]
         self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         
+        let newBackButton = UIBarButtonItem(title: "< Back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = newBackButton;
         
+    }
+    
+    
+    func back(sender: UIBarButtonItem) {
         
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {

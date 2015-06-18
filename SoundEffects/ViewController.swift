@@ -24,7 +24,21 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
         let startingViewController = self.viewControllerAtIndex(0)
         let viewControllers: Array = [startingViewController]
         self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+        
+        let newBackButton = UIBarButtonItem(title: "< Back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = newBackButton;
     }
+    
+    func back(sender: UIBarButtonItem) {
+        if DataSettingAndShare.MyDefaultVariables.isAddItem == true {
+            DataSettingAndShare.MyDefaultVariables.isAddItem = false
+        }
+        
+        println(DataSettingAndShare.MyDefaultVariables.isAddItem)
+
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         

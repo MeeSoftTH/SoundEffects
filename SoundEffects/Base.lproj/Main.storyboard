@@ -51,7 +51,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="llu-Sz-E9e" kind="push" id="jPi-A3-LHi"/>
+                                    <segue destination="llu-Sz-E9e" kind="push" id="ULF-0m-O0v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t3W-SS-63f">
@@ -755,7 +755,6 @@
                                         </state>
                                         <connections>
                                             <action selector="button1:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="Az2-Qv-7dt"/>
-                                            <segue destination="llu-Sz-E9e" kind="push" id="zdG-nf-X61"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QS2-5N-ypz">
@@ -906,7 +905,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="zdG-nf-X61"/>
-    </inferredMetricsTieBreakers>
 </document>
