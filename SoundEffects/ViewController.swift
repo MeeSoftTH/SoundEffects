@@ -15,7 +15,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         self.title = "Category"
         
         self.dataSource = self
@@ -25,30 +25,19 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
         let viewControllers: Array = [startingViewController]
         self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         
-        let newBackButton = UIBarButtonItem(title: "< Back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
-        self.navigationItem.leftBarButtonItem = newBackButton;
     }
     
-    func back(sender: UIBarButtonItem) {
-        if DataSettingAndShare.MyDefaultVariables.isAddItem == true {
-            DataSettingAndShare.MyDefaultVariables.isAddItem = false
-        }
-        
-        println(DataSettingAndShare.MyDefaultVariables.isAddItem)
-
-        self.navigationController?.popViewControllerAnimated(true)
-    }
     
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         
         if index == 0 {
             
-             println("This class is = ItemViewController1 \n ---------------------------------------------------------")
+            println("This class is = ItemViewController1 \n ---------------------------------------------------------")
             
             return self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController1") as!
             UIViewController
-           
+            
             
         }else if index == 1 {
             
@@ -83,13 +72,13 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
             return nil
             
         }
-          index--
-            println("Index current \(index)")
-            return self.viewControllerAtIndex(index)
+        index--
+        println("Index current \(index)")
+        return self.viewControllerAtIndex(index)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-    
+        
         let identifier = viewController.restorationIdentifier
         
         //println("Identifier after \(identifier)")
@@ -97,15 +86,15 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
         var index = self.identifiers.indexOfObject(identifier!)
         
         println("Index after \(index)")
-
+        
         if index == identifiers.count - 1 {
             
             return nil
             
         }
-           index++
+        index++
         println("Index current \(index)")
-            return self.viewControllerAtIndex(index)
+        return self.viewControllerAtIndex(index)
     }
     
     
@@ -115,6 +104,5 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
-    }
-    
+    }    
 }

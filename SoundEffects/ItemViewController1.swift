@@ -12,6 +12,10 @@ import AVFoundation
 class ItemViewController1: UIViewController {
     var soundPlayer = AVAudioPlayer()
     
+    let isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
+    var index: Int = 0
+    let appGroupId: String = "group.th.co.meesoft.soundeffect"
+    
     @IBOutlet weak var image1: UIButton!
     @IBOutlet weak var image2: UIButton!
     @IBOutlet weak var image3: UIButton!
@@ -29,7 +33,6 @@ class ItemViewController1: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println(DataSettingAndShare.MyDefaultVariables.isAddItem)
         updatePath()
     }
     
@@ -39,29 +42,68 @@ class ItemViewController1: UIViewController {
     
     
     @IBAction func Action1(sender: UIButton) {
-        soundPlayer(ActionSound1)
-        
+        if isItemsAdd {
+            self.index = 1
+            showDialog(ActionSound1)
+        }else {
+            soundPlayer(ActionSound1)
+        }
     }
     
     @IBAction func Action2(sender: UIButton) {
-        soundPlayer(ActionSound2)
+        
+        if isItemsAdd {
+            self.index = 2
+            showDialog(ActionSound2)
+        }else {
+            soundPlayer(ActionSound2)}
     }
     
     @IBAction func Action3(sender: UIButton) {
-        soundPlayer(ActionSound3)
+        if isItemsAdd {
+            self.index = 3
+            showDialog(ActionSound3)
+        }else {
+            
+            soundPlayer(ActionSound3)}
     }
     
     @IBAction func Action4(sender: UIButton) {
-        soundPlayer(ActionSound4)
+        if isItemsAdd {
+            self.index = 4
+            showDialog(ActionSound4)
+        }else {
+            
+            soundPlayer(ActionSound4)}
     }
     
     @IBAction func Action5(sender: UIButton) {
-        soundPlayer(ActionSound5)
+        if isItemsAdd {
+            self.index = 5
+            showDialog(ActionSound5)
+        }else {
+            
+            soundPlayer(ActionSound5)}
     }
     
     @IBAction func Action6(sender: UIButton) {
-        soundPlayer(ActionSound6)
+        if isItemsAdd {
+            self.index = 6
+            showDialog(ActionSound6)
+        }else {
+            
+            soundPlayer(ActionSound6)}
     }
+    
+    @IBAction func cancel(sender: UIBarButtonItem) {
+        
+        if DataSettingAndShare.MyDefaultVariables.isAddItem == true {
+            DataSettingAndShare.MyDefaultVariables.isAddItem = false
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
     
     func soundPlayer(path: String) {
@@ -79,7 +121,7 @@ class ItemViewController1: UIViewController {
     }
     
     func updatePath() {
-        let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: "group.th.co.meesoft.soundeffect")
+        let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: appGroupId)
         
         var sound1 = userDefind?.objectForKey("sound1") as! NSArray
         var soundPath1 = sound1.objectAtIndex(0) as! NSString
@@ -123,6 +165,86 @@ class ItemViewController1: UIViewController {
         var imagePath6 = sound6.objectAtIndex(1) as! NSString
         image6.setImage(UIImage(named: imagePath6 as String), forState:UIControlState.Normal)
         
+    }
+    
+    
+    func showDialog(path: String){
+        var chooseDialog = UIAlertController(title: "Options", message: "Choose or play audio ?",preferredStyle: UIAlertControllerStyle.ActionSheet
+        )
+        
+        chooseDialog.addAction(UIAlertAction(title: "Choose", style: .Default, handler: { (action: UIAlertAction!) in
+            
+            let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: self.appGroupId)
+
+            var itemSlot = "slot" + String(DataSettingAndShare.MyDefaultVariables.itemIndex)
+            
+            if self.index == 1 {
+                var sound1 = userDefind?.objectForKey("sound1") as! NSArray
+                var soundPath1 = sound1.objectAtIndex(0) as! NSString
+                var imagePath1 = sound1.objectAtIndex(1) as! NSString
+                
+                let sound_slot1: String = soundPath1 as String
+                let imgUrl_slot1: String = imagePath1 as String
+                userDefind.setObject([sound_slot1, imgUrl_slot1], forKey: itemSlot)
+                
+            }else if self.index == 2 {
+                var sound2 = userDefind?.objectForKey("sound2") as! NSArray
+                var soundPath2 = sound2.objectAtIndex(0) as! NSString
+                var imagePath2 = sound2.objectAtIndex(1) as! NSString
+                
+                let sound_slot2: String = soundPath2 as String
+                let imgUrl_slot2: String = imagePath2 as String
+                userDefind.setObject([sound_slot2, imgUrl_slot2], forKey: itemSlot)
+                
+            } else if self.index == 3 {
+                var sound3 = userDefind?.objectForKey("sound3") as! NSArray
+                var soundPath3 = sound3.objectAtIndex(0) as! NSString
+                var imagePath3 = sound3.objectAtIndex(1) as! NSString
+                
+                let sound_slot3: String = soundPath3 as String
+                let imgUrl_slot3: String = imagePath3 as String
+                userDefind.setObject([sound_slot3, imgUrl_slot3], forKey: itemSlot)
+                
+            }else if self.index == 4 {
+                
+                println("Is here 4")
+                var sound4 = userDefind?.objectForKey("sound4") as! NSArray
+                var soundPath4 = sound4.objectAtIndex(0) as! NSString
+                var imagePath4 = sound4.objectAtIndex(1) as! NSString
+                
+                let sound_slot4: String = soundPath4 as String
+                let imgUrl_slot4: String = imagePath4 as String
+                userDefind.setObject([sound_slot4, imgUrl_slot4], forKey: itemSlot)
+                
+            }else if self.index == 5 {
+                var sound5 = userDefind?.objectForKey("sound5") as! NSArray
+                var soundPath5 = sound5.objectAtIndex(0) as! NSString
+                var imagePath5 = sound5.objectAtIndex(1) as! NSString
+                
+                let sound_slot5: String = soundPath5 as String
+                let imgUrl_slot5: String = imagePath5 as String
+                userDefind.setObject([sound_slot5, imgUrl_slot5], forKey: itemSlot)
+                
+            }else if self.index == 6 {
+                var sound6 = userDefind?.objectForKey("sound6") as! NSArray
+                var soundPath6 = sound6.objectAtIndex(0) as! NSString
+                var imagePath6 = sound6.objectAtIndex(1) as! NSString
+                
+                let sound_slot6: String = soundPath6 as String
+                let imgUrl_slot6: String = imagePath6 as String
+                userDefind.setObject([sound_slot6, imgUrl_slot6], forKey: itemSlot)
             }
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        
+        chooseDialog.addAction(UIAlertAction(title: "Play", style: .Default, handler: { (action: UIAlertAction!) in
+            self.soundPlayer(path)
+            
+        }))
+        
+        chooseDialog.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        
+        presentViewController(chooseDialog, animated: true, completion: nil)
+    }
     
 }

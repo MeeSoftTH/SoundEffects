@@ -20,6 +20,20 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playAction(sender: UIButton) {
+        
+        let PageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! UIViewController
+        
+        self.navigationController!.pushViewController(PageViewController, animated: true)
+        
+    }
+    
+    @IBAction func watchAction(sender: UIButton) {
+        
+        let AddWatchViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AddWatchViewController") as! UIViewController
+        
+        self.navigationController!.pushViewController(AddWatchViewController, animated: true)
+    }
 
 }
 
