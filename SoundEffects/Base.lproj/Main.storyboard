@@ -516,14 +516,21 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" id="Zn6-vW-zdC">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="ant-Nc-VAF">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="UAU-kB-573">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mEK-kg-MyA">
+                                    <navigationItem id="pM3-QU-ppT"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="iCf-49-S5C">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Page 1/3" id="nRE-IE-wv9">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uIe-Sg-8mJ">
                                             <connections>
-                                                <action selector="cancel:" destination="xFD-mB-njk" id="Hh9-KM-7lk"/>
+                                                <action selector="cancel:" destination="xFD-mB-njk" id="vcm-NQ-bJN"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -532,7 +539,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -567,7 +574,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action7:" destination="aDc-1R-SHf" eventType="touchUpInside" id="sCp-Vf-28F"/>
+                                            <action selector="Action1:" destination="aDc-1R-SHf" eventType="touchUpInside" id="LE7-A4-TRl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PSe-fk-3Q4">
@@ -577,7 +584,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action8:" destination="aDc-1R-SHf" eventType="touchUpInside" id="3Wo-Qf-JZE"/>
+                                            <action selector="Action2:" destination="aDc-1R-SHf" eventType="touchUpInside" id="x9V-Sr-Rp4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k2W-6T-1D8">
@@ -587,7 +594,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action9:" destination="aDc-1R-SHf" eventType="touchUpInside" id="fse-rN-oAt"/>
+                                            <action selector="Action3:" destination="aDc-1R-SHf" eventType="touchUpInside" id="T5m-8l-lhl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JlO-4h-6ke">
@@ -597,7 +604,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action11:" destination="aDc-1R-SHf" eventType="touchUpInside" id="aPu-kb-VQc"/>
+                                            <action selector="Action5:" destination="aDc-1R-SHf" eventType="touchUpInside" id="EsP-3U-N0W"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kqo-LS-95m">
@@ -607,7 +614,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action12:" destination="aDc-1R-SHf" eventType="touchUpInside" id="8Cl-nh-q7B"/>
+                                            <action selector="Action6:" destination="aDc-1R-SHf" eventType="touchUpInside" id="kiT-5d-MOV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9CA-yK-Gcp">
@@ -617,12 +624,32 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action10:" destination="aDc-1R-SHf" eventType="touchUpInside" id="jVy-7Y-nDh"/>
+                                            <action selector="Action4:" destination="aDc-1R-SHf" eventType="touchUpInside" id="Hps-1G-rNQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="2d3-hg-TX4">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Y2S-6w-jbN"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="fqC-9a-P1k">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Page 2/3" id="5KG-vt-wgq">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yVu-xb-8xl">
+                                            <connections>
+                                                <action selector="cancel:" destination="aDc-1R-SHf" id="50g-Hu-cyD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -630,12 +657,12 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="image10" destination="9CA-yK-Gcp" id="xgs-4n-Q8G"/>
-                        <outlet property="image11" destination="JlO-4h-6ke" id="PfI-xu-RbU"/>
-                        <outlet property="image12" destination="kqo-LS-95m" id="3hV-GN-fL5"/>
-                        <outlet property="image7" destination="hTT-pM-7w4" id="gDa-nc-EwO"/>
-                        <outlet property="image8" destination="PSe-fk-3Q4" id="uW7-ES-Kzt"/>
-                        <outlet property="image9" destination="k2W-6T-1D8" id="QtB-mZ-Oe7"/>
+                        <outlet property="image1" destination="hTT-pM-7w4" id="Hrb-U8-mx0"/>
+                        <outlet property="image2" destination="PSe-fk-3Q4" id="KOY-hn-CM5"/>
+                        <outlet property="image3" destination="k2W-6T-1D8" id="fkm-hs-fIs"/>
+                        <outlet property="image4" destination="9CA-yK-Gcp" id="2IR-Jh-IGw"/>
+                        <outlet property="image5" destination="JlO-4h-6ke" id="IqU-Fg-PHL"/>
+                        <outlet property="image6" destination="kqo-LS-95m" id="FNP-wE-z9o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jwA-Kd-eAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -661,7 +688,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action13:" destination="XzT-WS-ccW" eventType="touchUpInside" id="LGo-Gv-Rll"/>
+                                            <action selector="Action1:" destination="XzT-WS-ccW" eventType="touchUpInside" id="slR-eY-GFc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pu0-2B-cMx">
@@ -671,7 +698,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action14:" destination="XzT-WS-ccW" eventType="touchUpInside" id="bVG-5q-7jF"/>
+                                            <action selector="Action2:" destination="XzT-WS-ccW" eventType="touchUpInside" id="rYU-rW-Dpq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="krj-mW-1mA">
@@ -681,7 +708,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action15:" destination="XzT-WS-ccW" eventType="touchUpInside" id="HPO-7S-jHJ"/>
+                                            <action selector="Action3:" destination="XzT-WS-ccW" eventType="touchUpInside" id="FY1-Hh-AHv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vcq-as-MQN">
@@ -691,7 +718,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action16:" destination="XzT-WS-ccW" eventType="touchUpInside" id="4Hk-rm-pv0"/>
+                                            <action selector="Action4:" destination="XzT-WS-ccW" eventType="touchUpInside" id="H7P-Uh-reY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IvZ-B3-fb9">
@@ -701,7 +728,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action17:" destination="XzT-WS-ccW" eventType="touchUpInside" id="cp3-qB-ofB"/>
+                                            <action selector="Action5:" destination="XzT-WS-ccW" eventType="touchUpInside" id="XbT-Qc-WJG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lVe-DE-AOY">
@@ -711,12 +738,32 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action18:" destination="XzT-WS-ccW" eventType="touchUpInside" id="hEi-hP-7Wt"/>
+                                            <action selector="Action6:" destination="XzT-WS-ccW" eventType="touchUpInside" id="1KC-ne-cu0"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="Ejp-E8-3Nc">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="0N3-Mg-Ke4"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="xKX-3J-O8X">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Page 3/3" id="CZ7-lF-Mpt">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Bbp-ZN-sdP">
+                                            <connections>
+                                                <action selector="cancel:" destination="XzT-WS-ccW" id="a6n-FI-y8B"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -724,12 +771,12 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="image13" destination="3EG-46-Ca8" id="4gz-MZ-4Nb"/>
-                        <outlet property="image14" destination="pu0-2B-cMx" id="cxJ-3C-2II"/>
-                        <outlet property="image15" destination="krj-mW-1mA" id="0EP-sg-8do"/>
-                        <outlet property="image16" destination="vcq-as-MQN" id="OcW-S0-KiD"/>
-                        <outlet property="image17" destination="IvZ-B3-fb9" id="Z78-8X-37z"/>
-                        <outlet property="image18" destination="lVe-DE-AOY" id="BgK-Py-hwf"/>
+                        <outlet property="image1" destination="3EG-46-Ca8" id="9mi-a8-hdP"/>
+                        <outlet property="image2" destination="pu0-2B-cMx" id="Ih7-ll-srP"/>
+                        <outlet property="image3" destination="krj-mW-1mA" id="H7n-jU-w4m"/>
+                        <outlet property="image4" destination="vcq-as-MQN" id="eIJ-1z-60i"/>
+                        <outlet property="image5" destination="IvZ-B3-fb9" id="jsK-VQ-Li0"/>
+                        <outlet property="image6" destination="lVe-DE-AOY" id="DnI-hG-K0X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJh-hn-W97" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -761,13 +808,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Iiv-M5-D8m">
-                                        <rect key="frame" x="8" y="8" width="140" height="140"/>
+                                        <rect key="frame" x="-50" y="-50" width="256" height="256"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action1:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="X5A-xs-gxv"/>
+                                            <action selector="Action1:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="jHo-Qz-4FN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QS2-5N-ypz">
@@ -777,7 +824,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action2:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="hFh-Uj-J5V"/>
+                                            <action selector="Action2:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="i48-HN-B3n"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BG7-5q-T1C">
@@ -787,7 +834,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action3:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="jqM-PP-9dl"/>
+                                            <action selector="Action3:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="PYk-AT-q2M"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AE7-eW-LQv">
@@ -797,21 +844,31 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action4:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="5jv-fs-0n2"/>
+                                            <action selector="Action4:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="Wof-U8-sHg"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4ZU-lg-mqV">
+                                <rect key="frame" x="0.0" y="456" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="ixU-WJ-rKb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="image1" destination="Iiv-M5-D8m" id="7d2-Yd-Bdi"/>
-                        <outlet property="image2" destination="QS2-5N-ypz" id="zwC-Ah-zam"/>
-                        <outlet property="image3" destination="BG7-5q-T1C" id="W4P-Re-HiX"/>
-                        <outlet property="image4" destination="AE7-eW-LQv" id="drz-Lz-JCc"/>
+                        <outlet property="image1" destination="Iiv-M5-D8m" id="9rR-06-fxY"/>
+                        <outlet property="image2" destination="QS2-5N-ypz" id="cLA-p1-PgP"/>
+                        <outlet property="image3" destination="BG7-5q-T1C" id="PxK-dX-wrH"/>
+                        <outlet property="image4" destination="AE7-eW-LQv" id="e9B-8d-sqw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgD-6t-o1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -836,6 +893,9 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action1:" destination="KdA-59-I5Q" eventType="touchUpInside" id="NjX-H6-uKf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hoc-n3-jRg">
                                         <rect key="frame" x="172" y="8" width="140" height="140"/>
@@ -843,6 +903,9 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action2:" destination="KdA-59-I5Q" eventType="touchUpInside" id="RQ4-rp-Lef"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pJ1-ot-eQW">
                                         <rect key="frame" x="8" y="168" width="140" height="140"/>
@@ -850,6 +913,9 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action3:" destination="KdA-59-I5Q" eventType="touchUpInside" id="CkI-Tr-2NF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6fR-1y-12L">
                                         <rect key="frame" x="172" y="168" width="140" height="140"/>
@@ -857,14 +923,34 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action4:" destination="KdA-59-I5Q" eventType="touchUpInside" id="yVA-xc-Agh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n8L-fW-3fS">
+                                <rect key="frame" x="0.0" y="456" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="WBE-fc-h8A"/>
+                                    <action selector="refresh:" destination="KdA-59-I5Q" eventType="touchUpInside" id="ufL-Qa-zjx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="image1" destination="MJE-zc-M8D" id="rPG-QN-uIa"/>
+                        <outlet property="image2" destination="Hoc-n3-jRg" id="aLH-l0-86U"/>
+                        <outlet property="image3" destination="pJ1-ot-eQW" id="pVf-5W-cgv"/>
+                        <outlet property="image4" destination="6fR-1y-12L" id="kCC-30-Ig6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myD-Me-QOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -888,6 +974,9 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action1:" destination="Bdq-JG-MtG" eventType="touchUpInside" id="xnc-Sj-VXV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5CY-t7-un0">
                                         <rect key="frame" x="172" y="8" width="140" height="140"/>
@@ -895,6 +984,9 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action2:" destination="Bdq-JG-MtG" eventType="touchUpInside" id="jhw-zg-Czi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GXN-cs-teQ">
                                         <rect key="frame" x="8" y="168" width="140" height="140"/>
@@ -902,6 +994,9 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action3:" destination="Bdq-JG-MtG" eventType="touchUpInside" id="EVJ-Fd-K8a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oqk-KD-RPc">
                                         <rect key="frame" x="172" y="168" width="140" height="140"/>
@@ -909,18 +1004,119 @@
                                         <state key="normal" image="add_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Action4:" destination="Bdq-JG-MtG" eventType="touchUpInside" id="DIj-QD-SxQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cNv-z2-ZxE">
+                                <rect key="frame" x="0.0" y="456" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh:" destination="Bdq-JG-MtG" eventType="touchUpInside" id="J2c-hn-jd8"/>
+                                    <action selector="refresh:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="x5m-lD-p7s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="image1" destination="nHa-Hp-o0b" id="ito-8J-VmO"/>
+                        <outlet property="image2" destination="5CY-t7-un0" id="Lqf-L9-wvI"/>
+                        <outlet property="image3" destination="GXN-cs-teQ" id="xdN-yM-tKh"/>
+                        <outlet property="image4" destination="oqk-KD-RPc" id="NOV-Dm-3l3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2f-X0-LgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1490" y="-179"/>
+        </scene>
+        <!--Watch Item View Controller4-->
+        <scene sceneID="VuJ-um-4o1">
+            <objects>
+                <viewController storyboardIdentifier="AddWatch4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ue8-qT-EaD" customClass="WatchItemViewController4" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r3X-jk-lun">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Q2H-46-2Ui">
+                                <rect key="frame" x="0.0" y="120" width="320" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rar-3e-CD8">
+                                        <rect key="frame" x="8" y="8" width="140" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Action1:" destination="Ue8-qT-EaD" eventType="touchUpInside" id="m6P-vX-2PI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OxE-sp-ayc">
+                                        <rect key="frame" x="172" y="8" width="140" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Action2:" destination="Ue8-qT-EaD" eventType="touchUpInside" id="h56-3N-BAt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="068-pJ-uEY">
+                                        <rect key="frame" x="8" y="168" width="140" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Action3:" destination="Ue8-qT-EaD" eventType="touchUpInside" id="523-Yh-uw7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wWo-eP-1MV">
+                                        <rect key="frame" x="172" y="168" width="140" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="add_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Action4:" destination="Ue8-qT-EaD" eventType="touchUpInside" id="Ygy-hO-ZhZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wTN-rw-JWo">
+                                <rect key="frame" x="0.0" y="456" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh:" destination="eRC-Fr-Qhg" eventType="touchUpInside" id="1ye-12-NyD"/>
+                                    <action selector="refresh:" destination="Ue8-qT-EaD" eventType="touchUpInside" id="vSk-nr-Nsf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="image1" destination="Rar-3e-CD8" id="w3T-2N-2cd"/>
+                        <outlet property="image2" destination="OxE-sp-ayc" id="GEC-lX-Ybb"/>
+                        <outlet property="image3" destination="068-pJ-uEY" id="F1N-AL-OhI"/>
+                        <outlet property="image4" destination="wWo-eP-1MV" id="5qU-BX-wN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKo-dV-oYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="-179"/>
         </scene>
     </scenes>
     <resources>

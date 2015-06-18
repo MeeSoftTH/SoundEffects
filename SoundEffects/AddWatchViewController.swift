@@ -10,7 +10,7 @@ import UIKit
 
 class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
-    var identifiers: NSArray = ["AddWatch1", "AddWatch2", "AddWatch3"]
+    var identifiers: NSArray = ["AddWatch1", "AddWatch2", "AddWatch3", "AddWatch4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,6 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
         let startingViewController = self.viewControllerAtIndex(0)
         let viewControllers: Array = [startingViewController]
         self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
-        
-        var refreshButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Refresh, target: self, action: "refresh")
-        navigationItem.rightBarButtonItem = refreshButton
-    }
-    
-    
-    func refresh() {
-        WatchItemViewController1().updatePath()
     }
 
     
@@ -37,8 +29,7 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
         
         if index == 0 {
             
-            println("This class is = AddWatch1 \n ---------------------------------------------------------")
-            
+            println("This class is = AddWatch1 \n---------------------------------------------------------")
             return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch1") as!
             UIViewController
             
@@ -58,6 +49,12 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
             return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch3") as!
             UIViewController
             
+        }else if index == 3 {
+            
+            println("This class is = AddWatch4 \n ---------------------------------------------------------")
+            
+            return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch4") as!
+            UIViewController
         }
         
         return nil

@@ -24,6 +24,10 @@ class ItemViewController1: UIViewController {
     @IBOutlet weak var image6: UIButton!
     
     
+    
+    @IBOutlet weak var topBar: UINavigationBar!
+    @IBOutlet weak var titleBar: UINavigationBar!
+    
     var ActionSound1 =  String()
     var ActionSound2 =  String()
     var ActionSound3 =  String()
@@ -33,6 +37,10 @@ class ItemViewController1: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if !isItemsAdd {
+            topBar.hidden = true
+            titleBar.hidden = true
+        }
         updatePath()
     }
     
@@ -177,9 +185,10 @@ class ItemViewController1: UIViewController {
             let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: self.appGroupId)
 
             var itemSlot = "slot" + String(DataSettingAndShare.MyDefaultVariables.itemIndex)
+            var sound = "sound" + String(self.index)
             
             if self.index == 1 {
-                var sound1 = userDefind?.objectForKey("sound1") as! NSArray
+                var sound1 = userDefind?.objectForKey(sound) as! NSArray
                 var soundPath1 = sound1.objectAtIndex(0) as! NSString
                 var imagePath1 = sound1.objectAtIndex(1) as! NSString
                 
@@ -188,7 +197,7 @@ class ItemViewController1: UIViewController {
                 userDefind.setObject([sound_slot1, imgUrl_slot1], forKey: itemSlot)
                 
             }else if self.index == 2 {
-                var sound2 = userDefind?.objectForKey("sound2") as! NSArray
+                var sound2 = userDefind?.objectForKey(sound) as! NSArray
                 var soundPath2 = sound2.objectAtIndex(0) as! NSString
                 var imagePath2 = sound2.objectAtIndex(1) as! NSString
                 
@@ -197,7 +206,7 @@ class ItemViewController1: UIViewController {
                 userDefind.setObject([sound_slot2, imgUrl_slot2], forKey: itemSlot)
                 
             } else if self.index == 3 {
-                var sound3 = userDefind?.objectForKey("sound3") as! NSArray
+                var sound3 = userDefind?.objectForKey(sound) as! NSArray
                 var soundPath3 = sound3.objectAtIndex(0) as! NSString
                 var imagePath3 = sound3.objectAtIndex(1) as! NSString
                 
@@ -206,9 +215,7 @@ class ItemViewController1: UIViewController {
                 userDefind.setObject([sound_slot3, imgUrl_slot3], forKey: itemSlot)
                 
             }else if self.index == 4 {
-                
-                println("Is here 4")
-                var sound4 = userDefind?.objectForKey("sound4") as! NSArray
+                var sound4 = userDefind?.objectForKey(sound) as! NSArray
                 var soundPath4 = sound4.objectAtIndex(0) as! NSString
                 var imagePath4 = sound4.objectAtIndex(1) as! NSString
                 
@@ -217,7 +224,7 @@ class ItemViewController1: UIViewController {
                 userDefind.setObject([sound_slot4, imgUrl_slot4], forKey: itemSlot)
                 
             }else if self.index == 5 {
-                var sound5 = userDefind?.objectForKey("sound5") as! NSArray
+                var sound5 = userDefind?.objectForKey(sound) as! NSArray
                 var soundPath5 = sound5.objectAtIndex(0) as! NSString
                 var imagePath5 = sound5.objectAtIndex(1) as! NSString
                 
@@ -226,7 +233,7 @@ class ItemViewController1: UIViewController {
                 userDefind.setObject([sound_slot5, imgUrl_slot5], forKey: itemSlot)
                 
             }else if self.index == 6 {
-                var sound6 = userDefind?.objectForKey("sound6") as! NSArray
+                var sound6 = userDefind?.objectForKey(sound) as! NSArray
                 var soundPath6 = sound6.objectAtIndex(0) as! NSString
                 var imagePath6 = sound6.objectAtIndex(1) as! NSString
                 

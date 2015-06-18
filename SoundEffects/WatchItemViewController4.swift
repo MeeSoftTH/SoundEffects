@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class WatchItemViewController2: UIViewController {
+class WatchItemViewController4: UIViewController {
     var soundPlayer = AVAudioPlayer()
     
     let appGroupId: String = "group.th.co.meesoft.soundeffect"
@@ -42,23 +42,23 @@ class WatchItemViewController2: UIViewController {
     }
     
     @IBAction func Action1(sender: UIButton) {
-        self.index = 5
+        self.index = 13
         if hasOptions1 {showDialog(ActionSound1)}else {openAddItemView()}
     }
     
     @IBAction func Action2(sender: UIButton) {
-        self.index = 6
+        self.index = 14
         if hasOptions2 {showDialog(ActionSound2)}else {openAddItemView()}
     }
     
     @IBAction func Action3(sender: UIButton) {
-        self.index = 7
+        self.index = 15
         if hasOptions3 {showDialog(ActionSound3)}else {openAddItemView()}
         
     }
     
     @IBAction func Action4(sender: UIButton) {
-        self.index = 8
+        self.index = 16
         if hasOptions4 {showDialog(ActionSound4)}else {openAddItemView()}
     }
     
@@ -81,7 +81,7 @@ class WatchItemViewController2: UIViewController {
     func updatePath() {
         let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: self.appGroupId)
         
-        let slotPath1: AnyObject? = userDefind?.objectForKey("slot5")
+        let slotPath1: AnyObject? = userDefind?.objectForKey("slot13")
         if slotPath1 != nil {
             hasOptions1 = true
             var slot1 = slotPath1 as! NSArray
@@ -91,7 +91,7 @@ class WatchItemViewController2: UIViewController {
             image1!.setImage(UIImage(named: slotImage1 as String), forState: UIControlState.Normal)
         }
         
-        let slotPath2: AnyObject? = userDefind?.objectForKey("slot6")
+        let slotPath2: AnyObject? = userDefind?.objectForKey("slot14")
         if slotPath2 != nil {
             hasOptions2 = true
             var slot2 = slotPath2 as! NSArray
@@ -101,7 +101,7 @@ class WatchItemViewController2: UIViewController {
             image2!.setImage(UIImage(named: slotImage2 as String), forState: UIControlState.Normal)
         }
         
-        let slotPath3: AnyObject? = userDefind?.objectForKey("slot7")
+        let slotPath3: AnyObject? = userDefind?.objectForKey("slot15")
         if slotPath3 != nil {
             hasOptions3 = true
             var slot3 = slotPath3 as! NSArray
@@ -111,7 +111,7 @@ class WatchItemViewController2: UIViewController {
             image3!.setImage(UIImage(named: slotImage3 as String), forState: UIControlState.Normal)
         }
         
-        let slotPath4: AnyObject? = userDefind?.objectForKey("slot8")
+        let slotPath4: AnyObject? = userDefind?.objectForKey("slot16")
         if slotPath4 != nil {
             hasOptions4 = true
             var slot4 = slotPath4 as! NSArray

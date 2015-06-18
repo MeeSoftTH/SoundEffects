@@ -104,71 +104,7 @@ class DataSettingAndShare {
                 userDefaultSetting.setObject([sound_defind18, imgUrl_defind18], forKey: "sound18")
                 
                 
-                // Slot watch defind
-                
-                let sound_slot1: String = ""
-                let imgUrl_slot1: String = ""
-                userDefaultSetting.setObject([sound_slot1, imgUrl_slot1], forKey: "slot1")
-                
-                let sound_slot2: String = ""
-                let imgUrl_slot2: String = ""
-                userDefaultSetting.setObject([sound_slot2, imgUrl_slot2], forKey: "slot2")
-                
-                let sound_slot3: String = ""
-                let imgUrl_slot3: String = ""
-                userDefaultSetting.setObject([sound_slot3, imgUrl_slot3], forKey: "slot3")
-                
-                let sound_slot4: String = ""
-                let imgUrl_slot4: String = ""
-                userDefaultSetting.setObject([sound_slot4, imgUrl_slot4], forKey: "slot4")
-                
-                let sound_slot5: String = ""
-                let imgUrl_slot5: String = ""
-                userDefaultSetting.setObject([sound_slot5, imgUrl_slot5], forKey: "slot5")
-                
-                let sound_slot6: String = ""
-                let imgUrl_slot6: String = ""
-                userDefaultSetting.setObject([sound_slot6, imgUrl_slot6], forKey: "slot6")
-                
-                let sound_slot7: String = ""
-                let imgUrl_slot7: String = ""
-                userDefaultSetting.setObject([sound_slot7, imgUrl_slot7], forKey: "slot7")
-                
-                let sound_slot8: String = ""
-                let imgUrl_slot8: String = ""
-                userDefaultSetting.setObject([sound_slot8, imgUrl_slot8], forKey: "slot8")
-                
-                let sound_slot9: String = ""
-                let imgUrl_slot9: String = ""
-                userDefaultSetting.setObject([sound_slot9, imgUrl_slot9], forKey: "slot9")
-                
-                let sound_slot10: String = ""
-                let imgUrl_slot10: String = ""
-                userDefaultSetting.setObject([sound_slot10, imgUrl_slot10], forKey: "slot10")
-                
-                let sound_slot11: String = ""
-                let imgUrl_slot11: String = ""
-                userDefaultSetting.setObject([sound_slot11, imgUrl_slot11], forKey: "slot11")
-                
-                let sound_slot12: String = ""
-                let imgUrl_slot12: String = ""
-                userDefaultSetting.setObject([sound_slot12, imgUrl_slot12], forKey: "slot12")
-                
-                let sound_slot13: String = ""
-                let imgUrl_slot13: String = ""
-                userDefaultSetting.setObject([sound_slot13, imgUrl_slot13], forKey: "slot13")
-                
-                let sound_slot14: String = ""
-                let imgUrl_slot14: String = ""
-                userDefaultSetting.setObject([sound_slot14, imgUrl_slot14], forKey: "slot14")
-                
-                let sound_slot15: String = ""
-                let imgUrl_slot15: String = ""
-                userDefaultSetting.setObject([sound_slot15, imgUrl_slot15], forKey: "slot15")
-                
-                let sound_slot16: String = ""
-                let imgUrl_slot16: String = ""
-                userDefaultSetting.setObject([sound_slot16, imgUrl_slot16], forKey: "slot16")
+               
                 
                 
                 let isPurchased = userDefaultSetting.boolForKey("isPurchased") as Bool?
