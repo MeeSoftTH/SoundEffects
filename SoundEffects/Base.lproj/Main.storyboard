@@ -41,7 +41,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="WATCH">
+                                <state key="normal" title="Remote play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -60,7 +60,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="PLAY">
+                                <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -293,16 +293,40 @@
             <point key="canvasLocation" x="1127" y="592"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="8Qc-LP-RDh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lg8-r7-eRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewController" id="zdV-72-U81" customClass="ViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w0l-QU-OHI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="rwK-pw-xMF">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="Zbp-jk-pMi">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-857"/>
+        </scene>
+        <!--Page View Controller-->
         <scene sceneID="CKm-2B-0gD">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="llu-Sz-E9e" customClass="ViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="zQn-Yf-ShM"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="pageSheet" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="llu-Sz-E9e" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06a-aP-UOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="-857"/>
+            <point key="canvasLocation" x="331" y="-857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rzC-bx-EnK">
@@ -447,10 +471,30 @@
                 <viewController storyboardIdentifier="ItemViewController1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xFD-mB-njk" customClass="ItemViewController1" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OtO-N4-1rS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="ant-Nc-VAF">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="pM3-QU-ppT"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="iCf-49-S5C">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Page 1/3" id="nRE-IE-wv9">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uIe-Sg-8mJ">
+                                            <connections>
+                                                <action selector="cancel:" destination="xFD-mB-njk" id="vcm-NQ-bJN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <view contentMode="scaleToFill" id="Iiu-QJ-Odj">
-                                <rect key="frame" x="0.0" y="64" width="320" height="476"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gFb-jt-Pc6">
@@ -516,26 +560,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" id="ant-Nc-VAF">
-                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="pM3-QU-ppT"/>
-                                </items>
-                            </navigationBar>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" id="iCf-49-S5C">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Page 1/3" id="nRE-IE-wv9">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uIe-Sg-8mJ">
-                                            <connections>
-                                                <action selector="cancel:" destination="xFD-mB-njk" id="vcm-NQ-bJN"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -549,6 +573,8 @@
                         <outlet property="image4" destination="d83-Ft-tnc" id="FHQ-En-tO9"/>
                         <outlet property="image5" destination="P82-yX-jps" id="90H-Mq-Aki"/>
                         <outlet property="image6" destination="FSy-kq-unB" id="8Ca-Qj-755"/>
+                        <outlet property="titleBar" destination="iCf-49-S5C" id="Xuw-cg-dHn"/>
+                        <outlet property="topBar" destination="ant-Nc-VAF" id="e0M-hL-MoU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWG-AW-Wug" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -563,8 +589,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="2d3-hg-TX4">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Y2S-6w-jbN"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="fqC-9a-P1k">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Page 2/3" id="5KG-vt-wgq">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yVu-xb-8xl">
+                                            <connections>
+                                                <action selector="cancel:" destination="aDc-1R-SHf" id="50g-Hu-cyD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <view contentMode="scaleToFill" id="FgM-Qo-rFi">
-                                <rect key="frame" x="0.0" y="64" width="320" height="476"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hTT-pM-7w4">
@@ -630,26 +676,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" id="2d3-hg-TX4">
-                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="Y2S-6w-jbN"/>
-                                </items>
-                            </navigationBar>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" id="fqC-9a-P1k">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Page 2/3" id="5KG-vt-wgq">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yVu-xb-8xl">
-                                            <connections>
-                                                <action selector="cancel:" destination="aDc-1R-SHf" id="50g-Hu-cyD"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -663,6 +689,8 @@
                         <outlet property="image4" destination="9CA-yK-Gcp" id="2IR-Jh-IGw"/>
                         <outlet property="image5" destination="JlO-4h-6ke" id="IqU-Fg-PHL"/>
                         <outlet property="image6" destination="kqo-LS-95m" id="FNP-wE-z9o"/>
+                        <outlet property="titleBar" destination="fqC-9a-P1k" id="pGI-Xn-4tK"/>
+                        <outlet property="topBar" destination="2d3-hg-TX4" id="ZSK-aC-Qbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jwA-Kd-eAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -677,8 +705,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="Ejp-E8-3Nc">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="0N3-Mg-Ke4"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="xKX-3J-O8X">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Page 3/3" id="CZ7-lF-Mpt">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Bbp-ZN-sdP">
+                                            <connections>
+                                                <action selector="cancel:" destination="XzT-WS-ccW" id="a6n-FI-y8B"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <view contentMode="scaleToFill" id="s7J-hq-D9h">
-                                <rect key="frame" x="0.0" y="64" width="320" height="476"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3EG-46-Ca8">
@@ -744,26 +792,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" id="Ejp-E8-3Nc">
-                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="0N3-Mg-Ke4"/>
-                                </items>
-                            </navigationBar>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" id="xKX-3J-O8X">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Page 3/3" id="CZ7-lF-Mpt">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Bbp-ZN-sdP">
-                                            <connections>
-                                                <action selector="cancel:" destination="XzT-WS-ccW" id="a6n-FI-y8B"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -777,6 +805,8 @@
                         <outlet property="image4" destination="vcq-as-MQN" id="eIJ-1z-60i"/>
                         <outlet property="image5" destination="IvZ-B3-fb9" id="jsK-VQ-Li0"/>
                         <outlet property="image6" destination="lVe-DE-AOY" id="DnI-hG-K0X"/>
+                        <outlet property="titleBar" destination="xKX-3J-O8X" id="Ch7-bl-rDO"/>
+                        <outlet property="topBar" destination="Ejp-E8-3Nc" id="bjH-L9-5uG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJh-hn-W97" userLabel="First Responder" sceneMemberID="firstResponder"/>

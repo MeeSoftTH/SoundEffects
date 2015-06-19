@@ -15,6 +15,7 @@ class DataSettingAndShare {
     struct MyDefaultVariables {
         static var isAddItem:Bool! = false
         static var itemIndex: Int! = 0
+        static var categoryIndex: Int = 0
     }
     
     func defindSetting() {

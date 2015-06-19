@@ -72,7 +72,7 @@ class WatchItemViewController1: UIViewController {
         DataSettingAndShare.MyDefaultVariables.isAddItem = true
         DataSettingAndShare.MyDefaultVariables.itemIndex = self.index
         
-        let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! ViewController
+        let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
         
         self.navigationController!.presentViewController(secondViewController, animated: true, completion : nil)
         //updatePath()

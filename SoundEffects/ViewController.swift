@@ -9,49 +9,70 @@
 import UIKit
 import Foundation
 
-class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class ViewController: UIViewController, UIPageViewControllerDataSource {
+    private var pageViewController: UIPageViewController?
     
-    var identifiers: NSArray = ["ItemViewController1", "ItemViewController2", "ItemViewController3"]
+    let identifiers: NSArray = ["ItemViewController1", "ItemViewController2", "ItemViewController3"]
+    //let pageTitles = ["Category 1", "Category 2", "Category 3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Category"
         
-        self.dataSource = self
-        self.delegate = self
+        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as!UIPageViewController
+        
+        pageController.dataSource = self
         
         let startingViewController = self.viewControllerAtIndex(0)
         let viewControllers: Array = [startingViewController]
-        self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+        pageController.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         
+        pageViewController = pageController
+        addChildViewController(pageViewController!)
+        self.view.addSubview(pageViewController!.view)
+        pageViewController!.didMoveToParentViewController(self)
     }
     
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         
+        
+        
         if index == 0 {
             
-            println("This class is = ItemViewController1 \n ---------------------------------------------------------")
+            println("This class is \(index)")
             
-            return self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController1") as!
+            let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController1") as!
             UIViewController
+            
+            return pageContentViewController
             
             
         }else if index == 1 {
             
-            println("This class is = ItemViewController2 \n ---------------------------------------------------------")
             
-            return self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController2") as!
+            
+             println("This class is \(index)")
+            
+            let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController2") as!
             UIViewController
+            
+            return pageContentViewController
+            
             
             
         }else if index == 2 {
             
-            println("This class is = ItemViewController3 \n ---------------------------------------------------------")
             
-            return self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController3") as!
+            
+             println("This class is \(index)")
+            
+            let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController3") as!
             UIViewController
+            
+            return pageContentViewController
+            
             
         }
         
@@ -64,15 +85,14 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
         //println("Identifier before \(identifier)")
         
         var index = self.identifiers.indexOfObject(identifier!)
-        println("Index before \(index)")
         
         if index == 0 || index == NSNotFound{
-            
             return nil
             
         }
+        
         index--
-        println("Index current \(index)")
+        //println("Index current \(index)")
         return self.viewControllerAtIndex(index)
     }
     
@@ -83,25 +103,21 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
         //println("Identifier after \(identifier)")
         
         var index = self.identifiers.indexOfObject(identifier!)
-        
-        println("Index after \(index)")
-        
         if index == identifiers.count - 1 {
             
             return nil
             
         }
+        
         index++
-        println("Index current \(index)")
+        //println("Index current \(index)")
         return self.viewControllerAtIndex(index)
     }
     
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return self.identifiers.count
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {        return self.identifiers.count
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 0
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {        return 0
     }    
 }

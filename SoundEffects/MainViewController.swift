@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
 
     @IBAction func playAction(sender: UIButton) {
         
-        let PageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! UIViewController
+        let PageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! UIViewController
         
         self.navigationController!.pushViewController(PageViewController, animated: true)
         
