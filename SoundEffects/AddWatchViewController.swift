@@ -19,6 +19,7 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
         self.dataSource = self
         self.delegate = self
         
+        
         let startingViewController = self.viewControllerAtIndex(0)
         let viewControllers: Array = [startingViewController]
         self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)

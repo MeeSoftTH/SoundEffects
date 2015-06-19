@@ -28,7 +28,6 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIPa
     }
     
     
-    
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         
         if index == 0 {

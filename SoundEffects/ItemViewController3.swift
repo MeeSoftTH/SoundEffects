@@ -39,8 +39,7 @@ class ItemViewController3: UIViewController {
         super.viewDidLoad()
         
         if !isItemsAdd {
-            topBar.hidden = true
-            titleBar.hidden = true
+            
         }
         
         updatePath()

@@ -38,8 +38,7 @@ class ItemViewController1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if !isItemsAdd {
-            topBar.hidden = true
-            titleBar.hidden = true
+            
         }
         updatePath()
     }
