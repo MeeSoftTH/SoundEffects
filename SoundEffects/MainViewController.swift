@@ -22,6 +22,10 @@ class MainViewController: UIViewController {
 
     @IBAction func playAction(sender: UIButton) {
         
+        var isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
+        
+        isItemsAdd = false
+        
         let PageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! UIViewController
         
         self.navigationController!.pushViewController(PageViewController, animated: true)
@@ -29,8 +33,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func watchAction(sender: UIButton) {
+        var isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
         
-        let AddWatchViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AddWatchViewController") as! UIViewController
+        isItemsAdd = true
+        
+        let AddWatchViewController = self.storyboard!.instantiateViewControllerWithIdentifier("WatchViewController") as! UIViewController
         
         self.navigationController!.pushViewController(AddWatchViewController, animated: true)
     }

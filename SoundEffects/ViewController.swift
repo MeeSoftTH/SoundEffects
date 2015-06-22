@@ -12,13 +12,23 @@ import Foundation
 class ViewController: UIViewController, UIPageViewControllerDataSource {
     private var pageViewController: UIPageViewController?
     
+    let isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
+    
+    var leftButton: String!
+
+    var pageContentViewController1: UIViewController!
+    var pageContentViewController2: UIViewController!
+    var pageContentViewController3: UIViewController!
+    
+    
     let identifiers: NSArray = ["ItemViewController1", "ItemViewController2", "ItemViewController3"]
-    //let pageTitles = ["Category 1", "Category 2", "Category 3"]
+    let pageTitles = ["Category 1", "Category 2", "Category 3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Category"
+        self.title = self.pageTitles[0]
+        
         
         let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as!UIPageViewController
         
@@ -32,21 +42,40 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         addChildViewController(pageViewController!)
         self.view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
+        
+        if isItemsAdd {
+            leftButton = "Cancel"
+        }else {
+            leftButton = "< Back"
+        }
+        
+        var actionCancel = UIBarButtonItem(title: leftButton, style: UIBarButtonItemStyle.Plain, target: self, action: "actionCancel") //Use a selector
+        navigationItem.leftBarButtonItem = actionCancel
+        
+    }
+    
+    
+    func actionCancel() {
+        
+        if DataSettingAndShare.MyDefaultVariables.isAddItem == true {
+            DataSettingAndShare.MyDefaultVariables.isAddItem = false
+        }
+        
+        self.navigationController!.popViewControllerAnimated(true)
+        
     }
     
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         
-        
-        
         if index == 0 {
             
             println("This class is \(index)")
             
-            let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController1") as!
+            pageContentViewController1 = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController1") as!
             UIViewController
             
-            return pageContentViewController
+            return pageContentViewController1
             
             
         }else if index == 1 {
@@ -55,10 +84,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             
              println("This class is \(index)")
             
-            let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController2") as!
+            pageContentViewController2 = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController2") as!
             UIViewController
             
-            return pageContentViewController
+            return pageContentViewController2
             
             
             
@@ -68,10 +97,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             
              println("This class is \(index)")
             
-            let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController3") as!
+            pageContentViewController3 = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController3") as!
             UIViewController
             
-            return pageContentViewController
+            return pageContentViewController3
             
             
         }
@@ -85,8 +114,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         //println("Identifier before \(identifier)")
         
         var index = self.identifiers.indexOfObject(identifier!)
+         self.title = self.pageTitles[index]
         
         if index == 0 || index == NSNotFound{
+            self.title = self.pageTitles[0]
             return nil
             
         }
@@ -103,7 +134,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         //println("Identifier after \(identifier)")
         
         var index = self.identifiers.indexOfObject(identifier!)
+        self.title = self.pageTitles[index]
         if index == identifiers.count - 1 {
+            
+            self.title = self.pageTitles[2]
             
             return nil
             
@@ -115,9 +149,11 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {        return self.identifiers.count
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return self.identifiers.count
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {        return 0
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
     }    
 }

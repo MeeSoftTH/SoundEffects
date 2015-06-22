@@ -12,114 +12,79 @@ import AVFoundation
 class WatchItemViewController3: UIViewController {
     var soundPlayer = AVAudioPlayer()
     
-    let appGroupId: String = "group.th.co.meesoft.soundeffect"
+    var defaultImage = "defaultIcon"
+    var tempImage = ""
+    var pageIndex: Int = DataSettingAndShare.MyDefaultVariables.categoryIndex
+    
+    let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: "group.th.co.meesoft.soundeffect")
+    
     var index: Int = 0
+        // Page3
+    @IBOutlet weak var watchImg9: UIButton?
+    @IBOutlet weak var watchImg10: UIButton?
+    @IBOutlet weak var watchImg11: UIButton?
+    @IBOutlet weak var watchImg12: UIButton?
     
-    @IBOutlet weak var image1: UIButton?
-    @IBOutlet weak var image2: UIButton?
-    @IBOutlet weak var image3: UIButton?
-    @IBOutlet weak var image4: UIButton?
+    // Page3
+    var watchAudio9 =  String()
+    var watchAudio10 =  String()
+    var watchAudio11 =  String()
+    var watchAudio12 =  String()
     
     
     
-    var ActionSound1 =  String()
-    var ActionSound2 =  String()
-    var ActionSound3 =  String()
-    var ActionSound4 =  String()
-    
-    var hasOptions1 = false
-    var hasOptions2 = false
-    var hasOptions3 = false
-    var hasOptions4 = false
+    // Page3
+    var hasOptions9 = false
+    var hasOptions10 = false
+    var hasOptions11 = false
+    var hasOptions12 = false
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updatePath()
+             updateUIPage3()
         
+        
+        
+       
+        
+        
+       
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func Action1(sender: UIButton) {
+    
+    
+    @IBAction func Action9(sender: UIButton) {
         self.index = 9
-        if hasOptions1 {showDialog(ActionSound1)}else {openAddItemView()}
+        if hasOptions9 {showDialog(watchAudio9)}else {openAddItemView()}
     }
     
-    @IBAction func Action2(sender: UIButton) {
+    @IBAction func Action10(sender: UIButton) {
         self.index = 10
-        if hasOptions2 {showDialog(ActionSound2)}else {openAddItemView()}
+        if hasOptions10 {showDialog(watchAudio10)}else {openAddItemView()}
     }
     
-    @IBAction func Action3(sender: UIButton) {
+    @IBAction func Action11(sender: UIButton) {
         self.index = 11
-        if hasOptions3 {showDialog(ActionSound3)}else {openAddItemView()}
+        if hasOptions11 {showDialog(watchAudio11)}else {openAddItemView()}
         
     }
     
-    @IBAction func Action4(sender: UIButton) {
+    @IBAction func Action12(sender: UIButton) {
         self.index = 12
-        if hasOptions4 {showDialog(ActionSound4)}else {openAddItemView()}
+        if hasOptions12 {showDialog(watchAudio12)}else {openAddItemView()}
     }
-    
-    @IBAction func refresh(sender: UIButton) {
-        updatePath()
-    }
-    
     
     func openAddItemView() {
         
         DataSettingAndShare.MyDefaultVariables.isAddItem = true
         DataSettingAndShare.MyDefaultVariables.itemIndex = self.index
         
-        let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! ViewController
+        let PageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
         
-        self.navigationController!.presentViewController(secondViewController, animated: true, completion : nil)
-        //updatePath()
-    }
-    
-    func updatePath() {
-        let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: self.appGroupId)
-        
-        let slotPath1: AnyObject? = userDefind?.objectForKey("slot9")
-        if slotPath1 != nil {
-            hasOptions1 = true
-            var slot1 = slotPath1 as! NSArray
-            var slotPath1 = slot1.objectAtIndex(0) as! NSString
-            ActionSound1 = slotPath1 as String
-            var slotImage1 = slot1.objectAtIndex(1) as! NSString
-            image1!.setImage(UIImage(named: slotImage1 as String), forState: UIControlState.Normal)
-        }
-        
-        let slotPath2: AnyObject? = userDefind?.objectForKey("slot10")
-        if slotPath2 != nil {
-            hasOptions2 = true
-            var slot2 = slotPath2 as! NSArray
-            var slotPath2 = slot2.objectAtIndex(0) as! NSString
-            ActionSound1 = slotPath2 as String
-            var slotImage2 = slot2.objectAtIndex(1) as! NSString
-            image2!.setImage(UIImage(named: slotImage2 as String), forState: UIControlState.Normal)
-        }
-        
-        let slotPath3: AnyObject? = userDefind?.objectForKey("slot11")
-        if slotPath3 != nil {
-            hasOptions3 = true
-            var slot3 = slotPath3 as! NSArray
-            var slotPath3 = slot3.objectAtIndex(0) as! NSString
-            ActionSound3 = slotPath3 as String
-            var slotImage3 = slot3.objectAtIndex(1) as! NSString
-            image3!.setImage(UIImage(named: slotImage3 as String), forState: UIControlState.Normal)
-        }
-        
-        let slotPath4: AnyObject? = userDefind?.objectForKey("slot12")
-        if slotPath4 != nil {
-            hasOptions4 = true
-            var slot4 = slotPath4 as! NSArray
-            var slotPath4 = slot4.objectAtIndex(0) as! NSString
-            ActionSound4 = slotPath4 as String
-            var slotImage4 = slot4.objectAtIndex(1) as! NSString
-            image4!.setImage(UIImage(named: slotImage4 as String), forState: UIControlState.Normal)
-        }
+        self.navigationController!.pushViewController(PageViewController, animated: true)
         
     }
     
@@ -153,5 +118,77 @@ class WatchItemViewController3: UIViewController {
         println(path)
     }
     
-    
+    func updateUIPage3() { println("Refresh3")
+        
+        let slotPath9: AnyObject? = userDefind?.objectForKey("slot9")
+        if slotPath9 != nil {
+            hasOptions9 = true
+            var slot9 = slotPath9 as! NSArray
+            var slotPath9 = slot9.objectAtIndex(0) as! NSString
+            watchAudio9 = slotPath9 as String
+            var slotImage9 = slot9.objectAtIndex(1) as! NSString
+            
+            if slotImage9 == "" {
+                tempImage = defaultImage
+            }else {
+                tempImage = slotImage9 as String
+            }
+            
+            watchImg9?.setImage(UIImage(named: tempImage as String), forState: UIControlState.Normal)
+            
+        }
+        
+        let slotPath10: AnyObject? = userDefind?.objectForKey("slot10")
+        if slotPath10 != nil {
+            hasOptions10 = true
+            var slot10 = slotPath10 as! NSArray
+            var slotPath10 = slot10.objectAtIndex(0) as! NSString
+            watchAudio10 = slotPath10 as String
+            var slotImage10 = slot10.objectAtIndex(1) as! NSString
+            
+            if slotImage10 == "" {
+                tempImage = defaultImage
+            }else {
+                tempImage = slotImage10 as String
+            }
+            
+            watchImg10?.setImage(UIImage(named: tempImage as String), forState: UIControlState.Normal)
+            
+        }
+        
+        let slotPath11: AnyObject? = userDefind?.objectForKey("slot11")
+        if slotPath11 != nil {
+            hasOptions11 = true
+            var slot11 = slotPath11 as! NSArray
+            var slotPath11 = slot11.objectAtIndex(0) as! NSString
+            watchAudio11 = slotPath11 as String
+            var slotImage11 = slot11.objectAtIndex(1) as! NSString
+            
+            if slotImage11 == "" {
+                tempImage = defaultImage
+            }else {
+                tempImage = slotImage11 as String
+            }
+            
+            watchImg11?.setImage(UIImage(named: tempImage as String), forState: UIControlState.Normal)
+            
+        }
+        
+        let slotPath12: AnyObject? = userDefind?.objectForKey("slot12")
+        if slotPath12 != nil {
+            hasOptions12 = true
+            var slot12 = slotPath12 as! NSArray
+            var slotPath12 = slot12.objectAtIndex(0) as! NSString
+            watchAudio12 = slotPath12 as String
+            var slotImage12 = slot12.objectAtIndex(1) as! NSString
+            
+            if slotImage12 == "" {
+                tempImage = defaultImage
+            }else {
+                tempImage = slotImage12 as String
+            }
+            
+            watchImg12?.setImage(UIImage(named: tempImage as String), forState: UIControlState.Normal)
+        }
+    }
 }

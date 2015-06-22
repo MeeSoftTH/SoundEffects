@@ -1,61 +1,107 @@
 //
-//  AddWatchViewController.swift
-//  SoundEffects
+//  ViewController.swift
+//  SoundEffect
 //
-//  Created by Pawarit_Bunrith on 6/15/2558 BE.
-//  Copyright (c) 2558 Pawarit_Bunrith. All rights reserved.
+//  Created by Pawarit Bunrith on 6/2/2558 BE.
+//  Copyright (c) 2558 Pawarit Bunrith. All rights reserved.
 //
 
 import UIKit
+import Foundation
 
-class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class AddWatchViewController: UIViewController, UIPageViewControllerDataSource {
+    private var pageViewController: UIPageViewController?
     
-    var identifiers: NSArray = ["AddWatch1", "AddWatch2", "AddWatch3", "AddWatch4"]
+    var leftButton: String!
+    
+    var Watch1: UIViewController!
+    var Watch2: UIViewController!
+    var Watch3: UIViewController!
+    var Watch4: UIViewController!
+    
+    let identifiers: NSArray = ["Watch1", "Watch2", "Watch3", "Watch4"]
+    let pageTitles = ["My Category 1", "My Category 2", "My Category 3", "My Category 4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Add to watch"
-        //self.navigationController?.navigationItem.backBarButtonItem?.title = "Back"
-        self.dataSource = self
-        self.delegate = self
         
+        self.title = self.pageTitles[0]
+        
+        
+        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("WatchController") as!UIPageViewController
+        
+        pageController.dataSource = self
         
         let startingViewController = self.viewControllerAtIndex(0)
         let viewControllers: Array = [startingViewController]
-        self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+        pageController.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+        
+        pageViewController = pageController
+        addChildViewController(pageViewController!)
+        self.view.addSubview(pageViewController!.view)
+        pageViewController!.didMoveToParentViewController(self)
+        
+        var actionRefresh = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "actionRefresh")
+        navigationItem.rightBarButtonItem = actionRefresh
+        
     }
-
+    
+    func actionRefresh() {
+        WatchItemViewController1().viewDidLoad()
+        WatchItemViewController2().viewDidLoad()
+        WatchItemViewController3().viewDidLoad()
+        WatchItemViewController4().viewDidLoad()
+    }
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         
         if index == 0 {
             
-            println("This class is = AddWatch1 \n---------------------------------------------------------")
-            return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch1") as!
+            println("This class is \(index)")
+            
+            Watch1 = self.storyboard?.instantiateViewControllerWithIdentifier("Watch1") as!
             UIViewController
+            
+            return Watch1
             
             
         }else if index == 1 {
             
-            println("This class is = AddWatch2 \n ---------------------------------------------------------")
             
-            return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch2") as!
+            
+            println("This class is \(index)")
+            
+            Watch2 = self.storyboard?.instantiateViewControllerWithIdentifier("Watch2") as!
             UIViewController
+            
+            return Watch2
+            
             
             
         }else if index == 2 {
             
-            println("This class is = AddWatch3 \n ---------------------------------------------------------")
             
-            return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch3") as!
+            
+            println("This class is \(index)")
+            
+            Watch3 = self.storyboard?.instantiateViewControllerWithIdentifier("Watch3") as!
             UIViewController
+            
+            return Watch3
+            
             
         }else if index == 3 {
             
-            println("This class is = AddWatch4 \n ---------------------------------------------------------")
             
-            return self.storyboard?.instantiateViewControllerWithIdentifier("AddWatch4") as!
+            
+            println("This class is \(index)")
+            
+            Watch4 = self.storyboard?.instantiateViewControllerWithIdentifier("Watch4") as!
             UIViewController
+            
+            return Watch4
+            
+            
         }
         
         return nil
@@ -67,15 +113,16 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
         //println("Identifier before \(identifier)")
         
         var index = self.identifiers.indexOfObject(identifier!)
-        println("Index before \(index)")
+        self.title = self.pageTitles[index]
         
         if index == 0 || index == NSNotFound{
-            
+            self.title = self.pageTitles[0]
             return nil
             
         }
+        
         index--
-        println("Index current \(index)")
+        //println("Index current \(index)")
         return self.viewControllerAtIndex(index)
     }
     
@@ -87,15 +134,17 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
         
         var index = self.identifiers.indexOfObject(identifier!)
         
-        println("Index after \(index)")
+        self.title = self.pageTitles[index]
         
         if index == identifiers.count - 1 {
+            self.title = self.pageTitles[3]
             
             return nil
             
         }
+        
         index++
-        println("Index current \(index)")
+        //println("Index current \(index)")
         return self.viewControllerAtIndex(index)
     }
     
@@ -107,5 +156,4 @@ class AddWatchViewController: UIPageViewController, UIPageViewControllerDataSour
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
     }
-    
 }
