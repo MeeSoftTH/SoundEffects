@@ -9,11 +9,18 @@
 import UIKit
 import AVFoundation
 
+protocol SelectItemProtocol {
+    func settingUIPage(audioPath: String, imagePath: String, slotIndex: String, UIIndex: Int)
+}
+
 class ItemViewController: UIViewController {
     var soundPlayer = AVAudioPlayer()
     
-    let isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
-    var index: Int = 0
+    let isItemsAdd = AppSetting.defaultVar.isAddItem
+    
+    var delegate: SelectItemProtocol!
+    
+    //var index: Int!
     
     // Audio path
     // Page 1
@@ -79,54 +86,47 @@ class ItemViewController: UIViewController {
     
     // Page 1
     @IBAction func Action1(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 1
-            showDialog(ActionSound1)
+        if isItemsAdd == true {
+            showDialog(ActionSound1 , imagePath: img1)
         }else {
             AudioPlayer(ActionSound1)
         }
     }
     
     @IBAction func Action2(sender: UIButton) {
-        
-        if isItemsAdd {
-            self.index = 2
-            showDialog(ActionSound2)
+        if isItemsAdd == true{
+            showDialog(ActionSound2 , imagePath: img2)
         }else {
             AudioPlayer(ActionSound2)
         }
     }
     
     @IBAction func Action3(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 3
-            showDialog(ActionSound3)
+        if isItemsAdd == true {
+            showDialog(ActionSound3 , imagePath: img3)
         }else {
-           AudioPlayer(ActionSound3)
+            AudioPlayer(ActionSound3)
         }
     }
     
     @IBAction func Action4(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 4
-            showDialog(ActionSound4)
+        if isItemsAdd == true {
+            showDialog(ActionSound4 , imagePath: img4)
         }else {
-           AudioPlayer(ActionSound4)
+            AudioPlayer(ActionSound4)
         }
     }
     
     @IBAction func Action5(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 5
-            showDialog(ActionSound5)
+        if isItemsAdd == true {
+            showDialog(ActionSound5 , imagePath: img5)
         }else {AudioPlayer(ActionSound5)
         }
     }
     
     @IBAction func Action6(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 6
-            showDialog(ActionSound6)
+        if isItemsAdd == true {
+            showDialog(ActionSound6 , imagePath: img6)
         }else {
             AudioPlayer(ActionSound6)
         }
@@ -134,108 +134,95 @@ class ItemViewController: UIViewController {
     
     // Page 2
     @IBAction func Action7(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 7
-            showDialog(ActionSound7)
+        if isItemsAdd == true {
+            showDialog(ActionSound7 , imagePath: img7)
         }else {
             AudioPlayer(ActionSound7)
         }
     }
     
     @IBAction func Action8(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 8
-            showDialog(ActionSound8)
+        if isItemsAdd == true {
+            showDialog(ActionSound8 , imagePath: img8)
         }else {
             AudioPlayer(ActionSound8)
         }
     }
     
     @IBAction func Action9(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 9
-            showDialog(ActionSound9)
+        if isItemsAdd == true {
+            showDialog(ActionSound9 , imagePath: img9)
         }else {
             AudioPlayer(ActionSound9)
         }
     }
     
     @IBAction func Action10(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 10
-            showDialog(ActionSound10)
+        if isItemsAdd == true {
+            showDialog(ActionSound10 , imagePath: img10)
         }else {
             AudioPlayer(ActionSound10)
         }
     }
     
     @IBAction func Action11(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 11
-            showDialog(ActionSound11)
+        if isItemsAdd == true {
+            showDialog(ActionSound11 , imagePath: img11)
         }else {AudioPlayer(ActionSound11)
         }
     }
     
     @IBAction func Action12(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 12
-            showDialog(ActionSound12)
+        if isItemsAdd == true {
+            showDialog(ActionSound12 , imagePath: img12)
         }else {
             AudioPlayer(ActionSound12)
         }
     }
-
+    
     // Page 3
     @IBAction func Action13(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 13
-            showDialog(ActionSound13)
+        if isItemsAdd == true {
+            showDialog(ActionSound13 , imagePath: img13)
         }else {
             AudioPlayer(ActionSound13)
         }
     }
     
     @IBAction func Action14(sender: UIButton) {
-        
-        if isItemsAdd {
-            self.index = 14
-            showDialog(ActionSound14)
+        if isItemsAdd == true {
+            showDialog(ActionSound14 , imagePath: img14)
         }else {
             AudioPlayer(ActionSound14)
         }
     }
     
     @IBAction func Action15(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 15
-            showDialog(ActionSound15)
+        if isItemsAdd == true {
+            showDialog(ActionSound15 , imagePath: img15)
         }else {
             AudioPlayer(ActionSound15)
         }
     }
-
+    
     @IBAction func Action16(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 16
-            showDialog(ActionSound16)
+        if isItemsAdd == true {
+            showDialog(ActionSound16 , imagePath: img16)
         }else {
             AudioPlayer(ActionSound16)
         }
     }
     
     @IBAction func Action17(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 17
-            showDialog(ActionSound17)
+        if isItemsAdd == true {
+            showDialog(ActionSound17 , imagePath: img17)
         }else {AudioPlayer(ActionSound17)
         }
     }
     
     @IBAction func Action18(sender: UIButton) {
-        if isItemsAdd {
-            self.index = 18
-            showDialog(ActionSound18)
+        if isItemsAdd == true {
+            showDialog(ActionSound18 , imagePath: img18)
         }else {
             AudioPlayer(ActionSound18)
         }
@@ -252,7 +239,7 @@ class ItemViewController: UIViewController {
         if let err = error {
             println("AVAudioPlayer error: \(err.localizedDescription)")
         } else {
-             println("AVAudioPlayer Play: \(resourcePath)")
+            println("AVAudioPlayer Play: \(resourcePath)")
             soundPlayer.stop()
             soundPlayer.prepareToPlay()
             soundPlayer.volume = 1.0
@@ -261,135 +248,28 @@ class ItemViewController: UIViewController {
     }
     
     
-    func showDialog(path: String){
+    func showDialog(audioPath: String, imagePath: String){
+        
+        println("last Controller \(AppSetting.defaultVar.controller)")
+        
         var chooseDialog = UIAlertController(title: "Options", message: "Choose or play audio ?",preferredStyle: UIAlertControllerStyle.ActionSheet
         )
         
         chooseDialog.addAction(UIAlertAction(title: "Choose", style: .Default, handler: { (action: UIAlertAction!) in
             
-            let appGroupId: String = "group.th.co.meesoft.soundeffect"
-            let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: appGroupId)
-
-            var itemSlot = "slot" + String(DataSettingAndShare.MyDefaultVariables.itemIndex)
+            println(AppSetting.defaultVar.addIndex)
+            var itemSlot = "slot" + String(AppSetting.defaultVar.addIndex)
             
-            if self.index == 1 {
-                
-                let sound_slot1: String = self.ActionSound1 as String
-                let imgUrl_slot1: String = self.img1 as String
-                userDefind.setObject([sound_slot1, imgUrl_slot1], forKey: itemSlot)
-                
-            }else if self.index == 2 {
-                
-                let sound_slot2: String = self.ActionSound2 as String
-                let imgUrl_slot2: String = self.img2 as String
-                userDefind.setObject([sound_slot2, imgUrl_slot2], forKey: itemSlot)
-                
-            } else if self.index == 3 {
-                
-                let sound_slot3: String = self.ActionSound3 as String
-                let imgUrl_slot3: String = self.img3 as String
-                userDefind.setObject([sound_slot3, imgUrl_slot3], forKey: itemSlot)
-                
-            }else if self.index == 4 {
-                
-                let sound_slot4: String = self.ActionSound4 as String
-                let imgUrl_slot4: String = self.img4 as String
-                userDefind.setObject([sound_slot4, imgUrl_slot4], forKey: itemSlot)
-                
-            }else if self.index == 5 {
-                
-                let sound_slot5: String = self.ActionSound5 as String
-                let imgUrl_slot5: String = self.img5 as String
-                userDefind.setObject([sound_slot5, imgUrl_slot5], forKey: itemSlot)
-                
-            }else if self.index == 6 {
-                
-                let sound_slot6: String = self.ActionSound6 as String
-                let imgUrl_slot6: String = self.img6 as String
-                userDefind.setObject([sound_slot6, imgUrl_slot6], forKey: itemSlot)
-                
-            }else if self.index == 7 {
-                
-                let sound_slot7: String = self.ActionSound7 as String
-                let imgUrl_slot7: String = self.img7 as String
-                userDefind.setObject([sound_slot7, imgUrl_slot7], forKey: itemSlot)
-                
-            }else if self.index == 8 {
-                
-                let sound_slot8: String = self.ActionSound8 as String
-                let imgUrl_slot8: String = self.img8 as String
-                userDefind.setObject([sound_slot8, imgUrl_slot8], forKey: itemSlot)
-                
-            }else if self.index == 9 {
-                
-                let sound_slot9: String = self.ActionSound9 as String
-                let imgUrl_slot9: String = self.img9 as String
-                userDefind.setObject([sound_slot9, imgUrl_slot9], forKey: itemSlot)
-                
-            }else if self.index == 10 {
-                
-                let sound_slot10: String = self.ActionSound10 as String
-                let imgUrl_slot10: String = self.img10 as String
-                userDefind.setObject([sound_slot10, imgUrl_slot10], forKey: itemSlot)
-                
-            }else if self.index == 11 {
-                
-                let sound_slot11: String = self.ActionSound11 as String
-                let imgUrl_slot11: String = self.img11 as String
-                userDefind.setObject([sound_slot11, imgUrl_slot11], forKey: itemSlot)
-                
-            }else if self.index == 12 {
-                
-                let sound_slot12: String = self.ActionSound12 as String
-                let imgUrl_slot12: String = self.img12 as String
-                userDefind.setObject([sound_slot12, imgUrl_slot12], forKey: itemSlot)
-                
-            }else if self.index == 13 {
-                
-                let sound_slot13: String = self.ActionSound13 as String
-                let imgUrl_slot13: String = self.img13 as String
-                userDefind.setObject([sound_slot13, imgUrl_slot13], forKey: itemSlot)
-                
-            }else if self.index == 14 {
-                
-                let sound_slot14: String = self.ActionSound14 as String
-                let imgUrl_slot14: String = self.img14 as String
-                userDefind.setObject([sound_slot14, imgUrl_slot14], forKey: itemSlot)
-                
-            }else if self.index == 15 {
-                
-                let sound_slot15: String = self.ActionSound15 as String
-                let imgUrl_slot15: String = self.img15 as String
-                userDefind.setObject([sound_slot15, imgUrl_slot15], forKey: itemSlot)
-                
-            }else if self.index == 16 {
-                
-                let sound_slot16: String = self.ActionSound16 as String
-                let imgUrl_slot16: String = self.img16 as String
-                userDefind.setObject([sound_slot16, imgUrl_slot16], forKey: itemSlot)
-                
-            }else if self.index == 17 {
-                
-                let sound_slot17: String = self.ActionSound17 as String
-                let imgUrl_slot17: String = self.img17 as String
-                userDefind.setObject([sound_slot17, imgUrl_slot17], forKey: itemSlot)
-                
-            }else if self.index == 18 {
-                
-                let sound_slot18: String = self.ActionSound18 as String
-                let imgUrl_slot18: String = self.img18 as String
-                userDefind.setObject([sound_slot18, imgUrl_slot18], forKey: itemSlot)
-                
-            }
+            //println(self.delegate)
             
-            userDefind!.synchronize()
-            println(userDefind!.synchronize())
+            AppSetting.defaultVar.controller!.settingUIPage(audioPath, imagePath: imagePath, slotIndex: itemSlot, UIIndex: AppSetting.defaultVar.addIndex)
             self.navigationController!.popViewControllerAnimated(true)
+            
         }))
         
         chooseDialog.addAction(UIAlertAction(title: "Play", style: .Default, handler: { (action: UIAlertAction!) in
             
-           self.AudioPlayer(path)
+            self.AudioPlayer(audioPath)
             
         }))
         
@@ -397,5 +277,4 @@ class ItemViewController: UIViewController {
         
         presentViewController(chooseDialog, animated: true, completion: nil)
     }
-    
 }

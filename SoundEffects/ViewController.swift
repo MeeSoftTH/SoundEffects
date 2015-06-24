@@ -7,15 +7,17 @@
 //
 
 import UIKit
-import Foundation
 
 class ViewController: UIViewController, UIPageViewControllerDataSource {
+    
     private var pageViewController: UIPageViewController?
     
-    let isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
+    let isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
+    
+    var controller: SelectItemProtocol! = nil
     
     var leftButton: String!
-
+    
     var pageContentViewController1: UIViewController!
     var pageContentViewController2: UIViewController!
     var pageContentViewController3: UIViewController!
@@ -27,10 +29,11 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        println("View controller \(self.controller)")
+        
         self.title = self.pageTitles[0]
         
-        
-        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as!UIPageViewController
+        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
         pageController.dataSource = self
         
@@ -42,7 +45,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         addChildViewController(pageViewController!)
         self.view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
-        
         if isItemsAdd {
             leftButton = "Cancel"
         }else {
@@ -52,13 +54,32 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         var actionCancel = UIBarButtonItem(title: leftButton, style: UIBarButtonItemStyle.Plain, target: self, action: "actionCancel") //Use a selector
         navigationItem.leftBarButtonItem = actionCancel
         
+        
+        let tempViewControl1 = self.storyboard!.instantiateViewControllerWithIdentifier("ItemViewController1") as! ItemViewController
+        
+        tempViewControl1.delegate = controller
+        
+        AppSetting.defaultVar.controller = controller
+        
+        println("desanation1 \(tempViewControl1.delegate)")
+        
+        let tempViewControl2 = self.storyboard!.instantiateViewControllerWithIdentifier("ItemViewController2") as! ItemViewController
+        
+        tempViewControl2.delegate = controller
+        println("desanation2 \(tempViewControl2.delegate)")
+        
+        let tempViewControl3 = self.storyboard!.instantiateViewControllerWithIdentifier("ItemViewController3") as! ItemViewController
+        
+        tempViewControl3.delegate = controller
+        println("desanation3 \(tempViewControl3.delegate)")
+        
     }
     
     
     func actionCancel() {
         
-        if DataSettingAndShare.MyDefaultVariables.isAddItem == true {
-            DataSettingAndShare.MyDefaultVariables.isAddItem = false
+        if AppSetting.defaultVar.isAddItem == true {
+            AppSetting.defaultVar.isAddItem = false
         }
         
         self.navigationController!.popViewControllerAnimated(true)
@@ -75,6 +96,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             pageContentViewController1 = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController1") as!
             UIViewController
             
+            
+            
             return pageContentViewController1
             
             
@@ -82,10 +105,13 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             
             
             
-             println("This class is \(index)")
+            println("This class is \(index)")
             
             pageContentViewController2 = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController2") as!
             UIViewController
+            
+            
+
             
             return pageContentViewController2
             
@@ -93,13 +119,12 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             
         }else if index == 2 {
             
-            
-            
-             println("This class is \(index)")
+            println("This class is \(index)")
             
             pageContentViewController3 = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController3") as!
             UIViewController
             
+                       
             return pageContentViewController3
             
             
@@ -114,7 +139,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         //println("Identifier before \(identifier)")
         
         var index = self.identifiers.indexOfObject(identifier!)
-         self.title = self.pageTitles[index]
+        self.title = self.pageTitles[index]
         
         if index == 0 || index == NSNotFound{
             self.title = self.pageTitles[0]
@@ -155,5 +180,5 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
-    }    
+    }
 }

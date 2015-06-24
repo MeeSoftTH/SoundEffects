@@ -41,16 +41,6 @@ class AddWatchViewController: UIViewController, UIPageViewControllerDataSource {
         self.view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
         
-        var actionRefresh = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "actionRefresh")
-        navigationItem.rightBarButtonItem = actionRefresh
-        
-    }
-    
-    func actionRefresh() {
-        WatchItemViewController1().viewDidLoad()
-        WatchItemViewController2().viewDidLoad()
-        WatchItemViewController3().viewDidLoad()
-        WatchItemViewController4().viewDidLoad()
     }
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {

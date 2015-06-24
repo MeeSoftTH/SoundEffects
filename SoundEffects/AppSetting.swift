@@ -11,17 +11,12 @@ import AVFoundation
 
 // This class for defind data source and path!!!!!
 
-class DataSettingAndShare {
+class AppSetting {
     
-    struct MyDefaultVariables {
+    struct defaultVar {
         static var isAddItem:Bool! = false
-        static var itemIndex: Int! = 0
-        static var categoryIndex: Int = 0
-        
-        
-        
-        static var key: String?
-        static var dicinary: NSDictionary?
+        static var addIndex:Int! = 0
+        static var controller: SelectItemProtocol! = nil
     }
     
     

@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
 
     @IBAction func playAction(sender: UIButton) {
         
-        var isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
+        var isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
         
         isItemsAdd = false
         
@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func watchAction(sender: UIButton) {
-        var isItemsAdd: Bool = DataSettingAndShare.MyDefaultVariables.isAddItem
+        var isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
         
         isItemsAdd = true
         

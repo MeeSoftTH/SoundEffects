@@ -321,14 +321,14 @@
         <!--Page View Controller-->
         <scene sceneID="CKm-2B-0gD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="06a-aP-UOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="llu-Sz-E9e" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06a-aP-UOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-124" y="-1107"/>
+            <point key="canvasLocation" x="-192" y="-1115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rzC-bx-EnK">
@@ -747,19 +747,19 @@
         <!--Page View Controller-->
         <scene sceneID="od6-ba-jxb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a6J-7N-BG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageViewController storyboardIdentifier="WatchController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Cto-hn-yqC" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6J-7N-BG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-144" y="-203.5"/>
         </scene>
-        <!--Watch Item View Controller2-->
+        <!--Watch Item View Controller-->
         <scene sceneID="o82-CA-Af7">
             <objects>
-                <viewController storyboardIdentifier="Watch2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K43-Tx-BtE" customClass="WatchItemViewController2" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Watch2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K43-Tx-BtE" customClass="WatchItemViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Nf-DN-tgS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -775,7 +775,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action5:" destination="K43-Tx-BtE" eventType="touchUpInside" id="0yq-85-q9V"/>
+                                            <action selector="Action5:" destination="K43-Tx-BtE" eventType="touchUpInside" id="nMa-BK-dN7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xol-At-PmO">
@@ -785,7 +785,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action7:" destination="K43-Tx-BtE" eventType="touchUpInside" id="8gB-Qv-0Hz"/>
+                                            <action selector="Action7:" destination="K43-Tx-BtE" eventType="touchUpInside" id="f5N-3I-8cd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DLU-pq-Q2V">
@@ -795,7 +795,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action8:" destination="K43-Tx-BtE" eventType="touchUpInside" id="2bS-7q-LjE"/>
+                                            <action selector="Action8:" destination="K43-Tx-BtE" eventType="touchUpInside" id="dWg-cQ-WTb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nk1-WC-Id2">
@@ -805,7 +805,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action6:" destination="K43-Tx-BtE" eventType="touchUpInside" id="GlK-lT-16K"/>
+                                            <action selector="Action6:" destination="K43-Tx-BtE" eventType="touchUpInside" id="Q9h-Bk-OKk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -816,20 +816,24 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchImg5" destination="oBz-cb-ZWX" id="u1c-ov-Sn9"/>
-                        <outlet property="watchImg6" destination="nk1-WC-Id2" id="YVr-CH-6qx"/>
-                        <outlet property="watchImg7" destination="xol-At-PmO" id="i28-NG-eE5"/>
-                        <outlet property="watchImg8" destination="DLU-pq-Q2V" id="0IV-vp-ZuU"/>
+                        <outlet property="watchChange5" destination="oBz-cb-ZWX" id="DDh-Ex-6BJ"/>
+                        <outlet property="watchChange6" destination="nk1-WC-Id2" id="5wF-M6-aho"/>
+                        <outlet property="watchChange7" destination="xol-At-PmO" id="yYH-ML-Q7b"/>
+                        <outlet property="watchChange8" destination="DLU-pq-Q2V" id="2pO-MK-osn"/>
+                        <outlet property="watchImg5" destination="oBz-cb-ZWX" id="Jfn-Qk-ZbA"/>
+                        <outlet property="watchImg6" destination="nk1-WC-Id2" id="aJH-KG-a5G"/>
+                        <outlet property="watchImg7" destination="xol-At-PmO" id="zTA-3A-cru"/>
+                        <outlet property="watchImg8" destination="DLU-pq-Q2V" id="v7b-NM-uFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGS-qb-50M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576" y="-203"/>
         </scene>
-        <!--Watch Item View Controller3-->
+        <!--Watch Item View Controller-->
         <scene sceneID="E9D-7m-mOs">
             <objects>
-                <viewController storyboardIdentifier="Watch3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i0r-SB-0IH" customClass="WatchItemViewController3" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Watch3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i0r-SB-0IH" customClass="WatchItemViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sCM-Nc-aDR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -845,7 +849,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action9:" destination="i0r-SB-0IH" eventType="touchUpInside" id="iXI-Nq-M7m"/>
+                                            <action selector="Action9:" destination="i0r-SB-0IH" eventType="touchUpInside" id="SV1-0P-xfh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U9E-Xp-DM6">
@@ -855,7 +859,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action10:" destination="i0r-SB-0IH" eventType="touchUpInside" id="iDe-We-48D"/>
+                                            <action selector="Action10:" destination="i0r-SB-0IH" eventType="touchUpInside" id="0mn-tc-bLG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="io7-HC-R5v">
@@ -865,7 +869,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action11:" destination="i0r-SB-0IH" eventType="touchUpInside" id="LQ7-n5-1mu"/>
+                                            <action selector="Action11:" destination="i0r-SB-0IH" eventType="touchUpInside" id="DiA-cW-4Og"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d6V-X9-cuF">
@@ -875,7 +879,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action12:" destination="i0r-SB-0IH" eventType="touchUpInside" id="Kq8-6n-kzM"/>
+                                            <action selector="Action12:" destination="i0r-SB-0IH" eventType="touchUpInside" id="UcW-F7-F0N"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -886,20 +890,24 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchImg10" destination="U9E-Xp-DM6" id="gKf-Tz-PUu"/>
-                        <outlet property="watchImg11" destination="io7-HC-R5v" id="gY3-zg-0vr"/>
-                        <outlet property="watchImg12" destination="d6V-X9-cuF" id="BX2-4F-ROF"/>
-                        <outlet property="watchImg9" destination="OsK-bu-g4Z" id="yvH-AD-9GC"/>
+                        <outlet property="watchChange10" destination="U9E-Xp-DM6" id="RYp-ob-KRh"/>
+                        <outlet property="watchChange11" destination="io7-HC-R5v" id="kOa-8T-cYq"/>
+                        <outlet property="watchChange12" destination="d6V-X9-cuF" id="oiu-6u-LwS"/>
+                        <outlet property="watchChange9" destination="OsK-bu-g4Z" id="WmI-YX-UKA"/>
+                        <outlet property="watchImg10" destination="U9E-Xp-DM6" id="osR-I1-Tvx"/>
+                        <outlet property="watchImg11" destination="io7-HC-R5v" id="53W-fh-gsj"/>
+                        <outlet property="watchImg12" destination="d6V-X9-cuF" id="LxM-mw-Q0J"/>
+                        <outlet property="watchImg9" destination="OsK-bu-g4Z" id="c6G-KX-wKT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ksw-r6-Fez" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="930" y="-203"/>
         </scene>
-        <!--Watch Item View Controller1-->
+        <!--Watch Item View Controller-->
         <scene sceneID="kP0-ZA-ZtZ">
             <objects>
-                <viewController storyboardIdentifier="Watch1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ExW-6P-9KI" customClass="WatchItemViewController1" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Watch1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ExW-6P-9KI" customClass="WatchItemViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I1x-PC-cUB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -915,7 +923,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action2:" destination="ExW-6P-9KI" eventType="touchUpInside" id="hII-T1-tRp"/>
+                                            <action selector="Action2:" destination="ExW-6P-9KI" eventType="touchUpInside" id="RU0-4z-TKh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oCg-hu-0ho">
@@ -925,7 +933,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action3:" destination="ExW-6P-9KI" eventType="touchUpInside" id="v99-oi-uQ0"/>
+                                            <action selector="Action3:" destination="ExW-6P-9KI" eventType="touchUpInside" id="omr-c8-LH8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SuX-XW-elp">
@@ -935,7 +943,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action4:" destination="ExW-6P-9KI" eventType="touchUpInside" id="YAs-lJ-aPO"/>
+                                            <action selector="Action4:" destination="ExW-6P-9KI" eventType="touchUpInside" id="gCN-Zc-vAh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nvO-t5-G6u">
@@ -945,7 +953,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action1:" destination="ExW-6P-9KI" eventType="touchUpInside" id="wiu-uc-dnp"/>
+                                            <action selector="Action1:" destination="ExW-6P-9KI" eventType="touchUpInside" id="yKh-UY-R9I"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -957,20 +965,24 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchImg1" destination="nvO-t5-G6u" id="qep-rz-Ni1"/>
-                        <outlet property="watchImg2" destination="uej-LZ-Je7" id="4cY-av-uCT"/>
-                        <outlet property="watchImg3" destination="oCg-hu-0ho" id="qiV-Fa-FWy"/>
-                        <outlet property="watchImg4" destination="SuX-XW-elp" id="28u-AV-pxS"/>
+                        <outlet property="watchChange1" destination="nvO-t5-G6u" id="SrG-15-Erc"/>
+                        <outlet property="watchChange2" destination="uej-LZ-Je7" id="WgY-AY-sSo"/>
+                        <outlet property="watchChange3" destination="oCg-hu-0ho" id="TEJ-Va-fuE"/>
+                        <outlet property="watchChange4" destination="SuX-XW-elp" id="szL-Ll-pAt"/>
+                        <outlet property="watchImg1" destination="nvO-t5-G6u" id="FGW-iO-ZCv"/>
+                        <outlet property="watchImg2" destination="uej-LZ-Je7" id="oaf-ls-z93"/>
+                        <outlet property="watchImg3" destination="oCg-hu-0ho" id="vVZ-F4-prY"/>
+                        <outlet property="watchImg4" destination="SuX-XW-elp" id="pUv-Fu-Ola"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQP-81-aZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244" y="-203"/>
         </scene>
-        <!--Watch Item View Controller4-->
+        <!--Watch Item View Controller-->
         <scene sceneID="UkZ-q9-zxC">
             <objects>
-                <viewController storyboardIdentifier="Watch4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dL8-eR-LLg" customClass="WatchItemViewController4" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Watch4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dL8-eR-LLg" customClass="WatchItemViewController" customModule="SoundEffects" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f5p-Bi-lwP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -986,7 +998,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action13:" destination="dL8-eR-LLg" eventType="touchUpInside" id="irh-EH-1CQ"/>
+                                            <action selector="Action13:" destination="dL8-eR-LLg" eventType="touchUpInside" id="5MC-Qp-OGO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Feg-Qg-BtZ">
@@ -996,7 +1008,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action14:" destination="dL8-eR-LLg" eventType="touchUpInside" id="Fqj-5c-kIq"/>
+                                            <action selector="Action14:" destination="dL8-eR-LLg" eventType="touchUpInside" id="gHf-4H-ifc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mcf-mt-Bdw">
@@ -1006,7 +1018,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action15:" destination="dL8-eR-LLg" eventType="touchUpInside" id="trl-3V-rC3"/>
+                                            <action selector="Action15:" destination="dL8-eR-LLg" eventType="touchUpInside" id="yh8-lD-FU2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="67g-jy-VyV">
@@ -1016,7 +1028,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Action16:" destination="dL8-eR-LLg" eventType="touchUpInside" id="poG-VE-8bX"/>
+                                            <action selector="Action16:" destination="dL8-eR-LLg" eventType="touchUpInside" id="Nv5-Zd-3dZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1027,10 +1039,16 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchImg13" destination="HJe-qd-2hg" id="mR5-It-JkO"/>
-                        <outlet property="watchImg14" destination="Feg-Qg-BtZ" id="uwF-ag-YFM"/>
-                        <outlet property="watchImg15" destination="mcf-mt-Bdw" id="Kfs-I2-36C"/>
-                        <outlet property="watchImg16" destination="67g-jy-VyV" id="2wF-Qj-XEc"/>
+                        <outlet property="watchChange1" destination="HJe-qd-2hg" id="lUT-dL-Kml"/>
+                        <outlet property="watchChange13" destination="HJe-qd-2hg" id="Hem-cS-TKJ"/>
+                        <outlet property="watchChange14" destination="Feg-Qg-BtZ" id="ugR-Rx-1lE"/>
+                        <outlet property="watchChange15" destination="mcf-mt-Bdw" id="uN3-9y-ONY"/>
+                        <outlet property="watchChange16" destination="67g-jy-VyV" id="zuP-QF-4Fu"/>
+                        <outlet property="watchImg13" destination="HJe-qd-2hg" id="Laz-Wd-zap"/>
+                        <outlet property="watchImg14" destination="Feg-Qg-BtZ" id="snL-QF-dof"/>
+                        <outlet property="watchImg15" destination="mcf-mt-Bdw" id="00I-Hq-PhG"/>
+                        <outlet property="watchImg16" destination="67g-jy-VyV" id="pW7-Vu-Kwi"/>
+                        <outletCollection property="change" destination="HJe-qd-2hg" id="f7l-XI-GmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFI-Fk-aVc" userLabel="First Responder" sceneMemberID="firstResponder"/>

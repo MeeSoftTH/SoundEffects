@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window!.backgroundColor = UIColor.whiteColor()
         
-        DataSettingAndShare().defindSetting()
+        AppSetting().defindSetting()
         
         return true
     }

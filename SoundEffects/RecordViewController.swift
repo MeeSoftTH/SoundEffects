@@ -170,15 +170,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     func audioRecorderEncodeErrorDidOccur(recorder: AVAudioRecorder!, error: NSError!) {
         println("Error while recording audio \(error.localizedDescription)")
     }
-    
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
-    }
+
     
     // MARK:- didReceiveMemoryWarning
     

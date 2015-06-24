@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B481AB21B31706400EF52AE /* DataSettingAndShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AB11B31706400EF52AE /* DataSettingAndShare.swift */; };
+		6B481AB21B31706400EF52AE /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AB11B31706400EF52AE /* AppSetting.swift */; };
 		6B5471F21B220233002BE808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F11B220233002BE808 /* AppDelegate.swift */; };
 		6B5471F41B220233002BE808 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F31B220233002BE808 /* ViewController.swift */; };
 		6B5471F71B220233002BE808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5471F51B220233002BE808 /* Main.storyboard */; };
@@ -78,10 +78,7 @@
 		6BC004FB1B22050B0048630B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC004FA1B22050B0048630B /* Images.xcassets */; };
 		6BC004FE1B22050B0048630B /* SoundEffects WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6BC004E31B22050A0048630B /* SoundEffects WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6BC2BC451B25930600C804D5 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2BC441B25930600C804D5 /* CustomViewController.swift */; };
-		6BC34CD01B381BDC0042082D /* WatchItemViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC34CCC1B381BDC0042082D /* WatchItemViewController1.swift */; };
-		6BC34CD11B381BDC0042082D /* WatchItemViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC34CCD1B381BDC0042082D /* WatchItemViewController2.swift */; };
-		6BC34CD21B381BDC0042082D /* WatchItemViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC34CCE1B381BDC0042082D /* WatchItemViewController3.swift */; };
-		6BC34CD31B381BDC0042082D /* WatchItemViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC34CCF1B381BDC0042082D /* WatchItemViewController4.swift */; };
+		6BC34CD01B381BDC0042082D /* WatchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC34CCC1B381BDC0042082D /* WatchItemViewController.swift */; };
 		6BEE53C71B2433720045B4AE /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE53C11B2433720045B4AE /* BrowseViewController.swift */; };
 		6BEE53C81B2433720045B4AE /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE53C21B2433720045B4AE /* ItemViewController.swift */; };
 		6BEE53CB1B2433720045B4AE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE53C51B2433720045B4AE /* MainViewController.swift */; };
@@ -128,7 +125,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B481AB11B31706400EF52AE /* DataSettingAndShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSettingAndShare.swift; sourceTree = "<group>"; };
+		6B481AB11B31706400EF52AE /* AppSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		6B5471EC1B220233002BE808 /* SoundEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5471F01B220233002BE808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B5471F11B220233002BE808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,10 +166,7 @@
 		6BC004F81B22050B0048630B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6BC004FA1B22050B0048630B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BC2BC441B25930600C804D5 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
-		6BC34CCC1B381BDC0042082D /* WatchItemViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController1.swift; sourceTree = "<group>"; };
-		6BC34CCD1B381BDC0042082D /* WatchItemViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController2.swift; sourceTree = "<group>"; };
-		6BC34CCE1B381BDC0042082D /* WatchItemViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController3.swift; sourceTree = "<group>"; };
-		6BC34CCF1B381BDC0042082D /* WatchItemViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController4.swift; sourceTree = "<group>"; };
+		6BC34CCC1B381BDC0042082D /* WatchItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController.swift; sourceTree = "<group>"; };
 		6BD3CF8E1B2EE04400C10FAC /* SoundEffects WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SoundEffects WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		6BEE53C11B2433720045B4AE /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		6BEE53C21B2433720045B4AE /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
@@ -209,10 +203,7 @@
 		6B481AAF1B316F7B00EF52AE /* AddToWatchControl */ = {
 			isa = PBXGroup;
 			children = (
-				6BC34CCC1B381BDC0042082D /* WatchItemViewController1.swift */,
-				6BC34CCD1B381BDC0042082D /* WatchItemViewController2.swift */,
-				6BC34CCE1B381BDC0042082D /* WatchItemViewController3.swift */,
-				6BC34CCF1B381BDC0042082D /* WatchItemViewController4.swift */,
+				6BC34CCC1B381BDC0042082D /* WatchItemViewController.swift */,
 				6BF06E721B2F046500CE7A62 /* AddWatchViewController.swift */,
 			);
 			name = AddToWatchControl;
@@ -259,7 +250,7 @@
 				6B5471F11B220233002BE808 /* AppDelegate.swift */,
 				6BEE53C11B2433720045B4AE /* BrowseViewController.swift */,
 				6BC2BC441B25930600C804D5 /* CustomViewController.swift */,
-				6B481AB11B31706400EF52AE /* DataSettingAndShare.swift */,
+				6B481AB11B31706400EF52AE /* AppSetting.swift */,
 				6BEE53C51B2433720045B4AE /* MainViewController.swift */,
 				6BEE53C61B2433720045B4AE /* RecordViewController.swift */,
 				6B5471F81B220233002BE808 /* Images.xcassets */,
@@ -590,13 +581,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B5471F41B220233002BE808 /* ViewController.swift in Sources */,
-				6BC34CD21B381BDC0042082D /* WatchItemViewController3.swift in Sources */,
-				6BC34CD31B381BDC0042082D /* WatchItemViewController4.swift in Sources */,
-				6BC34CD01B381BDC0042082D /* WatchItemViewController1.swift in Sources */,
+				6BC34CD01B381BDC0042082D /* WatchItemViewController.swift in Sources */,
 				6BEE53CC1B2433720045B4AE /* RecordViewController.swift in Sources */,
-				6BC34CD11B381BDC0042082D /* WatchItemViewController2.swift in Sources */,
 				6BEE53C81B2433720045B4AE /* ItemViewController.swift in Sources */,
-				6B481AB21B31706400EF52AE /* DataSettingAndShare.swift in Sources */,
+				6B481AB21B31706400EF52AE /* AppSetting.swift in Sources */,
 				6BEE53C71B2433720045B4AE /* BrowseViewController.swift in Sources */,
 				6B5471F21B220233002BE808 /* AppDelegate.swift in Sources */,
 				6BC2BC451B25930600C804D5 /* CustomViewController.swift in Sources */,

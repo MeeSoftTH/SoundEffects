@@ -16,7 +16,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="cif-Wq-BKw">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="Briefcase" id="qoH-mW-XCE">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="qoH-mW-XCE">
                                                     <connections>
                                                         <action selector="Action1" destination="AgC-eL-Hgc" id="iM7-Z8-PRd"/>
                                                     </connections>
@@ -25,7 +25,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="ssb-eT-gYf">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="analytics" id="u35-go-SYc">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="u35-go-SYc">
                                                     <connections>
                                                         <action selector="Action2" destination="AgC-eL-Hgc" id="HLT-Ml-vhA"/>
                                                     </connections>
@@ -38,7 +38,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="2vK-dO-nMA">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="box" id="dtT-N7-F64">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="dtT-N7-F64">
                                                     <connections>
                                                         <action selector="Action3" destination="AgC-eL-Hgc" id="jo2-N4-I4Q"/>
                                                     </connections>
@@ -47,7 +47,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="hvG-LS-vbM">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="browser" id="wzY-YO-EzR">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="wzY-YO-EzR">
                                                     <connections>
                                                         <action selector="Action4" destination="AgC-eL-Hgc" id="OOL-Sq-GFC"/>
                                                     </connections>
@@ -77,7 +77,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="vhL-cR-v5W">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="bubbles" id="nND-u7-845">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="nND-u7-845">
                                                     <connections>
                                                         <action selector="Action5" destination="ENh-Ca-WH3" id="w1q-M2-N4k"/>
                                                     </connections>
@@ -86,7 +86,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="rPs-Sw-bTn">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="clock" id="SHR-vV-o3I">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="SHR-vV-o3I">
                                                     <connections>
                                                         <action selector="Action6" destination="ENh-Ca-WH3" id="I53-eq-tr0"/>
                                                     </connections>
@@ -99,7 +99,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="eQB-hV-KH3">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="diamond" id="YdT-xj-Pdx">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="YdT-xj-Pdx">
                                                     <connections>
                                                         <action selector="Action7" destination="ENh-Ca-WH3" id="6th-mB-FQt"/>
                                                     </connections>
@@ -108,7 +108,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="UWN-8Y-bhK">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="graph" id="iYz-cb-4pL">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="iYz-cb-4pL">
                                                     <connections>
                                                         <action selector="Action8" destination="ENh-Ca-WH3" id="bo4-6x-WCs"/>
                                                     </connections>
@@ -138,7 +138,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="h15-T2-CO7">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="imac" id="VC7-9A-h1O">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="VC7-9A-h1O">
                                                     <connections>
                                                         <action selector="Action9" destination="1va-RH-Iz1" id="DM6-Y5-uft"/>
                                                     </connections>
@@ -147,7 +147,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="pxh-ji-WeC">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="joypad" id="P7z-up-73I">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="P7z-up-73I">
                                                     <connections>
                                                         <action selector="Action10" destination="1va-RH-Iz1" id="jTO-jq-f3H"/>
                                                     </connections>
@@ -160,7 +160,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="wFR-Of-y5D">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="keyboards" id="m7l-GG-Uin">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="m7l-GG-Uin">
                                                     <connections>
                                                         <action selector="Action11" destination="1va-RH-Iz1" id="160-bs-rwp"/>
                                                     </connections>
@@ -169,7 +169,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="GQ3-ky-7Md">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="map" id="zwQ-mU-qVR">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="zwQ-mU-qVR">
                                                     <connections>
                                                         <action selector="Action12" destination="1va-RH-Iz1" id="tKS-Yi-F85"/>
                                                     </connections>
@@ -222,7 +222,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="aIK-Iy-3ja">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="open-box" id="ohT-d8-Sal">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="ohT-d8-Sal">
                                                     <connections>
                                                         <action selector="Action13" destination="LRN-5y-JrG" id="9mN-eI-5Hs"/>
                                                     </connections>
@@ -231,7 +231,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="c0F-He-e97">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="package" id="paQ-F2-gby">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="paQ-F2-gby">
                                                     <connections>
                                                         <action selector="Action14" destination="LRN-5y-JrG" id="BnK-t3-8q0"/>
                                                     </connections>
@@ -244,7 +244,7 @@
                                     <items>
                                         <group width="0.50000000000000011" alignment="left" id="8o4-aB-QsT">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="settings" id="IoM-62-SaF">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="IoM-62-SaF">
                                                     <connections>
                                                         <action selector="Action15" destination="LRN-5y-JrG" id="3pY-90-3a1"/>
                                                     </connections>
@@ -253,7 +253,7 @@
                                         </group>
                                         <group width="0.50000000000000011" alignment="left" id="giE-qn-E64">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="speakers" id="dXK-nm-Dpb">
+                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="dXK-nm-Dpb">
                                                     <connections>
                                                         <action selector="Action16" destination="LRN-5y-JrG" id="pzK-za-q0a"/>
                                                     </connections>
