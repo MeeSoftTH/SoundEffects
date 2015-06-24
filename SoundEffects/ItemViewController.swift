@@ -17,9 +17,7 @@ class ItemViewController: UIViewController {
     var soundPlayer = AVAudioPlayer()
     
     let isItemsAdd = AppSetting.defaultVar.isAddItem
-    
-    var delegate: SelectItemProtocol!
-    
+        
     //var index: Int!
     
     // Audio path

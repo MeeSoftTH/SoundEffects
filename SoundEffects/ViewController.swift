@@ -14,8 +14,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     let isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
     
-    var controller: SelectItemProtocol! = nil
-    
     var leftButton: String!
     
     var pageContentViewController1: UIViewController!
@@ -28,8 +26,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("View controller \(self.controller)")
         
         self.title = self.pageTitles[0]
         
@@ -53,26 +49,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         
         var actionCancel = UIBarButtonItem(title: leftButton, style: UIBarButtonItemStyle.Plain, target: self, action: "actionCancel") //Use a selector
         navigationItem.leftBarButtonItem = actionCancel
-        
-        
-        let tempViewControl1 = self.storyboard!.instantiateViewControllerWithIdentifier("ItemViewController1") as! ItemViewController
-        
-        tempViewControl1.delegate = controller
-        
-        AppSetting.defaultVar.controller = controller
-        
-        println("desanation1 \(tempViewControl1.delegate)")
-        
-        let tempViewControl2 = self.storyboard!.instantiateViewControllerWithIdentifier("ItemViewController2") as! ItemViewController
-        
-        tempViewControl2.delegate = controller
-        println("desanation2 \(tempViewControl2.delegate)")
-        
-        let tempViewControl3 = self.storyboard!.instantiateViewControllerWithIdentifier("ItemViewController3") as! ItemViewController
-        
-        tempViewControl3.delegate = controller
-        println("desanation3 \(tempViewControl3.delegate)")
-        
     }
     
     

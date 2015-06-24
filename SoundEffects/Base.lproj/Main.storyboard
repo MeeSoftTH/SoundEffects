@@ -816,10 +816,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchChange5" destination="oBz-cb-ZWX" id="DDh-Ex-6BJ"/>
-                        <outlet property="watchChange6" destination="nk1-WC-Id2" id="5wF-M6-aho"/>
-                        <outlet property="watchChange7" destination="xol-At-PmO" id="yYH-ML-Q7b"/>
-                        <outlet property="watchChange8" destination="DLU-pq-Q2V" id="2pO-MK-osn"/>
                         <outlet property="watchImg5" destination="oBz-cb-ZWX" id="Jfn-Qk-ZbA"/>
                         <outlet property="watchImg6" destination="nk1-WC-Id2" id="aJH-KG-a5G"/>
                         <outlet property="watchImg7" destination="xol-At-PmO" id="zTA-3A-cru"/>
@@ -890,10 +886,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchChange10" destination="U9E-Xp-DM6" id="RYp-ob-KRh"/>
-                        <outlet property="watchChange11" destination="io7-HC-R5v" id="kOa-8T-cYq"/>
-                        <outlet property="watchChange12" destination="d6V-X9-cuF" id="oiu-6u-LwS"/>
-                        <outlet property="watchChange9" destination="OsK-bu-g4Z" id="WmI-YX-UKA"/>
                         <outlet property="watchImg10" destination="U9E-Xp-DM6" id="osR-I1-Tvx"/>
                         <outlet property="watchImg11" destination="io7-HC-R5v" id="53W-fh-gsj"/>
                         <outlet property="watchImg12" destination="d6V-X9-cuF" id="LxM-mw-Q0J"/>
@@ -965,10 +957,6 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchChange1" destination="nvO-t5-G6u" id="SrG-15-Erc"/>
-                        <outlet property="watchChange2" destination="uej-LZ-Je7" id="WgY-AY-sSo"/>
-                        <outlet property="watchChange3" destination="oCg-hu-0ho" id="TEJ-Va-fuE"/>
-                        <outlet property="watchChange4" destination="SuX-XW-elp" id="szL-Ll-pAt"/>
                         <outlet property="watchImg1" destination="nvO-t5-G6u" id="FGW-iO-ZCv"/>
                         <outlet property="watchImg2" destination="uej-LZ-Je7" id="oaf-ls-z93"/>
                         <outlet property="watchImg3" destination="oCg-hu-0ho" id="vVZ-F4-prY"/>
@@ -1039,16 +1027,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="watchChange1" destination="HJe-qd-2hg" id="lUT-dL-Kml"/>
-                        <outlet property="watchChange13" destination="HJe-qd-2hg" id="Hem-cS-TKJ"/>
-                        <outlet property="watchChange14" destination="Feg-Qg-BtZ" id="ugR-Rx-1lE"/>
-                        <outlet property="watchChange15" destination="mcf-mt-Bdw" id="uN3-9y-ONY"/>
-                        <outlet property="watchChange16" destination="67g-jy-VyV" id="zuP-QF-4Fu"/>
                         <outlet property="watchImg13" destination="HJe-qd-2hg" id="Laz-Wd-zap"/>
                         <outlet property="watchImg14" destination="Feg-Qg-BtZ" id="snL-QF-dof"/>
                         <outlet property="watchImg15" destination="mcf-mt-Bdw" id="00I-Hq-PhG"/>
                         <outlet property="watchImg16" destination="67g-jy-VyV" id="pW7-Vu-Kwi"/>
-                        <outletCollection property="change" destination="HJe-qd-2hg" id="f7l-XI-GmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFI-Fk-aVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
