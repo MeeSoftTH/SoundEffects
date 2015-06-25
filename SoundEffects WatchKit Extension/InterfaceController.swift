@@ -175,7 +175,7 @@ class InterfaceController: WKInterfaceController {
         
         let isPurchased = userDefind?.boolForKey("ispurchased") as Bool?
         
-        println("Update UI")
+        //println("Update UI")
         
         let slotPath1: AnyObject? = userDefind?.objectForKey("slot1")
         if slotPath1 != nil {

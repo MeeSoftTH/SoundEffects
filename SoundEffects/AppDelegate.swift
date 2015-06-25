@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import WatchKit
-import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

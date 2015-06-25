@@ -16,6 +16,7 @@ class AppSetting {
         static var isAddItem:Bool! = false
         static var addIndex:Int! = 0
         static var controller: SelectItemProtocol! = nil
+        static let isTest:Bool = false
     }
     
     
