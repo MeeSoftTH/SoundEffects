@@ -85,10 +85,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             
             pageContentViewController2 = self.storyboard?.instantiateViewControllerWithIdentifier("ItemViewController2") as!
             UIViewController
-            
-            
-
-            
             return pageContentViewController2
             
             

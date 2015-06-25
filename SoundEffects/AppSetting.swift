@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AVFoundation
 
 // This class for defind data source and path!!!!!
 
@@ -30,12 +29,10 @@ class AppSetting {
         if let isFirstTimeDone = userDefaultSetting.boolForKey("isdonefirsttime") as Bool? {
             
             if !isFirstTimeDone {
-                
                 userDefaultSetting.setBool(true, forKey: "isdonefirsttime")
-                
-                
-                let isPurchased = userDefaultSetting.boolForKey("isPurchased") as Bool?
             }
+            
+            let isPurchased = userDefaultSetting.boolForKey("isPurchased") as Bool?
         }
     }
 }

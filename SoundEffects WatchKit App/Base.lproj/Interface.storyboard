@@ -12,46 +12,55 @@
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="gBx-us-Yee">
                             <items>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="gR9-mg-a4y">
+                                <group width="1" height="1" alignment="center" layout="vertical" id="HEd-ZK-Ziv">
                                     <items>
-                                        <group width="0.50000000000000011" alignment="left" id="cif-Wq-BKw">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="VUe-6M-f1Z">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="qoH-mW-XCE">
-                                                    <connections>
-                                                        <action selector="Action1" destination="AgC-eL-Hgc" id="iM7-Z8-PRd"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="e8k-fG-WiU">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="Pvs-ze-m4z">
+                                                            <connections>
+                                                                <action selector="Action1" destination="AgC-eL-Hgc" id="Ciy-MZ-yE8"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="2Jt-6c-AeC">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="GEn-Rg-dwe">
+                                                            <connections>
+                                                                <action selector="Action2" destination="AgC-eL-Hgc" id="s3F-fX-LwW"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
                                             </items>
                                         </group>
-                                        <group width="0.50000000000000011" alignment="left" id="ssb-eT-gYf">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="bGt-5X-IVY">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="u35-go-SYc">
-                                                    <connections>
-                                                        <action selector="Action2" destination="AgC-eL-Hgc" id="HLT-Ml-vhA"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="p9n-uW-KQH">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="h9T-gP-MVb">
+                                                            <connections>
+                                                                <action selector="Action3" destination="AgC-eL-Hgc" id="kKi-YS-WT4"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="NPP-fu-nry">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="jlP-Oi-LkH">
+                                                            <connections>
+                                                                <action selector="Action4" destination="AgC-eL-Hgc" id="KUL-zf-5Pi"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
                                             </items>
                                         </group>
-                                    </items>
-                                </group>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="rdn-bq-bcj">
-                                    <items>
-                                        <group width="0.50000000000000011" alignment="left" id="2vK-dO-nMA">
+                                        <group width="1" alignment="left" layout="vertical" id="KJG-un-6L9">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="dtT-N7-F64">
-                                                    <connections>
-                                                        <action selector="Action3" destination="AgC-eL-Hgc" id="jo2-N4-I4Q"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
-                                        <group width="0.50000000000000011" alignment="left" id="hvG-LS-vbM">
-                                            <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="wzY-YO-EzR">
-                                                    <connections>
-                                                        <action selector="Action4" destination="AgC-eL-Hgc" id="OOL-Sq-GFC"/>
-                                                    </connections>
-                                                </button>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="mxZ-AO-seQ"/>
                                             </items>
                                         </group>
                                     </items>
@@ -60,6 +69,10 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="button1" destination="Pvs-ze-m4z" id="gjD-eh-zkq"/>
+                        <outlet property="button2" destination="GEn-Rg-dwe" id="Lq5-6u-mxM"/>
+                        <outlet property="button3" destination="h9T-gP-MVb" id="NwO-7m-e6M"/>
+                        <outlet property="button4" destination="jlP-Oi-LkH" id="bhq-wh-MWf"/>
                         <segue destination="ENh-Ca-WH3" kind="relationship" relationship="nextPage" id="4pi-IX-wBH"/>
                     </connections>
                 </controller>
@@ -71,56 +84,78 @@
             <objects>
                 <controller identifier="Controller2" id="ENh-Ca-WH3" customClass="InterfaceController" customModule="SoundEffects_WatchKit_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="NIA-Dn-pkz">
+                        <group width="136" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="NIA-Dn-pkz">
                             <items>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="Abx-0J-Yh9">
+                                <group width="1" height="1" alignment="center" layout="vertical" id="fMX-QG-Ttg">
                                     <items>
-                                        <group width="0.50000000000000011" alignment="left" id="vhL-cR-v5W">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="Abx-0J-Yh9">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="nND-u7-845">
-                                                    <connections>
-                                                        <action selector="Action5" destination="ENh-Ca-WH3" id="w1q-M2-N4k"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="vhL-cR-v5W">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="nND-u7-845">
+                                                            <connections>
+                                                                <action selector="Action5" destination="ENh-Ca-WH3" id="kbT-wI-chX"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="rPs-Sw-bTn">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="SHR-vV-o3I">
+                                                            <connections>
+                                                                <action selector="Action6" destination="ENh-Ca-WH3" id="RkM-ou-gDW"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
                                             </items>
                                         </group>
-                                        <group width="0.50000000000000011" alignment="left" id="rPs-Sw-bTn">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="fOC-aA-6df">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="SHR-vV-o3I">
-                                                    <connections>
-                                                        <action selector="Action6" destination="ENh-Ca-WH3" id="I53-eq-tr0"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="eQB-hV-KH3">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="YdT-xj-Pdx">
+                                                            <connections>
+                                                                <action selector="Action7" destination="ENh-Ca-WH3" id="4Hy-TX-lDz"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="UWN-8Y-bhK">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="iYz-cb-4pL">
+                                                            <connections>
+                                                                <action selector="Action8" destination="ENh-Ca-WH3" id="GVh-86-MXr"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" layout="vertical" id="PsJ-k3-0lC">
+                                            <items>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="1CD-Gl-UpH"/>
                                             </items>
                                         </group>
                                     </items>
                                 </group>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="fOC-aA-6df">
+                                <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="ZhA-ji-Ooa">
                                     <items>
-                                        <group width="0.50000000000000011" alignment="left" id="eQB-hV-KH3">
-                                            <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="YdT-xj-Pdx">
-                                                    <connections>
-                                                        <action selector="Action7" destination="ENh-Ca-WH3" id="6th-mB-FQt"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
-                                        <group width="0.50000000000000011" alignment="left" id="UWN-8Y-bhK">
-                                            <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="iYz-cb-4pL">
-                                                    <connections>
-                                                        <action selector="Action8" destination="ENh-Ca-WH3" id="bo4-6x-WCs"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
+                                        <label width="1" alignment="center" text="Purchase" textAlignment="center" id="oDP-1A-ORo"/>
+                                        <label width="1" alignment="center" text="on phone" textAlignment="center" id="Sbd-UF-fLd"/>
+                                        <label width="1" alignment="center" text="to unlock." textAlignment="center" id="lld-g1-ybC"/>
                                     </items>
                                 </group>
                             </items>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="button5" destination="nND-u7-845" id="gl5-fx-vxe"/>
+                        <outlet property="button6" destination="SHR-vV-o3I" id="sZb-Tz-y81"/>
+                        <outlet property="button7" destination="YdT-xj-Pdx" id="kbn-Ce-pzi"/>
+                        <outlet property="button8" destination="iYz-cb-4pL" id="TyN-KW-Av3"/>
+                        <outlet property="buttonView2" destination="fMX-QG-Ttg" id="WTO-Ra-lF2"/>
+                        <outlet property="lockView2" destination="ZhA-ji-Ooa" id="RZ3-Bs-xpv"/>
                         <segue destination="1va-RH-Iz1" kind="relationship" relationship="nextPage" id="Yl8-2l-p3l"/>
                     </connections>
                 </controller>
@@ -132,48 +167,64 @@
             <objects>
                 <controller identifier="Controller3" id="1va-RH-Iz1" customClass="InterfaceController" customModule="SoundEffects_WatchKit_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="nof-x7-g5d">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="BCm-ph-gMb">
                             <items>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="xfD-E5-axk">
+                                <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="pW4-Ss-Q4o">
                                     <items>
-                                        <group width="0.50000000000000011" alignment="left" id="h15-T2-CO7">
-                                            <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="VC7-9A-h1O">
-                                                    <connections>
-                                                        <action selector="Action9" destination="1va-RH-Iz1" id="DM6-Y5-uft"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
-                                        <group width="0.50000000000000011" alignment="left" id="pxh-ji-WeC">
-                                            <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="P7z-up-73I">
-                                                    <connections>
-                                                        <action selector="Action10" destination="1va-RH-Iz1" id="jTO-jq-f3H"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
+                                        <label width="1" alignment="center" text="Purchase" textAlignment="center" id="cm5-gO-Sjw"/>
+                                        <label width="1" alignment="center" text="on phone" textAlignment="center" id="7Z3-E8-BW5"/>
+                                        <label width="1" alignment="center" text="to unlock." textAlignment="center" id="kVd-ax-t0G"/>
                                     </items>
                                 </group>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="QYb-ys-RMq">
+                                <group width="1" height="1" alignment="center" layout="vertical" id="xpI-9C-mbN">
                                     <items>
-                                        <group width="0.50000000000000011" alignment="left" id="wFR-Of-y5D">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="tJb-Wj-r39">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="m7l-GG-Uin">
-                                                    <connections>
-                                                        <action selector="Action11" destination="1va-RH-Iz1" id="160-bs-rwp"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="qlc-lj-OvO">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="RGA-U4-MPt">
+                                                            <connections>
+                                                                <action selector="Action9" destination="1va-RH-Iz1" id="qYR-0K-VsK"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="mU1-bL-9B1">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="7zP-pu-Ev0">
+                                                            <connections>
+                                                                <action selector="Action10" destination="1va-RH-Iz1" id="6dJ-T5-NSq"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
                                             </items>
                                         </group>
-                                        <group width="0.50000000000000011" alignment="left" id="GQ3-ky-7Md">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="8iG-tE-6tj">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="zwQ-mU-qVR">
-                                                    <connections>
-                                                        <action selector="Action12" destination="1va-RH-Iz1" id="tKS-Yi-F85"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="XCD-xw-Neq">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="bj6-fv-we6">
+                                                            <connections>
+                                                                <action selector="Action11" destination="1va-RH-Iz1" id="VzV-Zx-jcE"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="xQb-mz-47l">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="ous-gR-B4r">
+                                                            <connections>
+                                                                <action selector="Action12" destination="1va-RH-Iz1" id="0Iw-lB-JiW"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" layout="vertical" id="MbY-4V-QPG">
+                                            <items>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="Avh-Mv-oex"/>
                                             </items>
                                         </group>
                                     </items>
@@ -182,6 +233,12 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="button10" destination="7zP-pu-Ev0" id="ey2-Uo-Lcx"/>
+                        <outlet property="button11" destination="bj6-fv-we6" id="9da-Oz-aZo"/>
+                        <outlet property="button12" destination="ous-gR-B4r" id="utK-Md-uuq"/>
+                        <outlet property="button9" destination="RGA-U4-MPt" id="A6w-An-c6Q"/>
+                        <outlet property="buttonView3" destination="xpI-9C-mbN" id="p1z-02-ROP"/>
+                        <outlet property="lockView3" destination="pW4-Ss-Q4o" id="lLG-lr-WIW"/>
                         <segue destination="LRN-5y-JrG" kind="relationship" relationship="nextPage" id="OrV-kq-NWH"/>
                     </connections>
                 </controller>
@@ -216,48 +273,64 @@
             <objects>
                 <controller identifier="Controller4" id="LRN-5y-JrG" customClass="InterfaceController" customModule="SoundEffects_WatchKit_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="VhR-TS-bQn">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="OH6-9A-uk0">
                             <items>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="W3U-ZU-bkN">
+                                <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="GOr-Lj-cEK">
                                     <items>
-                                        <group width="0.50000000000000011" alignment="left" id="aIK-Iy-3ja">
-                                            <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="ohT-d8-Sal">
-                                                    <connections>
-                                                        <action selector="Action13" destination="LRN-5y-JrG" id="9mN-eI-5Hs"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
-                                        <group width="0.50000000000000011" alignment="left" id="c0F-He-e97">
-                                            <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="paQ-F2-gby">
-                                                    <connections>
-                                                        <action selector="Action14" destination="LRN-5y-JrG" id="BnK-t3-8q0"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
+                                        <label width="1" alignment="center" text="Purchase" textAlignment="center" id="hjF-Os-yjf"/>
+                                        <label width="1" alignment="center" text="on phone" textAlignment="center" id="OBo-NK-UkF"/>
+                                        <label width="1" alignment="center" text="to unlock." textAlignment="center" id="M7b-uX-HkJ"/>
                                     </items>
                                 </group>
-                                <group width="1" height="0.50000000000000011" alignment="center" id="EU0-ej-RrM">
+                                <group width="1" height="1" alignment="center" layout="vertical" id="BgV-Wj-bXJ">
                                     <items>
-                                        <group width="0.50000000000000011" alignment="left" id="8o4-aB-QsT">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="wyT-LC-gtz">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="IoM-62-SaF">
-                                                    <connections>
-                                                        <action selector="Action15" destination="LRN-5y-JrG" id="3pY-90-3a1"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="Pef-pV-Eaa">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="hQE-vz-34S">
+                                                            <connections>
+                                                                <action selector="Action13" destination="LRN-5y-JrG" id="iqQ-Wk-tGp"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="3PR-7h-PYY">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="ifz-6r-xbw">
+                                                            <connections>
+                                                                <action selector="Action14" destination="LRN-5y-JrG" id="SkG-Uc-kdq"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
                                             </items>
                                         </group>
-                                        <group width="0.50000000000000011" alignment="left" id="giE-qn-E64">
+                                        <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="NNe-kC-anY">
                                             <items>
-                                                <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="add_icon" id="dXK-nm-Dpb">
-                                                    <connections>
-                                                        <action selector="Action16" destination="LRN-5y-JrG" id="pzK-za-q0a"/>
-                                                    </connections>
-                                                </button>
+                                                <group width="0.50000000000000011" alignment="left" id="6qX-E9-OCq">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="zhk-Cc-5CS">
+                                                            <connections>
+                                                                <action selector="Action15" destination="LRN-5y-JrG" id="B2o-pq-w3m"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                                <group width="0.50000000000000011" alignment="left" id="Z73-18-eKR">
+                                                    <items>
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="Ztm-sJ-N7L">
+                                                            <connections>
+                                                                <action selector="Action16" destination="LRN-5y-JrG" id="ZMH-eF-avg"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" layout="vertical" id="Eod-fE-LSO">
+                                            <items>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="UPY-Cv-iuS"/>
                                             </items>
                                         </group>
                                     </items>
@@ -265,6 +338,14 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="button13" destination="hQE-vz-34S" id="IEr-VF-yIn"/>
+                        <outlet property="button14" destination="ifz-6r-xbw" id="vRH-eV-rlZ"/>
+                        <outlet property="button15" destination="zhk-Cc-5CS" id="C9U-0f-riJ"/>
+                        <outlet property="button16" destination="Ztm-sJ-N7L" id="aRW-Hs-TkG"/>
+                        <outlet property="buttonView4" destination="BgV-Wj-bXJ" id="rzh-Qc-1aE"/>
+                        <outlet property="lockView4" destination="GOr-Lj-cEK" id="kuE-Xf-xmx"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="801" y="316"/>

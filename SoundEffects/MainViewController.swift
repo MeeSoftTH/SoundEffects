@@ -41,6 +41,14 @@ class MainViewController: UIViewController {
         
         self.navigationController!.pushViewController(AddWatchViewController, animated: true)
     }
+    
+    @IBAction func puchase(sender: UIButton) {
+        
+        let appPurchaseController = self.storyboard!.instantiateViewControllerWithIdentifier("appPurchase") as! UIViewController
+        
+        self.presentViewController(appPurchaseController, animated: true, completion: nil)
+    }
+    
 
 }
 

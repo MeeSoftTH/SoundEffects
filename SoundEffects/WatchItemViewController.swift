@@ -417,7 +417,6 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         let sound_slot: String = audioPath as String
         let imgUrl_slot: String = imagePath as String
         
-        if !(sound_slot == "") && !(imgUrl_slot == "") {
             if UIIndex == 1 {
                 hasOptions1 = true
                 watchAudio1 = sound_slot as String
@@ -499,7 +498,6 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             }
             
             userDefind.setObject([sound_slot, imgUrl_slot], forKey: slotIndex)
-        }
         
     }
 }
