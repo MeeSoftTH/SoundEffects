@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B481AB21B31706400EF52AE /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B481AB11B31706400EF52AE /* AppSetting.swift */; };
+		6B5471F21B220233002BE808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F11B220233002BE808 /* AppDelegate.swift */; };
+		6B5471F41B220233002BE808 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5471F31B220233002BE808 /* ViewController.swift */; };
+		6B5471F71B220233002BE808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5471F51B220233002BE808 /* Main.storyboard */; };
+		6B5471F91B220233002BE808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5471F81B220233002BE808 /* Images.xcassets */; };
+		6B5471FC1B220233002BE808 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5471FA1B220233002BE808 /* LaunchScreen.xib */; };
+		6B5472081B220233002BE808 /* SoundEffectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5472071B220233002BE808 /* SoundEffectsTests.swift */; };
+		6B61EC121B293E8600A35825 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC004F71B22050B0048630B /* Interface.storyboard */; };
+		6B69EE971B371349001647B4 /* audio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE851B371349001647B4 /* audio1.mp3 */; };
+		6B69EE981B371349001647B4 /* audio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE851B371349001647B4 /* audio1.mp3 */; };
+		6B69EE991B371349001647B4 /* audio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE851B371349001647B4 /* audio1.mp3 */; };
+		6B69EE9A1B371349001647B4 /* audio10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE861B371349001647B4 /* audio10.mp3 */; };
+		6B69EE9B1B371349001647B4 /* audio10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE861B371349001647B4 /* audio10.mp3 */; };
+		6B69EE9C1B371349001647B4 /* audio10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE861B371349001647B4 /* audio10.mp3 */; };
+		6B69EE9D1B371349001647B4 /* audio11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE871B371349001647B4 /* audio11.mp3 */; };
+		6B69EE9E1B371349001647B4 /* audio11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE871B371349001647B4 /* audio11.mp3 */; };
+		6B69EE9F1B371349001647B4 /* audio11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE871B371349001647B4 /* audio11.mp3 */; };
+		6B69EEA01B371349001647B4 /* audio12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE881B371349001647B4 /* audio12.mp3 */; };
+		6B69EEA11B371349001647B4 /* audio12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE881B371349001647B4 /* audio12.mp3 */; };
+		6B69EEA21B371349001647B4 /* audio12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE881B371349001647B4 /* audio12.mp3 */; };
+		6B69EEA31B371349001647B4 /* audio13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE891B371349001647B4 /* audio13.mp3 */; };
+		6B69EEA41B371349001647B4 /* audio13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE891B371349001647B4 /* audio13.mp3 */; };
+		6B69EEA51B371349001647B4 /* audio13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE891B371349001647B4 /* audio13.mp3 */; };
+		6B69EEA61B371349001647B4 /* audio14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8A1B371349001647B4 /* audio14.mp3 */; };
+		6B69EEA71B371349001647B4 /* audio14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8A1B371349001647B4 /* audio14.mp3 */; };
+		6B69EEA81B371349001647B4 /* audio14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8A1B371349001647B4 /* audio14.mp3 */; };
+		6B69EEA91B371349001647B4 /* audio15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8B1B371349001647B4 /* audio15.mp3 */; };
+		6B69EEAA1B371349001647B4 /* audio15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8B1B371349001647B4 /* audio15.mp3 */; };
+		6B69EEAB1B371349001647B4 /* audio15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8B1B371349001647B4 /* audio15.mp3 */; };
+		6B69EEAC1B371349001647B4 /* audio16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8C1B371349001647B4 /* audio16.mp3 */; };
+		6B69EEAD1B371349001647B4 /* audio16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8C1B371349001647B4 /* audio16.mp3 */; };
+		6B69EEAE1B371349001647B4 /* audio16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8C1B371349001647B4 /* audio16.mp3 */; };
+		6B69EEAF1B371349001647B4 /* audio17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8D1B371349001647B4 /* audio17.mp3 */; };
+		6B69EEB01B371349001647B4 /* audio17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8D1B371349001647B4 /* audio17.mp3 */; };
+		6B69EEB11B371349001647B4 /* audio17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8D1B371349001647B4 /* audio17.mp3 */; };
+		6B69EEB21B371349001647B4 /* audio18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8E1B371349001647B4 /* audio18.mp3 */; };
+		6B69EEB31B371349001647B4 /* audio18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8E1B371349001647B4 /* audio18.mp3 */; };
+		6B69EEB41B371349001647B4 /* audio18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8E1B371349001647B4 /* audio18.mp3 */; };
+		6B69EEB51B371349001647B4 /* audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8F1B371349001647B4 /* audio2.mp3 */; };
+		6B69EEB61B371349001647B4 /* audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8F1B371349001647B4 /* audio2.mp3 */; };
+		6B69EEB71B371349001647B4 /* audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE8F1B371349001647B4 /* audio2.mp3 */; };
+		6B69EEB81B371349001647B4 /* audio3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE901B371349001647B4 /* audio3.mp3 */; };
+		6B69EEB91B371349001647B4 /* audio3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE901B371349001647B4 /* audio3.mp3 */; };
+		6B69EEBA1B371349001647B4 /* audio3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE901B371349001647B4 /* audio3.mp3 */; };
+		6B69EEBB1B371349001647B4 /* audio4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE911B371349001647B4 /* audio4.mp3 */; };
+		6B69EEBC1B371349001647B4 /* audio4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE911B371349001647B4 /* audio4.mp3 */; };
+		6B69EEBD1B371349001647B4 /* audio4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE911B371349001647B4 /* audio4.mp3 */; };
+		6B69EEBE1B371349001647B4 /* audio5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE921B371349001647B4 /* audio5.mp3 */; };
+		6B69EEBF1B371349001647B4 /* audio5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE921B371349001647B4 /* audio5.mp3 */; };
+		6B69EEC01B371349001647B4 /* audio5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE921B371349001647B4 /* audio5.mp3 */; };
+		6B69EEC11B371349001647B4 /* audio6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE931B371349001647B4 /* audio6.mp3 */; };
+		6B69EEC21B371349001647B4 /* audio6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE931B371349001647B4 /* audio6.mp3 */; };
+		6B69EEC31B371349001647B4 /* audio6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE931B371349001647B4 /* audio6.mp3 */; };
+		6B69EEC41B371349001647B4 /* audio7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE941B371349001647B4 /* audio7.mp3 */; };
+		6B69EEC51B371349001647B4 /* audio7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE941B371349001647B4 /* audio7.mp3 */; };
+		6B69EEC61B371349001647B4 /* audio7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE941B371349001647B4 /* audio7.mp3 */; };
+		6B69EEC71B371349001647B4 /* audio8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE951B371349001647B4 /* audio8.mp3 */; };
+		6B69EEC81B371349001647B4 /* audio8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE951B371349001647B4 /* audio8.mp3 */; };
+		6B69EEC91B371349001647B4 /* audio8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE951B371349001647B4 /* audio8.mp3 */; };
+		6B69EECA1B371349001647B4 /* audio9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE961B371349001647B4 /* audio9.mp3 */; };
+		6B69EECB1B371349001647B4 /* audio9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE961B371349001647B4 /* audio9.mp3 */; };
+		6B69EECC1B371349001647B4 /* audio9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B69EE961B371349001647B4 /* audio9.mp3 */; };
+		6BA94F7E1B2ECF6200BFFFC6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC004F71B22050B0048630B /* Interface.storyboard */; };
+		6BC004E91B22050A0048630B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC004E81B22050A0048630B /* InterfaceController.swift */; };
+		6BC004EB1B22050A0048630B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC004EA1B22050A0048630B /* NotificationController.swift */; };
+		6BC004ED1B22050A0048630B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC004EC1B22050A0048630B /* Images.xcassets */; };
+		6BC004F11B22050A0048630B /* SoundEffects WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 6BC004F01B22050A0048630B /* SoundEffects WatchKit App.app */; };
+		6BC004F91B22050B0048630B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC004F71B22050B0048630B /* Interface.storyboard */; };
+		6BC004FB1B22050B0048630B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC004FA1B22050B0048630B /* Images.xcassets */; };
+		6BC004FE1B22050B0048630B /* SoundEffects WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6BC004E31B22050A0048630B /* SoundEffects WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6BC2BC451B25930600C804D5 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2BC441B25930600C804D5 /* CustomViewController.swift */; };
+		6BC34CD01B381BDC0042082D /* WatchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC34CCC1B381BDC0042082D /* WatchItemViewController.swift */; };
+		6BEE53C71B2433720045B4AE /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE53C11B2433720045B4AE /* BrowseViewController.swift */; };
+		6BEE53C81B2433720045B4AE /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE53C21B2433720045B4AE /* ItemViewController.swift */; };
+		6BEE53CB1B2433720045B4AE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE53C51B2433720045B4AE /* MainViewController.swift */; };
+		6BEE53CC1B2433720045B4AE /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE53C61B2433720045B4AE /* RecordViewController.swift */; };
+		6BF06E731B2F046500CE7A62 /* AddWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF06E721B2F046500CE7A62 /* AddWatchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B5472021B220233002BE808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5471E41B220233002BE808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B5471EB1B220233002BE808;
+			remoteInfo = SoundEffects;
+		};
+		6BC004F21B22050A0048630B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5471E41B220233002BE808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BC004EF1B22050A0048630B;
+			remoteInfo = "SoundEffects WatchKit App";
+		};
+		6BC004FC1B22050B0048630B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5471E41B220233002BE808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BC004E21B22050A0048630B;
+			remoteInfo = "SoundEffects WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6BC005051B22050B0048630B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6BC004FE1B22050B0048630B /* SoundEffects WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6B481AB11B31706400EF52AE /* AppSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		6B5471EC1B220233002BE808 /* SoundEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5471F01B220233002BE808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5471F11B220233002BE808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B5471F31B220233002BE808 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B5471F61B220233002BE808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B5471F81B220233002BE808 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6B5471FB1B220233002BE808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6B5472011B220233002BE808 /* SoundEffectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundEffectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5472061B220233002BE808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5472071B220233002BE808 /* SoundEffectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectsTests.swift; sourceTree = "<group>"; };
+		6B61EDA31B29532900A35825 /* SoundEffects.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SoundEffects.entitlements; sourceTree = "<group>"; };
+		6B69EE851B371349001647B4 /* audio1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio1.mp3; sourceTree = "<group>"; };
+		6B69EE861B371349001647B4 /* audio10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio10.mp3; sourceTree = "<group>"; };
+		6B69EE871B371349001647B4 /* audio11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio11.mp3; sourceTree = "<group>"; };
+		6B69EE881B371349001647B4 /* audio12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio12.mp3; sourceTree = "<group>"; };
+		6B69EE891B371349001647B4 /* audio13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio13.mp3; sourceTree = "<group>"; };
+		6B69EE8A1B371349001647B4 /* audio14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio14.mp3; sourceTree = "<group>"; };
+		6B69EE8B1B371349001647B4 /* audio15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio15.mp3; sourceTree = "<group>"; };
+		6B69EE8C1B371349001647B4 /* audio16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio16.mp3; sourceTree = "<group>"; };
+		6B69EE8D1B371349001647B4 /* audio17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio17.mp3; sourceTree = "<group>"; };
+		6B69EE8E1B371349001647B4 /* audio18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio18.mp3; sourceTree = "<group>"; };
+		6B69EE8F1B371349001647B4 /* audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio2.mp3; sourceTree = "<group>"; };
+		6B69EE901B371349001647B4 /* audio3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio3.mp3; sourceTree = "<group>"; };
+		6B69EE911B371349001647B4 /* audio4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio4.mp3; sourceTree = "<group>"; };
+		6B69EE921B371349001647B4 /* audio5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio5.mp3; sourceTree = "<group>"; };
+		6B69EE931B371349001647B4 /* audio6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio6.mp3; sourceTree = "<group>"; };
+		6B69EE941B371349001647B4 /* audio7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio7.mp3; sourceTree = "<group>"; };
+		6B69EE951B371349001647B4 /* audio8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio8.mp3; sourceTree = "<group>"; };
+		6B69EE961B371349001647B4 /* audio9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio9.mp3; sourceTree = "<group>"; };
+		6BC004E31B22050A0048630B /* SoundEffects WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SoundEffects WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC004E61B22050A0048630B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC004E71B22050A0048630B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6BC004E81B22050A0048630B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6BC004EA1B22050A0048630B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6BC004EC1B22050A0048630B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6BC004F01B22050A0048630B /* SoundEffects WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoundEffects WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC004F61B22050B0048630B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC004F81B22050B0048630B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6BC004FA1B22050B0048630B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6BC2BC441B25930600C804D5 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		6BC34CCC1B381BDC0042082D /* WatchItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchItemViewController.swift; sourceTree = "<group>"; };
+		6BD3CF8E1B2EE04400C10FAC /* SoundEffects WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SoundEffects WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		6BEE53C11B2433720045B4AE /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		6BEE53C21B2433720045B4AE /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		6BEE53C51B2433720045B4AE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6BEE53C61B2433720045B4AE /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		6BF06E721B2F046500CE7A62 /* AddWatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWatchViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B5471E91B220233002BE808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B5471FE1B220233002BE808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC004E01B22050A0048630B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B481AAF1B316F7B00EF52AE /* AddToWatchControl */ = {
+			isa = PBXGroup;
+			children = (
+				6BC34CCC1B381BDC0042082D /* WatchItemViewController.swift */,
+				6BF06E721B2F046500CE7A62 /* AddWatchViewController.swift */,
+			);
+			name = AddToWatchControl;
+			sourceTree = "<group>";
+		};
+		6B481AB01B316FBE00EF52AE /* PhoneViewControl */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE53C21B2433720045B4AE /* ItemViewController.swift */,
+				6B5471F31B220233002BE808 /* ViewController.swift */,
+			);
+			name = PhoneViewControl;
+			sourceTree = "<group>";
+		};
+		6B5471E31B220233002BE808 = {
+			isa = PBXGroup;
+			children = (
+				6B69EE841B371349001647B4 /* Audio */,
+				6B5471EE1B220233002BE808 /* SoundEffects */,
+				6B5472041B220233002BE808 /* SoundEffectsTests */,
+				6BC004E41B22050A0048630B /* SoundEffects WatchKit Extension */,
+				6BC004F41B22050A0048630B /* SoundEffects WatchKit App */,
+				6B5471ED1B220233002BE808 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B5471ED1B220233002BE808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B5471EC1B220233002BE808 /* SoundEffects.app */,
+				6B5472011B220233002BE808 /* SoundEffectsTests.xctest */,
+				6BC004E31B22050A0048630B /* SoundEffects WatchKit Extension.appex */,
+				6BC004F01B22050A0048630B /* SoundEffects WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B5471EE1B220233002BE808 /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				6B61EDA31B29532900A35825 /* SoundEffects.entitlements */,
+				6B481AB01B316FBE00EF52AE /* PhoneViewControl */,
+				6B481AAF1B316F7B00EF52AE /* AddToWatchControl */,
+				6B5471F11B220233002BE808 /* AppDelegate.swift */,
+				6BEE53C11B2433720045B4AE /* BrowseViewController.swift */,
+				6BC2BC441B25930600C804D5 /* CustomViewController.swift */,
+				6B481AB11B31706400EF52AE /* AppSetting.swift */,
+				6BEE53C51B2433720045B4AE /* MainViewController.swift */,
+				6BEE53C61B2433720045B4AE /* RecordViewController.swift */,
+				6B5471F81B220233002BE808 /* Images.xcassets */,
+				6B5471FA1B220233002BE808 /* LaunchScreen.xib */,
+				6B5471F51B220233002BE808 /* Main.storyboard */,
+				6B5471EF1B220233002BE808 /* Supporting Files */,
+			);
+			path = SoundEffects;
+			sourceTree = "<group>";
+		};
+		6B5471EF1B220233002BE808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B5471F01B220233002BE808 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B5472041B220233002BE808 /* SoundEffectsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B5472071B220233002BE808 /* SoundEffectsTests.swift */,
+				6B5472051B220233002BE808 /* Supporting Files */,
+			);
+			path = SoundEffectsTests;
+			sourceTree = "<group>";
+		};
+		6B5472051B220233002BE808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B5472061B220233002BE808 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B69EE841B371349001647B4 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6B69EE851B371349001647B4 /* audio1.mp3 */,
+				6B69EE861B371349001647B4 /* audio10.mp3 */,
+				6B69EE871B371349001647B4 /* audio11.mp3 */,
+				6B69EE881B371349001647B4 /* audio12.mp3 */,
+				6B69EE891B371349001647B4 /* audio13.mp3 */,
+				6B69EE8A1B371349001647B4 /* audio14.mp3 */,
+				6B69EE8B1B371349001647B4 /* audio15.mp3 */,
+				6B69EE8C1B371349001647B4 /* audio16.mp3 */,
+				6B69EE8D1B371349001647B4 /* audio17.mp3 */,
+				6B69EE8E1B371349001647B4 /* audio18.mp3 */,
+				6B69EE8F1B371349001647B4 /* audio2.mp3 */,
+				6B69EE901B371349001647B4 /* audio3.mp3 */,
+				6B69EE911B371349001647B4 /* audio4.mp3 */,
+				6B69EE921B371349001647B4 /* audio5.mp3 */,
+				6B69EE931B371349001647B4 /* audio6.mp3 */,
+				6B69EE941B371349001647B4 /* audio7.mp3 */,
+				6B69EE951B371349001647B4 /* audio8.mp3 */,
+				6B69EE961B371349001647B4 /* audio9.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		6BC004E41B22050A0048630B /* SoundEffects WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6BD3CF8E1B2EE04400C10FAC /* SoundEffects WatchKit Extension.entitlements */,
+				6BC004E81B22050A0048630B /* InterfaceController.swift */,
+				6BC004EA1B22050A0048630B /* NotificationController.swift */,
+				6BC004EC1B22050A0048630B /* Images.xcassets */,
+				6BC004E51B22050A0048630B /* Supporting Files */,
+			);
+			path = "SoundEffects WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6BC004E51B22050A0048630B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BC004E61B22050A0048630B /* Info.plist */,
+				6BC004E71B22050A0048630B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BC004F41B22050A0048630B /* SoundEffects WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6BC004F71B22050B0048630B /* Interface.storyboard */,
+				6BC004FA1B22050B0048630B /* Images.xcassets */,
+				6BC004F51B22050B0048630B /* Supporting Files */,
+			);
+			path = "SoundEffects WatchKit App";
+			sourceTree = "<group>";
+		};
+		6BC004F51B22050B0048630B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BC004F61B22050B0048630B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B5471EB1B220233002BE808 /* SoundEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B54720B1B220233002BE808 /* Build configuration list for PBXNativeTarget "SoundEffects" */;
+			buildPhases = (
+				6B5471E81B220233002BE808 /* Sources */,
+				6B5471E91B220233002BE808 /* Frameworks */,
+				6B5471EA1B220233002BE808 /* Resources */,
+				6BC005051B22050B0048630B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BC004FD1B22050B0048630B /* PBXTargetDependency */,
+			);
+			name = SoundEffects;
+			productName = SoundEffects;
+			productReference = 6B5471EC1B220233002BE808 /* SoundEffects.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B5472001B220233002BE808 /* SoundEffectsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B54720E1B220233002BE808 /* Build configuration list for PBXNativeTarget "SoundEffectsTests" */;
+			buildPhases = (
+				6B5471FD1B220233002BE808 /* Sources */,
+				6B5471FE1B220233002BE808 /* Frameworks */,
+				6B5471FF1B220233002BE808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B5472031B220233002BE808 /* PBXTargetDependency */,
+			);
+			name = SoundEffectsTests;
+			productName = SoundEffectsTests;
+			productReference = 6B5472011B220233002BE808 /* SoundEffectsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BC004E21B22050A0048630B /* SoundEffects WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BC005021B22050B0048630B /* Build configuration list for PBXNativeTarget "SoundEffects WatchKit Extension" */;
+			buildPhases = (
+				6BC004DF1B22050A0048630B /* Sources */,
+				6BC004E01B22050A0048630B /* Frameworks */,
+				6BC004E11B22050A0048630B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BC004F31B22050A0048630B /* PBXTargetDependency */,
+			);
+			name = "SoundEffects WatchKit Extension";
+			productName = "SoundEffects WatchKit Extension";
+			productReference = 6BC004E31B22050A0048630B /* SoundEffects WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		6BC004EF1B22050A0048630B /* SoundEffects WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BC004FF1B22050B0048630B /* Build configuration list for PBXNativeTarget "SoundEffects WatchKit App" */;
+			buildPhases = (
+				6BC004EE1B22050A0048630B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoundEffects WatchKit App";
+			productName = "SoundEffects WatchKit App";
+			productReference = 6BC004F01B22050A0048630B /* SoundEffects WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B5471E41B220233002BE808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Pawarit_Bunrith;
+				TargetAttributes = {
+					6B5471EB1B220233002BE808 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2FQVS88B7S;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6B5472001B220233002BE808 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 6B5471EB1B220233002BE808;
+					};
+					6BC004E21B22050A0048630B = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2FQVS88B7S;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6BC004EF1B22050A0048630B = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2FQVS88B7S;
+					};
+				};
+			};
+			buildConfigurationList = 6B5471E71B220233002BE808 /* Build configuration list for PBXProject "SoundEffects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B5471E31B220233002BE808;
+			productRefGroup = 6B5471ED1B220233002BE808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B5471EB1B220233002BE808 /* SoundEffects */,
+				6B5472001B220233002BE808 /* SoundEffectsTests */,
+				6BC004E21B22050A0048630B /* SoundEffects WatchKit Extension */,
+				6BC004EF1B22050A0048630B /* SoundEffects WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B5471EA1B220233002BE808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA94F7E1B2ECF6200BFFFC6 /* Interface.storyboard in Resources */,
+				6B5471F71B220233002BE808 /* Main.storyboard in Resources */,
+				6B69EEA91B371349001647B4 /* audio15.mp3 in Resources */,
+				6B69EE971B371349001647B4 /* audio1.mp3 in Resources */,
+				6B69EEBB1B371349001647B4 /* audio4.mp3 in Resources */,
+				6B69EEB21B371349001647B4 /* audio18.mp3 in Resources */,
+				6B5471FC1B220233002BE808 /* LaunchScreen.xib in Resources */,
+				6B69EEA61B371349001647B4 /* audio14.mp3 in Resources */,
+				6B69EEB51B371349001647B4 /* audio2.mp3 in Resources */,
+				6B69EEA31B371349001647B4 /* audio13.mp3 in Resources */,
+				6B69EEC11B371349001647B4 /* audio6.mp3 in Resources */,
+				6B69EE9D1B371349001647B4 /* audio11.mp3 in Resources */,
+				6B69EE9A1B371349001647B4 /* audio10.mp3 in Resources */,
+				6B69EEC71B371349001647B4 /* audio8.mp3 in Resources */,
+				6B69EEA01B371349001647B4 /* audio12.mp3 in Resources */,
+				6B69EEBE1B371349001647B4 /* audio5.mp3 in Resources */,
+				6B69EEAC1B371349001647B4 /* audio16.mp3 in Resources */,
+				6B69EECA1B371349001647B4 /* audio9.mp3 in Resources */,
+				6B69EEB81B371349001647B4 /* audio3.mp3 in Resources */,
+				6B69EEC41B371349001647B4 /* audio7.mp3 in Resources */,
+				6B69EEAF1B371349001647B4 /* audio17.mp3 in Resources */,
+				6B5471F91B220233002BE808 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B5471FF1B220233002BE808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC004E11B22050A0048630B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B69EEC21B371349001647B4 /* audio6.mp3 in Resources */,
+				6B69EEAD1B371349001647B4 /* audio16.mp3 in Resources */,
+				6B69EEC81B371349001647B4 /* audio8.mp3 in Resources */,
+				6B69EEA11B371349001647B4 /* audio12.mp3 in Resources */,
+				6B69EEA71B371349001647B4 /* audio14.mp3 in Resources */,
+				6B69EEC51B371349001647B4 /* audio7.mp3 in Resources */,
+				6B61EC121B293E8600A35825 /* Interface.storyboard in Resources */,
+				6B69EEAA1B371349001647B4 /* audio15.mp3 in Resources */,
+				6B69EE9E1B371349001647B4 /* audio11.mp3 in Resources */,
+				6BC004ED1B22050A0048630B /* Images.xcassets in Resources */,
+				6B69EEB01B371349001647B4 /* audio17.mp3 in Resources */,
+				6BC004F11B22050A0048630B /* SoundEffects WatchKit App.app in Resources */,
+				6B69EECB1B371349001647B4 /* audio9.mp3 in Resources */,
+				6B69EEB31B371349001647B4 /* audio18.mp3 in Resources */,
+				6B69EE9B1B371349001647B4 /* audio10.mp3 in Resources */,
+				6B69EE981B371349001647B4 /* audio1.mp3 in Resources */,
+				6B69EEB91B371349001647B4 /* audio3.mp3 in Resources */,
+				6B69EEB61B371349001647B4 /* audio2.mp3 in Resources */,
+				6B69EEBC1B371349001647B4 /* audio4.mp3 in Resources */,
+				6B69EEA41B371349001647B4 /* audio13.mp3 in Resources */,
+				6B69EEBF1B371349001647B4 /* audio5.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC004EE1B22050A0048630B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B69EEA81B371349001647B4 /* audio14.mp3 in Resources */,
+				6B69EE9C1B371349001647B4 /* audio10.mp3 in Resources */,
+				6B69EEBD1B371349001647B4 /* audio4.mp3 in Resources */,
+				6B69EEAE1B371349001647B4 /* audio16.mp3 in Resources */,
+				6BC004F91B22050B0048630B /* Interface.storyboard in Resources */,
+				6B69EEC61B371349001647B4 /* audio7.mp3 in Resources */,
+				6B69EEB41B371349001647B4 /* audio18.mp3 in Resources */,
+				6B69EECC1B371349001647B4 /* audio9.mp3 in Resources */,
+				6B69EE9F1B371349001647B4 /* audio11.mp3 in Resources */,
+				6B69EEA51B371349001647B4 /* audio13.mp3 in Resources */,
+				6BC004FB1B22050B0048630B /* Images.xcassets in Resources */,
+				6B69EEA21B371349001647B4 /* audio12.mp3 in Resources */,
+				6B69EEAB1B371349001647B4 /* audio15.mp3 in Resources */,
+				6B69EEC31B371349001647B4 /* audio6.mp3 in Resources */,
+				6B69EEB11B371349001647B4 /* audio17.mp3 in Resources */,
+				6B69EEBA1B371349001647B4 /* audio3.mp3 in Resources */,
+				6B69EE991B371349001647B4 /* audio1.mp3 in Resources */,
+				6B69EEB71B371349001647B4 /* audio2.mp3 in Resources */,
+				6B69EEC91B371349001647B4 /* audio8.mp3 in Resources */,
+				6B69EEC01B371349001647B4 /* audio5.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B5471E81B220233002BE808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5471F41B220233002BE808 /* ViewController.swift in Sources */,
+				6BC34CD01B381BDC0042082D /* WatchItemViewController.swift in Sources */,
+				6BEE53CC1B2433720045B4AE /* RecordViewController.swift in Sources */,
+				6BEE53C81B2433720045B4AE /* ItemViewController.swift in Sources */,
+				6B481AB21B31706400EF52AE /* AppSetting.swift in Sources */,
+				6BEE53C71B2433720045B4AE /* BrowseViewController.swift in Sources */,
+				6B5471F21B220233002BE808 /* AppDelegate.swift in Sources */,
+				6BC2BC451B25930600C804D5 /* CustomViewController.swift in Sources */,
+				6BF06E731B2F046500CE7A62 /* AddWatchViewController.swift in Sources */,
+				6BEE53CB1B2433720045B4AE /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B5471FD1B220233002BE808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5472081B220233002BE808 /* SoundEffectsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC004DF1B22050A0048630B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC004EB1B22050A0048630B /* NotificationController.swift in Sources */,
+				6BC004E91B22050A0048630B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B5472031B220233002BE808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B5471EB1B220233002BE808 /* SoundEffects */;
+			targetProxy = 6B5472021B220233002BE808 /* PBXContainerItemProxy */;
+		};
+		6BC004F31B22050A0048630B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BC004EF1B22050A0048630B /* SoundEffects WatchKit App */;
+			targetProxy = 6BC004F21B22050A0048630B /* PBXContainerItemProxy */;
+		};
+		6BC004FD1B22050B0048630B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BC004E21B22050A0048630B /* SoundEffects WatchKit Extension */;
+			targetProxy = 6BC004FC1B22050B0048630B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B5471F51B220233002BE808 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B5471F61B220233002BE808 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B5471FA1B220233002BE808 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B5471FB1B220233002BE808 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6BC004F71B22050B0048630B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BC004F81B22050B0048630B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B5472091B220233002BE808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B54720A1B220233002BE808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B54720C1B220233002BE808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundEffects/SoundEffects.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SoundEffects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		6B54720D1B220233002BE808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundEffects/SoundEffects.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SoundEffects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		6B54720F1B220233002BE808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SoundEffectsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundEffects.app/SoundEffects";
+			};
+			name = Debug;
+		};
+		6B5472101B220233002BE808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SoundEffectsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundEffects.app/SoundEffects";
+			};
+			name = Release;
+		};
+		6BC005001B22050B0048630B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SoundEffects_WatchKit_Extension;
+				INFOPLIST_FILE = "SoundEffects WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		6BC005011B22050B0048630B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = SoundEffects_WatchKit_Extension;
+				INFOPLIST_FILE = "SoundEffects WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		6BC005031B22050B0048630B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SoundEffects WatchKit Extension/SoundEffects WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SoundEffects WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6BC005041B22050B0048630B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SoundEffects WatchKit Extension/SoundEffects WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "SoundEffects WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B5471E71B220233002BE808 /* Build configuration list for PBXProject "SoundEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B5472091B220233002BE808 /* Debug */,
+				6B54720A1B220233002BE808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B54720B1B220233002BE808 /* Build configuration list for PBXNativeTarget "SoundEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B54720C1B220233002BE808 /* Debug */,
+				6B54720D1B220233002BE808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B54720E1B220233002BE808 /* Build configuration list for PBXNativeTarget "SoundEffectsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B54720F1B220233002BE808 /* Debug */,
+				6B5472101B220233002BE808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BC004FF1B22050B0048630B /* Build configuration list for PBXNativeTarget "SoundEffects WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC005001B22050B0048630B /* Debug */,
+				6BC005011B22050B0048630B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BC005021B22050B0048630B /* Build configuration list for PBXNativeTarget "SoundEffects WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC005031B22050B0048630B /* Debug */,
+				6BC005041B22050B0048630B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B5471E41B220233002BE808 /* Project object */;
+}
