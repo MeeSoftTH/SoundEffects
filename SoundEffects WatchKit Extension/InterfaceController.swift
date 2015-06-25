@@ -13,14 +13,14 @@ import AVFoundation
 class InterfaceController: WKInterfaceController {
     
     
-    @IBOutlet weak var lockView2: WKInterfaceGroup!
-    @IBOutlet weak var buttonView2: WKInterfaceGroup!
+    @IBOutlet weak var lockView2: WKInterfaceGroup?
+    @IBOutlet weak var buttonView2: WKInterfaceGroup?
     
-    @IBOutlet weak var lockView3: WKInterfaceGroup!
-    @IBOutlet weak var buttonView3: WKInterfaceGroup!
+    @IBOutlet weak var lockView3: WKInterfaceGroup?
+    @IBOutlet weak var buttonView3: WKInterfaceGroup?
     
-    @IBOutlet weak var lockView4: WKInterfaceGroup!
-    @IBOutlet weak var buttonView4: WKInterfaceGroup!
+    @IBOutlet weak var lockView4: WKInterfaceGroup?
+    @IBOutlet weak var buttonView4: WKInterfaceGroup?
     
     
     @IBOutlet weak var button1: WKInterfaceButton!
@@ -154,6 +154,11 @@ class InterfaceController: WKInterfaceController {
         soundPlayer(ActionSound16)
     }
     
+    @IBAction func refresh() {
+        updateData()
+    }
+    
+    
     func soundPlayer(audioPath: String) {
         
         let path = NSBundle.mainBundle().URLForResource(audioPath, withExtension: "mp3")!
@@ -168,7 +173,7 @@ class InterfaceController: WKInterfaceController {
     func updateData() {
         let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: "group.th.co.meesoft.soundeffect")
         
-        let isPurchased = userDefind?.boolForKey("isPurchased") as Bool?
+        let isPurchased = userDefind?.boolForKey("ispurchased") as Bool?
         
         println("Update UI")
         
@@ -217,13 +222,13 @@ class InterfaceController: WKInterfaceController {
         
         if isPurchased == true {
             
-            lockView2.setHidden(true)
-            lockView3.setHidden(true)
-            lockView3.setHidden(true)
+            lockView2?.setHidden(true)
+            lockView3?.setHidden(true)
+            lockView3?.setHidden(true)
             
-            buttonView2.setHidden(false)
-            buttonView3.setHidden(false)
-            buttonView4.setHidden(false)
+            buttonView2?.setHidden(false)
+            buttonView3?.setHidden(false)
+            buttonView4?.setHidden(false)
 
             
             let slotPath5: AnyObject? = userDefind?.objectForKey("slot5")
@@ -357,6 +362,15 @@ class InterfaceController: WKInterfaceController {
                 
             }
             
+        }else {
+            lockView2?.setHidden(false)
+            lockView3?.setHidden(false)
+            lockView3?.setHidden(false)
+            
+            buttonView2?.setHidden(true)
+            buttonView3?.setHidden(true)
+            buttonView4?.setHidden(true)
+        
         }
     }
 }

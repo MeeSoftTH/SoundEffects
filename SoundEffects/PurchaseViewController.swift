@@ -11,7 +11,13 @@ import StoreKit
 
 class PurchaseViewController: UIViewController, SKProductsRequestDelegate, SKPaymentTransactionObserver {
     
+    
+    @IBOutlet weak var label1: UILabel!
+    
     let groupId:String = "group.th.co.meesoft.soundeffect"
+    
+    @IBOutlet weak var purchaseSwitch: UISwitch!
+    
     
     let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: "group.th.co.meesoft.soundeffect")
     
@@ -42,8 +48,11 @@ class PurchaseViewController: UIViewController, SKProductsRequestDelegate, SKPay
         if let isPurchase = userDefind.boolForKey("ispurchased") as Bool? {
             label.text = isPurchase ? fullVertion : freeVersion
             unlock.enabled = isPurchase
+            label1.text = isPurchase ? "Is Purchased" : "Not Purchase"
+            purchaseSwitch.on = isPurchase ? true : false
+            unlock.backgroundColor = isPurchase ? UIColor.grayColor() : UIColor.blueColor()
+            
         }
-
         
         // Do any additional setup after loading the view.
     }
@@ -69,6 +78,26 @@ class PurchaseViewController: UIViewController, SKProductsRequestDelegate, SKPay
 
     @IBAction func cancel(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    @IBAction func purchase(sender: UISwitch) {
+        if purchaseSwitch.on {
+            let userSetting: NSUserDefaults! = NSUserDefaults(suiteName: groupId)
+            userSetting.setBool(true, forKey: "ispurchased")
+            unlock.enabled = false
+            unlock.backgroundColor = UIColor.grayColor()
+            label.text = fullVertion
+            label1.text = "Is Purchased"
+        }else {
+            let userSetting: NSUserDefaults! = NSUserDefaults(suiteName: groupId)
+            userSetting.setBool(false, forKey: "ispurchased")
+            unlock.enabled = true
+            unlock.backgroundColor = UIColor.blueColor()
+            label.text = freeVersion
+            label1.text = "Not Purchase"
+
+        }
     }
     
     var list = [SKProduct]()
@@ -159,7 +188,9 @@ class PurchaseViewController: UIViewController, SKProductsRequestDelegate, SKPay
         let userSetting: NSUserDefaults! = NSUserDefaults(suiteName: groupId)
         userSetting.setBool(true, forKey: "ispurchased")
         unlock.enabled = false
-        label.text = "Full Version"
+        label.text = fullVertion
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     

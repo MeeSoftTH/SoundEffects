@@ -60,7 +60,11 @@
                                         </group>
                                         <group width="1" alignment="left" layout="vertical" id="KJG-un-6L9">
                                             <items>
-                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="mxZ-AO-seQ"/>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="mxZ-AO-seQ">
+                                                    <connections>
+                                                        <action selector="refresh" destination="AgC-eL-Hgc" id="cCt-yX-5dc"/>
+                                                    </connections>
+                                                </button>
                                             </items>
                                         </group>
                                     </items>
@@ -86,7 +90,7 @@
                     <items>
                         <group width="136" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="NIA-Dn-pkz">
                             <items>
-                                <group width="1" height="1" alignment="center" layout="vertical" id="fMX-QG-Ttg">
+                                <group width="1" height="1" alignment="center" hidden="YES" layout="vertical" id="fMX-QG-Ttg">
                                     <items>
                                         <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="Abx-0J-Yh9">
                                             <items>
@@ -134,7 +138,11 @@
                                         </group>
                                         <group width="1" alignment="left" layout="vertical" id="PsJ-k3-0lC">
                                             <items>
-                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="1CD-Gl-UpH"/>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="1CD-Gl-UpH">
+                                                    <connections>
+                                                        <action selector="refresh" destination="ENh-Ca-WH3" id="rMa-0J-I1T"/>
+                                                    </connections>
+                                                </button>
                                             </items>
                                         </group>
                                     </items>
@@ -176,7 +184,7 @@
                                         <label width="1" alignment="center" text="to unlock." textAlignment="center" id="kVd-ax-t0G"/>
                                     </items>
                                 </group>
-                                <group width="1" height="1" alignment="center" layout="vertical" id="xpI-9C-mbN">
+                                <group width="1" height="1" alignment="center" hidden="YES" layout="vertical" id="xpI-9C-mbN">
                                     <items>
                                         <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="tJb-Wj-r39">
                                             <items>
@@ -224,7 +232,11 @@
                                         </group>
                                         <group width="1" alignment="left" layout="vertical" id="MbY-4V-QPG">
                                             <items>
-                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="Avh-Mv-oex"/>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="Avh-Mv-oex">
+                                                    <connections>
+                                                        <action selector="refresh" destination="1va-RH-Iz1" id="6RQ-6P-PCw"/>
+                                                    </connections>
+                                                </button>
                                             </items>
                                         </group>
                                     </items>
@@ -282,7 +294,7 @@
                                         <label width="1" alignment="center" text="to unlock." textAlignment="center" id="M7b-uX-HkJ"/>
                                     </items>
                                 </group>
-                                <group width="1" height="1" alignment="center" layout="vertical" id="BgV-Wj-bXJ">
+                                <group width="1" height="1" alignment="center" hidden="YES" layout="vertical" id="BgV-Wj-bXJ">
                                     <items>
                                         <group width="0.90000000000000002" height="0.40000000000000013" alignment="center" id="wyT-LC-gtz">
                                             <items>
@@ -330,7 +342,11 @@
                                         </group>
                                         <group width="1" alignment="left" layout="vertical" id="Eod-fE-LSO">
                                             <items>
-                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="UPY-Cv-iuS"/>
+                                                <button width="1" height="0.80000000000000004" alignment="center" verticalAlignment="center" title="Refresh" id="UPY-Cv-iuS">
+                                                    <connections>
+                                                        <action selector="refresh" destination="LRN-5y-JrG" id="65o-uo-P4W"/>
+                                                    </connections>
+                                                </button>
                                             </items>
                                         </group>
                                     </items>

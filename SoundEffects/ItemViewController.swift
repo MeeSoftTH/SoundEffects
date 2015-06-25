@@ -49,7 +49,7 @@ class ItemViewController: UIViewController {
     
     // Image Path
     // Page 1
-    var img1: String =  "img1"
+    var img1: String =  "img0"
     var img2: String =  "img2"
     var img3: String =  "img3"
     var img4: String =  "img4"

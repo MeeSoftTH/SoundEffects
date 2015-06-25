@@ -25,14 +25,14 @@ class AppSetting {
         
         //println("Defind Path")
         
+        var isPurchased = userDefaultSetting.boolForKey("ispurchased") as Bool?
+        
         
         if let isFirstTimeDone = userDefaultSetting.boolForKey("isdonefirsttime") as Bool? {
             
             if !isFirstTimeDone {
                 userDefaultSetting.setBool(true, forKey: "isdonefirsttime")
             }
-            
-            let isPurchased = userDefaultSetting.boolForKey("isPurchased") as Bool?
         }
     }
 }

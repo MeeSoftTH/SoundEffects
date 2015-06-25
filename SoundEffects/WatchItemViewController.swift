@@ -12,11 +12,25 @@ import AVFoundation
 class WatchItemViewController: UIViewController, SelectItemProtocol {
     
     let userDefind: NSUserDefaults! = NSUserDefaults(suiteName: "group.th.co.meesoft.soundeffect")
-    let  defaultImage = "defaultIcon"
+    
+    var isPurchase: Bool!
+    
+    let defaultImage = "defaultIcon"
     
     var soundPlayer = AVAudioPlayer()
     
     var index: Int = 0
+    
+    
+    @IBOutlet weak var labelView2: UIView?
+    @IBOutlet weak var buttonView2: UIView?
+    
+    @IBOutlet weak var labelView3: UIView?
+    @IBOutlet weak var buttonView3: UIView?
+    
+    @IBOutlet weak var labelView4: UIView?
+    @IBOutlet weak var buttonView4: UIView?
+    
     
     // Page1
     @IBOutlet weak var watchImg1: UIButton?
@@ -83,6 +97,9 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        isPurchase = userDefind!.boolForKey("ispurchased") as Bool?
+        
+        println("This full version = \(isPurchase)")
         updateUIPage()
         
         // Do any additional setup after loading the view.
@@ -265,147 +282,167 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             
         }
         
-        let slotPath5: AnyObject? = userDefind?.objectForKey("slot5")
-        if slotPath5 != nil {
-            hasOptions5 = true
-            var slot5 = slotPath5 as! NSArray
-            var slotPath5 = slot5.objectAtIndex(0) as! NSString
-            watchAudio5 = slotPath5 as String
-            var slotImage5 = slot5.objectAtIndex(1) as! NSString
+        if self.isPurchase == true {
             
-            watchImg5?.setImage(UIImage(named: slotImage5 as String), forState: UIControlState.Normal)
+            labelView2?.hidden = true
+            labelView3?.hidden = true
+            labelView4?.hidden = true
             
-        }
-        
-        let slotPath6: AnyObject? = userDefind?.objectForKey("slot6")
-        if slotPath6 != nil {
-            hasOptions6 = true
-            var slot6 = slotPath6 as! NSArray
-            var slotPath6 = slot6.objectAtIndex(0) as! NSString
-            watchAudio6 = slotPath6 as String
-            var slotImage6 = slot6.objectAtIndex(1) as! NSString
+            buttonView2?.hidden = false
+            buttonView3?.hidden = false
+            buttonView4?.hidden = false
             
-            watchImg6?.setImage(UIImage(named: slotImage6 as String), forState: UIControlState.Normal)
+            let slotPath5: AnyObject? = userDefind?.objectForKey("slot5")
+            if slotPath5 != nil {
+                hasOptions5 = true
+                var slot5 = slotPath5 as! NSArray
+                var slotPath5 = slot5.objectAtIndex(0) as! NSString
+                watchAudio5 = slotPath5 as String
+                var slotImage5 = slot5.objectAtIndex(1) as! NSString
+                
+                watchImg5?.setImage(UIImage(named: slotImage5 as String), forState: UIControlState.Normal)
+                
+            }
             
-        }
-        
-        let slotPath7: AnyObject? = userDefind?.objectForKey("slot7")
-        if slotPath7 != nil {
-            hasOptions7 = true
-            var slot7 = slotPath7 as! NSArray
-            var slotPath7 = slot7.objectAtIndex(0) as! NSString
-            watchAudio7 = slotPath7 as String
-            var slotImage7 = slot7.objectAtIndex(1) as! NSString
+            let slotPath6: AnyObject? = userDefind?.objectForKey("slot6")
+            if slotPath6 != nil {
+                hasOptions6 = true
+                var slot6 = slotPath6 as! NSArray
+                var slotPath6 = slot6.objectAtIndex(0) as! NSString
+                watchAudio6 = slotPath6 as String
+                var slotImage6 = slot6.objectAtIndex(1) as! NSString
+                
+                watchImg6?.setImage(UIImage(named: slotImage6 as String), forState: UIControlState.Normal)
+                
+            }
             
-            watchImg7?.setImage(UIImage(named: slotImage7 as String), forState: UIControlState.Normal)
+            let slotPath7: AnyObject? = userDefind?.objectForKey("slot7")
+            if slotPath7 != nil {
+                hasOptions7 = true
+                var slot7 = slotPath7 as! NSArray
+                var slotPath7 = slot7.objectAtIndex(0) as! NSString
+                watchAudio7 = slotPath7 as String
+                var slotImage7 = slot7.objectAtIndex(1) as! NSString
+                
+                watchImg7?.setImage(UIImage(named: slotImage7 as String), forState: UIControlState.Normal)
+                
+            }
             
-        }
-        
-        let slotPath8: AnyObject? = userDefind?.objectForKey("slot8")
-        if slotPath8 != nil {
-            hasOptions8 = true
-            var slot8 = slotPath8 as! NSArray
-            var slotPath8 = slot8.objectAtIndex(0) as! NSString
-            watchAudio8 = slotPath8 as String
-            var slotImage8 = slot8.objectAtIndex(1) as! NSString
+            let slotPath8: AnyObject? = userDefind?.objectForKey("slot8")
+            if slotPath8 != nil {
+                hasOptions8 = true
+                var slot8 = slotPath8 as! NSArray
+                var slotPath8 = slot8.objectAtIndex(0) as! NSString
+                watchAudio8 = slotPath8 as String
+                var slotImage8 = slot8.objectAtIndex(1) as! NSString
+                
+                watchImg8?.setImage(UIImage(named: slotImage8 as String), forState: UIControlState.Normal)
+                
+            }
             
-            watchImg8?.setImage(UIImage(named: slotImage8 as String), forState: UIControlState.Normal)
+            let slotPath9: AnyObject? = userDefind?.objectForKey("slot9")
+            if slotPath9 != nil {
+                hasOptions9 = true
+                var slot9 = slotPath9 as! NSArray
+                var slotPath9 = slot9.objectAtIndex(0) as! NSString
+                watchAudio9 = slotPath9 as String
+                var slotImage9 = slot9.objectAtIndex(1) as! NSString
+                
+                watchImg9?.setImage(UIImage(named: slotImage9 as String), forState: UIControlState.Normal)
+                
+            }
             
-        }
-        
-        let slotPath9: AnyObject? = userDefind?.objectForKey("slot9")
-        if slotPath9 != nil {
-            hasOptions9 = true
-            var slot9 = slotPath9 as! NSArray
-            var slotPath9 = slot9.objectAtIndex(0) as! NSString
-            watchAudio9 = slotPath9 as String
-            var slotImage9 = slot9.objectAtIndex(1) as! NSString
+            let slotPath10: AnyObject? = userDefind?.objectForKey("slot10")
+            if slotPath10 != nil {
+                hasOptions10 = true
+                var slot10 = slotPath10 as! NSArray
+                var slotPath10 = slot10.objectAtIndex(0) as! NSString
+                watchAudio10 = slotPath10 as String
+                var slotImage10 = slot10.objectAtIndex(1) as! NSString
+                
+                watchImg10?.setImage(UIImage(named: slotImage10 as String), forState: UIControlState.Normal)
+                
+            }
             
-            watchImg9?.setImage(UIImage(named: slotImage9 as String), forState: UIControlState.Normal)
+            let slotPath11: AnyObject? = userDefind?.objectForKey("slot11")
+            if slotPath11 != nil {
+                hasOptions11 = true
+                var slot11 = slotPath11 as! NSArray
+                var slotPath11 = slot11.objectAtIndex(0) as! NSString
+                watchAudio11 = slotPath11 as String
+                var slotImage11 = slot11.objectAtIndex(1) as! NSString
+                
+                watchImg11?.setImage(UIImage(named: slotImage11 as String), forState: UIControlState.Normal)
+                
+            }
             
-        }
-        
-        let slotPath10: AnyObject? = userDefind?.objectForKey("slot10")
-        if slotPath10 != nil {
-            hasOptions10 = true
-            var slot10 = slotPath10 as! NSArray
-            var slotPath10 = slot10.objectAtIndex(0) as! NSString
-            watchAudio10 = slotPath10 as String
-            var slotImage10 = slot10.objectAtIndex(1) as! NSString
+            let slotPath12: AnyObject? = userDefind?.objectForKey("slot12")
+            if slotPath12 != nil {
+                hasOptions12 = true
+                var slot12 = slotPath12 as! NSArray
+                var slotPath12 = slot12.objectAtIndex(0) as! NSString
+                watchAudio12 = slotPath12 as String
+                var slotImage12 = slot12.objectAtIndex(1) as! NSString
+                
+                watchImg12?.setImage(UIImage(named: slotImage12 as String), forState: UIControlState.Normal)
+                
+            }
             
-            watchImg10?.setImage(UIImage(named: slotImage10 as String), forState: UIControlState.Normal)
+            let slotPath13: AnyObject? = userDefind?.objectForKey("slot13")
+            if slotPath13 != nil {
+                hasOptions13 = true
+                var slot13 = slotPath13 as! NSArray
+                var slotPath13 = slot13.objectAtIndex(0) as! NSString
+                watchAudio13 = slotPath13 as String
+                var slotImage13 = slot13.objectAtIndex(1) as! NSString
+                
+                watchImg13?.setImage(UIImage(named: slotImage13 as String), forState: UIControlState.Normal)
+                
+            }
             
-        }
-        
-        let slotPath11: AnyObject? = userDefind?.objectForKey("slot11")
-        if slotPath11 != nil {
-            hasOptions11 = true
-            var slot11 = slotPath11 as! NSArray
-            var slotPath11 = slot11.objectAtIndex(0) as! NSString
-            watchAudio11 = slotPath11 as String
-            var slotImage11 = slot11.objectAtIndex(1) as! NSString
+            let slotPath14: AnyObject? = userDefind?.objectForKey("slot14")
+            if slotPath14 != nil {
+                hasOptions14 = true
+                var slot14 = slotPath14 as! NSArray
+                var slotPath14 = slot14.objectAtIndex(0) as! NSString
+                watchAudio14 = slotPath14 as String
+                var slotImage14 = slot14.objectAtIndex(1) as! NSString
+                
+                watchImg14?.setImage(UIImage(named: slotImage14 as String), forState: UIControlState.Normal)
+                
+            }
             
-            watchImg11?.setImage(UIImage(named: slotImage11 as String), forState: UIControlState.Normal)
+            let slotPath15: AnyObject? = userDefind?.objectForKey("slot15")
+            if slotPath15 != nil {
+                hasOptions15 = true
+                var slot15 = slotPath15 as! NSArray
+                var slotPath15 = slot15.objectAtIndex(0) as! NSString
+                watchAudio15 = slotPath15 as String
+                var slotImage15 = slot15.objectAtIndex(1) as! NSString
+                
+                watchImg15?.setImage(UIImage(named: slotImage15 as String), forState: UIControlState.Normal)
+                
+            }
             
-        }
-        
-        let slotPath12: AnyObject? = userDefind?.objectForKey("slot12")
-        if slotPath12 != nil {
-            hasOptions12 = true
-            var slot12 = slotPath12 as! NSArray
-            var slotPath12 = slot12.objectAtIndex(0) as! NSString
-            watchAudio12 = slotPath12 as String
-            var slotImage12 = slot12.objectAtIndex(1) as! NSString
+            let slotPath16: AnyObject? = userDefind?.objectForKey("slot16")
+            if slotPath16 != nil {
+                hasOptions16 = true
+                var slot16 = slotPath16 as! NSArray
+                var slotPath16 = slot16.objectAtIndex(0) as! NSString
+                watchAudio16 = slotPath16 as String
+                var slotImage16 = slot16.objectAtIndex(1) as! NSString
+                
+                watchImg16?.setImage(UIImage(named: slotImage16 as String), forState: UIControlState.Normal)
+                
+            }
+        }else {
+            labelView2?.hidden = false
+            labelView3?.hidden = false
+            labelView4?.hidden = false
             
-            watchImg12?.setImage(UIImage(named: slotImage12 as String), forState: UIControlState.Normal)
-            
-        }
-        
-        let slotPath13: AnyObject? = userDefind?.objectForKey("slot13")
-        if slotPath13 != nil {
-            hasOptions13 = true
-            var slot13 = slotPath13 as! NSArray
-            var slotPath13 = slot13.objectAtIndex(0) as! NSString
-            watchAudio13 = slotPath13 as String
-            var slotImage13 = slot13.objectAtIndex(1) as! NSString
-            
-            watchImg13?.setImage(UIImage(named: slotImage13 as String), forState: UIControlState.Normal)
-            
-        }
-        
-        let slotPath14: AnyObject? = userDefind?.objectForKey("slot14")
-        if slotPath14 != nil {
-            hasOptions14 = true
-            var slot14 = slotPath14 as! NSArray
-            var slotPath14 = slot14.objectAtIndex(0) as! NSString
-            watchAudio14 = slotPath14 as String
-            var slotImage14 = slot14.objectAtIndex(1) as! NSString
-            
-            watchImg14?.setImage(UIImage(named: slotImage14 as String), forState: UIControlState.Normal)
-            
-        }
-        
-        let slotPath15: AnyObject? = userDefind?.objectForKey("slot15")
-        if slotPath15 != nil {
-            hasOptions15 = true
-            var slot15 = slotPath15 as! NSArray
-            var slotPath15 = slot15.objectAtIndex(0) as! NSString
-            watchAudio15 = slotPath15 as String
-            var slotImage15 = slot15.objectAtIndex(1) as! NSString
-            
-            watchImg15?.setImage(UIImage(named: slotImage15 as String), forState: UIControlState.Normal)
-            
-        }
-        
-        let slotPath16: AnyObject? = userDefind?.objectForKey("slot16")
-        if slotPath16 != nil {
-            hasOptions16 = true
-            var slot16 = slotPath16 as! NSArray
-            var slotPath16 = slot16.objectAtIndex(0) as! NSString
-            watchAudio16 = slotPath16 as String
-            var slotImage16 = slot16.objectAtIndex(1) as! NSString
-            
-            watchImg16?.setImage(UIImage(named: slotImage16 as String), forState: UIControlState.Normal)
+            buttonView2?.hidden = true
+            buttonView3?.hidden = true
+            buttonView4?.hidden = true
             
         }
     }
@@ -417,87 +454,86 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         let sound_slot: String = audioPath as String
         let imgUrl_slot: String = imagePath as String
         
-            if UIIndex == 1 {
-                hasOptions1 = true
-                watchAudio1 = sound_slot as String
-                watchImg1?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 2 {
-                hasOptions2 = true
-                watchAudio2 = audioPath as String
-                watchImg2?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 3 {
-                hasOptions3 = true
-                watchAudio3 = audioPath as String
-                watchImg3?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 4 {
-                hasOptions4 = true
-                watchAudio4 = audioPath as String
-                watchImg4?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 5 {
-                watchAudio5 = audioPath as String
-                watchImg5?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 6 {
-                hasOptions6 = true
-                watchAudio6 = audioPath as String
-                watchImg6?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 7 {
-                hasOptions7 = true
-                watchAudio7 = audioPath as String
-                watchImg7?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 8 {
-                hasOptions8 = true
-                watchAudio8 = audioPath as String
-                watchImg8?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 9 {
-                hasOptions9 = true
-                watchAudio9 = audioPath as String
-                watchImg9?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 10 {
-                hasOptions10 = true
-                watchAudio10 = audioPath as String
-                watchImg10?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 11 {
-                hasOptions11 = true
-                watchAudio11 = audioPath as String
-                watchImg11?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 12 {
-                hasOptions12 = true
-                watchAudio12 = audioPath as String
-                watchImg12?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 13 {
-                hasOptions13 = true
-                watchAudio13 = audioPath as String
-                watchImg13?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 14 {
-                hasOptions14 = true
-                watchAudio14 = audioPath as String
-                watchImg14?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 15 {
-                hasOptions15 = true
-                watchAudio15 = audioPath as String
-                watchImg15?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-                
-            }else if UIIndex == 16 {
-                hasOptions16 = true
-                watchAudio16 = audioPath as String
-                watchImg16?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
-            }
+        if UIIndex == 1 {
+            hasOptions1 = true
+            watchAudio1 = sound_slot as String
+            watchImg1?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
-            userDefind.setObject([sound_slot, imgUrl_slot], forKey: slotIndex)
+        }else if UIIndex == 2 {
+            hasOptions2 = true
+            watchAudio2 = audioPath as String
+            watchImg2?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 3 {
+            hasOptions3 = true
+            watchAudio3 = audioPath as String
+            watchImg3?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 4 {
+            hasOptions4 = true
+            watchAudio4 = audioPath as String
+            watchImg4?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 5 {
+            watchAudio5 = audioPath as String
+            watchImg5?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 6 {
+            hasOptions6 = true
+            watchAudio6 = audioPath as String
+            watchImg6?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 7 {
+            hasOptions7 = true
+            watchAudio7 = audioPath as String
+            watchImg7?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 8 {
+            hasOptions8 = true
+            watchAudio8 = audioPath as String
+            watchImg8?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 9 {
+            hasOptions9 = true
+            watchAudio9 = audioPath as String
+            watchImg9?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 10 {
+            hasOptions10 = true
+            watchAudio10 = audioPath as String
+            watchImg10?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 11 {
+            hasOptions11 = true
+            watchAudio11 = audioPath as String
+            watchImg11?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 12 {
+            hasOptions12 = true
+            watchAudio12 = audioPath as String
+            watchImg12?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 13 {
+            hasOptions13 = true
+            watchAudio13 = audioPath as String
+            watchImg13?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 14 {
+            hasOptions14 = true
+            watchAudio14 = audioPath as String
+            watchImg14?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 15 {
+            hasOptions15 = true
+            watchAudio15 = audioPath as String
+            watchImg15?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+        }else if UIIndex == 16 {
+            hasOptions16 = true
+            watchAudio16 = audioPath as String
+            watchImg16?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+        }
         
+        userDefind.setObject([sound_slot, imgUrl_slot], forKey: slotIndex)
     }
 }
