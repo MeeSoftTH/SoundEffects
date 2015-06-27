@@ -78,58 +78,38 @@ class MainViewController: UIViewController, SKProductsRequestDelegate, SKPayment
     
     
     @IBAction func unlock(sender: UIButton) {
-        
-        var chooseDialog = UIAlertController(title: "Purchase to full varsion", message: "If unlock you can add audio to apple watch for 16 slots",preferredStyle: UIAlertControllerStyle.ActionSheet
-        )
-        
-        chooseDialog.addAction(UIAlertAction(title: "Unlock Now - $0.99", style: .Destructive, handler: { (action: UIAlertAction!) in
+        if self.isTestPur {
+            // test purchase
+            let userSetting: NSUserDefaults! = NSUserDefaults(suiteName: self.groupId)
             
-            if self.isTestPur {
-                // test purchase
-                let userSetting: NSUserDefaults! = NSUserDefaults(suiteName: self.groupId)
-                
-                var isPurchased = self.userDefind.boolForKey("ispurchased") as Bool?
-                
-                if (isPurchased != nil && isPurchased == false) {
-                    userSetting.setBool(true, forKey: "ispurchased")
-                }else {
-                    userSetting.setBool(false, forKey: "ispurchased")
-                }
-                self.updateUIState()
+            var isPurchased = self.userDefind.boolForKey("ispurchased") as Bool?
+            
+            if (isPurchased != nil && isPurchased == false) {
+                userSetting.setBool(true, forKey: "ispurchased")
             }else {
-                
-                // purchase
-                for product in self.list {
-                    var prodID = product.productIdentifier
-                    if(prodID == self.productId) {
-                        self.p = product
-                        self.makePurchase()
-                        break;
-                    }
-                }
+                userSetting.setBool(false, forKey: "ispurchased")
             }
+            self.updateUIState()
+        }else {
             
-        }))
-        
-        /*chooseDialog.addAction(UIAlertAction(title: "Restore purchase", style: .Default, handler: { (action: UIAlertAction!) in
-        paymentQueueRestoreCompletedTransactionsFinished()
-        
-        }))*/
-        
-        chooseDialog.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-        
-        presentViewController(chooseDialog, animated: true, completion: nil)
+            // purchase
+            for product in self.list {
+                var prodID = product.productIdentifier
+                if(prodID == self.productId) {
+                    self.p = product
+                    self.makePurchase()
+                    break;
+                }
+                
+            }
+        }
     }
     
     func updateUIState() {
         if let isPurchase = userDefind.boolForKey("ispurchased") as Bool? {
-            var tempTitle = isPurchase ? fullVertion : freeVersion
-            var tempColor = isPurchase ? UIColor.grayColor() : UIColor.blueColor()
-            
-            unlockButton.setTitle(tempTitle, forState: UIControlState.Normal)
-            //unlockButton.enabled = !isPurchase
-            unlockButton.setTitleColor(tempColor, forState: UIControlState.Normal)
-            
+            if AppSetting.defaultVar.isTest == false {
+                unlockButton.hidden = isPurchase
+            }            
         }
     }
     

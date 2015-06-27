@@ -12,8 +12,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     private var pageViewController: UIPageViewController?
     
-    let isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
-    
     var leftButton: String!
     
     var pageContentViewController1: UIViewController!
@@ -41,27 +39,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         addChildViewController(pageViewController!)
         self.view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
-        if isItemsAdd {
-            leftButton = "Cancel"
-        }else {
-            leftButton = "< Back"
-        }
-        
-        var actionCancel = UIBarButtonItem(title: leftButton, style: UIBarButtonItemStyle.Plain, target: self, action: "actionCancel") //Use a selector
-        navigationItem.leftBarButtonItem = actionCancel
-    }
-    
-    
-    func actionCancel() {
-        
-        if AppSetting.defaultVar.isAddItem == true {
-            AppSetting.defaultVar.isAddItem = false
-        }
-        
-        self.navigationController!.popViewControllerAnimated(true)
         
     }
-    
     
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         
