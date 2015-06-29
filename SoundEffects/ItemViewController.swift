@@ -8,9 +8,10 @@
 
 import UIKit
 import AVFoundation
+import AudioToolbox
 
 protocol SelectItemProtocol {
-    func settingUIPage(audioPath: String, imagePath: String, slotIndex: String, UIIndex: Int)
+    func settingUIPage(audioPath: String, imagePath: String, isVibrate: Bool, UIIndex: Int)
 }
 
 class ItemViewController: UIViewController {
@@ -18,7 +19,7 @@ class ItemViewController: UIViewController {
     
     let isItemsAdd = AppSetting.defaultVar.isAddItem
         
-    //var index: Int!
+    var index: Int!
     
     // Audio path
     // Page 1
@@ -84,6 +85,7 @@ class ItemViewController: UIViewController {
     
     // Page 1
     @IBAction func Action1(sender: UIButton) {
+        self.index = 1
         if isItemsAdd == true {
             showDialog(ActionSound1 , imagePath: img1)
         }else {
@@ -92,6 +94,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action2(sender: UIButton) {
+        self.index = 2
         if isItemsAdd == true{
             showDialog(ActionSound2 , imagePath: img2)
         }else {
@@ -100,6 +103,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action3(sender: UIButton) {
+        self.index = 3
         if isItemsAdd == true {
             showDialog(ActionSound3 , imagePath: img3)
         }else {
@@ -108,6 +112,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action4(sender: UIButton) {
+        self.index = 4
         if isItemsAdd == true {
             showDialog(ActionSound4 , imagePath: img4)
         }else {
@@ -123,6 +128,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action6(sender: UIButton) {
+        self.index = 6
         if isItemsAdd == true {
             showDialog(ActionSound6 , imagePath: img6)
         }else {
@@ -132,6 +138,7 @@ class ItemViewController: UIViewController {
     
     // Page 2
     @IBAction func Action7(sender: UIButton) {
+        self.index = 7
         if isItemsAdd == true {
             showDialog(ActionSound7 , imagePath: img7)
         }else {
@@ -140,6 +147,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action8(sender: UIButton) {
+        self.index = 8
         if isItemsAdd == true {
             showDialog(ActionSound8 , imagePath: img8)
         }else {
@@ -148,6 +156,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action9(sender: UIButton) {
+        self.index = 9
         if isItemsAdd == true {
             showDialog(ActionSound9 , imagePath: img9)
         }else {
@@ -156,6 +165,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action10(sender: UIButton) {
+        self.index = 10
         if isItemsAdd == true {
             showDialog(ActionSound10 , imagePath: img10)
         }else {
@@ -164,6 +174,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action11(sender: UIButton) {
+        self.index = 11
         if isItemsAdd == true {
             showDialog(ActionSound11 , imagePath: img11)
         }else {AudioPlayer(ActionSound11)
@@ -171,6 +182,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action12(sender: UIButton) {
+        self.index = 12
         if isItemsAdd == true {
             showDialog(ActionSound12 , imagePath: img12)
         }else {
@@ -180,6 +192,7 @@ class ItemViewController: UIViewController {
     
     // Page 3
     @IBAction func Action13(sender: UIButton) {
+        self.index = 13
         if isItemsAdd == true {
             showDialog(ActionSound13 , imagePath: img13)
         }else {
@@ -188,6 +201,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action14(sender: UIButton) {
+        self.index = 14
         if isItemsAdd == true {
             showDialog(ActionSound14 , imagePath: img14)
         }else {
@@ -196,6 +210,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action15(sender: UIButton) {
+        self.index = 15
         if isItemsAdd == true {
             showDialog(ActionSound15 , imagePath: img15)
         }else {
@@ -204,6 +219,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action16(sender: UIButton) {
+        self.index = 16
         if isItemsAdd == true {
             showDialog(ActionSound16 , imagePath: img16)
         }else {
@@ -212,6 +228,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action17(sender: UIButton) {
+        self.index = 17
         if isItemsAdd == true {
             showDialog(ActionSound17 , imagePath: img17)
         }else {AudioPlayer(ActionSound17)
@@ -219,6 +236,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action18(sender: UIButton) {
+        self.index = 18
         if isItemsAdd == true {
             showDialog(ActionSound18 , imagePath: img18)
         }else {
@@ -242,6 +260,11 @@ class ItemViewController: UIViewController {
             soundPlayer.prepareToPlay()
             soundPlayer.volume = 1.0
             soundPlayer.play()
+            
+            if self.index >= 13 {
+                print("Is Vibrate")
+                AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            }
         }
     }
     
@@ -258,9 +281,13 @@ class ItemViewController: UIViewController {
             println(AppSetting.defaultVar.addIndex)
             var itemSlot = "slot" + String(AppSetting.defaultVar.addIndex)
             
+            var vibrateIndex = self.index >= 13 ? true : false
+            
+            
+            
             //println(self.delegate)
             
-            AppSetting.defaultVar.controller!.settingUIPage(audioPath, imagePath: imagePath, slotIndex: itemSlot, UIIndex: AppSetting.defaultVar.addIndex)
+            AppSetting.defaultVar.controller!.settingUIPage(audioPath, imagePath: imagePath, isVibrate: vibrateIndex, UIIndex: AppSetting.defaultVar.addIndex)
             self.navigationController!.popViewControllerAnimated(true)
             
         }))

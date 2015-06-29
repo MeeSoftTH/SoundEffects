@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AudioToolbox
 
 class WatchItemViewController: UIViewController, SelectItemProtocol {
     
@@ -95,6 +96,28 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
     var hasOptions15 = false
     var hasOptions16 = false
     
+    
+    var isVibration1: Bool! = false
+    var isVibration2: Bool! = false
+    var isVibration3: Bool! = false
+    var isVibration4: Bool! = false
+    
+    var isVibration5: Bool! = false
+    var isVibration6: Bool! = false
+    var isVibration7: Bool! = false
+    var isVibration8: Bool! = false
+    
+    var isVibration9: Bool! = false
+    var isVibration10: Bool! = false
+    var isVibration11: Bool! = false
+    var isVibration12: Bool! = false
+    
+    var isVibration13: Bool! = false
+    var isVibration14: Bool! = false
+    var isVibration15: Bool! = false
+    var isVibration16: Bool! = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         isPurchase = userDefind!.boolForKey("ispurchased") as Bool?
@@ -107,86 +130,86 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
     
     @IBAction func Action1(sender: UIButton) {
         self.index = 1
-        if hasOptions1 {showDialog(watchAudio1)}else {openAddItemView()}
+        if hasOptions1 {showDialog(watchAudio1, isVibration: isVibration1)}else {openAddItemView()}
     }
     
     @IBAction func Action2(sender: UIButton) {
         self.index = 2
-        if hasOptions2 {showDialog(watchAudio2)}else {openAddItemView()}
+        if hasOptions2 {showDialog(watchAudio2, isVibration: isVibration2)}else {openAddItemView()}
     }
     
     @IBAction func Action3(sender: UIButton) {
         self.index = 3
-        if hasOptions3 {showDialog(watchAudio3)}else {openAddItemView()}
+        if hasOptions3 {showDialog(watchAudio3, isVibration: isVibration3)}else {openAddItemView()}
         
     }
     
     @IBAction func Action4(sender: UIButton) {
         self.index = 4
-        if hasOptions4 {showDialog(watchAudio4)}else {openAddItemView()}
+        if hasOptions4 {showDialog(watchAudio4, isVibration: isVibration4)}else {openAddItemView()}
     }
     
     @IBAction func Action5(sender: UIButton) {
         self.index = 5
-        if hasOptions5 {showDialog(watchAudio5)}else {openAddItemView()}
+        if hasOptions5 {showDialog(watchAudio5, isVibration: isVibration5)}else {openAddItemView()}
     }
     
     @IBAction func Action6(sender: UIButton) {
         self.index = 6
-        if hasOptions6 {showDialog(watchAudio6)}else {openAddItemView()}
+        if hasOptions6 {showDialog(watchAudio6, isVibration: isVibration6)}else {openAddItemView()}
     }
     
     @IBAction func Action7(sender: UIButton) {
         self.index = 7
-        if hasOptions7 {showDialog(watchAudio7)}else {openAddItemView()}
+        if hasOptions7 {showDialog(watchAudio7, isVibration: isVibration7)}else {openAddItemView()}
         
     }
     
     @IBAction func Action8(sender: UIButton) {
         self.index = 8
-        if hasOptions8 {showDialog(watchAudio8)}else {openAddItemView()}
+        if hasOptions8 {showDialog(watchAudio8, isVibration: isVibration8)}else {openAddItemView()}
     }
     
     @IBAction func Action9(sender: UIButton) {
         self.index = 9
-        if hasOptions9 {showDialog(watchAudio9)}else {openAddItemView()}
+        if hasOptions9 {showDialog(watchAudio9, isVibration: isVibration9)}else {openAddItemView()}
     }
     
     @IBAction func Action10(sender: UIButton) {
         self.index = 10
-        if hasOptions10 {showDialog(watchAudio10)}else {openAddItemView()}
+        if hasOptions10 {showDialog(watchAudio10, isVibration: isVibration10)}else {openAddItemView()}
     }
     
     @IBAction func Action11(sender: UIButton) {
         self.index = 11
-        if hasOptions11 {showDialog(watchAudio11)}else {openAddItemView()}
+        if hasOptions11 {showDialog(watchAudio11, isVibration: isVibration11)}else {openAddItemView()}
         
     }
     
     @IBAction func Action12(sender: UIButton) {
         self.index = 12
-        if hasOptions12 {showDialog(watchAudio12)}else {openAddItemView()}
+        if hasOptions12 {showDialog(watchAudio12, isVibration: isVibration12)}else {openAddItemView()}
     }
     
     @IBAction func Action13(sender: UIButton) {
         self.index = 13
-        if hasOptions13 {showDialog(watchAudio13)}else {openAddItemView()}
+        if hasOptions13 {showDialog(watchAudio13, isVibration: isVibration13)}else {openAddItemView()}
     }
     
     @IBAction func Action14(sender: UIButton) {
         self.index = 14
-        if hasOptions14 {showDialog(watchAudio14)}else {openAddItemView()}
+        if hasOptions14 {showDialog(watchAudio14, isVibration: isVibration14)}else {openAddItemView()}
     }
     
     @IBAction func Action15(sender: UIButton) {
         self.index = 15
-        if hasOptions15 {showDialog(watchAudio15)}else {openAddItemView()}
+        if hasOptions15 {showDialog(watchAudio15, isVibration: isVibration15)}else {openAddItemView()}
         
     }
     
     @IBAction func Action16(sender: UIButton) {
         self.index = 16
-        if hasOptions16 {showDialog(watchAudio16)}else {openAddItemView()}
+        if hasOptions16 {showDialog(watchAudio16, isVibration: isVibration16)}else {openAddItemView()}
     }
     
     func openAddItemView() {
@@ -202,7 +225,7 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         
     }
     
-    func showDialog(path: String){
+    func showDialog(path: String, isVibration: Bool){
         var chooseDialog = UIAlertController(title: "Options", message: "Choose or play audio ?",preferredStyle: UIAlertControllerStyle.ActionSheet
         )
         
@@ -211,7 +234,7 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         }))
         
         chooseDialog.addAction(UIAlertAction(title: "Play", style: .Default, handler: { (action: UIAlertAction!) in
-            self.soundPlayer(path)
+            self.soundPlayer(path, isVibration: isVibration)
             
         }))
         
@@ -220,7 +243,7 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         presentViewController(chooseDialog, animated: true, completion: nil)
     }
     
-    func soundPlayer(path: String) {
+    func soundPlayer(path: String, isVibration: Bool) {
         let resourcePath = NSBundle.mainBundle().URLForResource(path, withExtension: "mp3")!
         
         soundPlayer = AVAudioPlayer(contentsOfURL: resourcePath, error: nil)
@@ -229,6 +252,10 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         soundPlayer.volume = 1.0
         soundPlayer.play()
         
+        if isVibration == true {
+            print("Is Vibrate")
+            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
         println(path)
     }
     
@@ -244,6 +271,13 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             var slotImage1 = slot1.objectAtIndex(1) as! NSString
             
             watchImg1?.setImage(UIImage(named: slotImage1 as String), forState: UIControlState.Normal)
+            
+            
+            if let isVibrate = slot1.objectAtIndex(2) as? Bool {
+                if isVibrate == true {
+                    self.isVibration1 = true
+                }
+            }
         }
         
         let slotPath2: AnyObject? = userDefind?.objectForKey("slot2")
@@ -256,6 +290,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             
             watchImg2?.setImage(UIImage(named: slotImage2 as String), forState: UIControlState.Normal)
             
+            if let isVibrate = slot2.objectAtIndex(2) as? Bool {
+                if isVibrate == true {
+                    self.isVibration2 = true
+                }
+            }
         }
         
         let slotPath3: AnyObject? = userDefind?.objectForKey("slot3")
@@ -268,6 +307,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             
             watchImg3?.setImage(UIImage(named: slotImage3 as String), forState: UIControlState.Normal)
             
+            if let isVibrate = slot3.objectAtIndex(2) as? Bool {
+                if isVibrate == true {
+                    self.isVibration3 = true
+                }
+            }
         }
         
         let slotPath4: AnyObject? = userDefind?.objectForKey("slot4")
@@ -280,6 +324,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             
             watchImg4?.setImage(UIImage(named: slotImage4 as String), forState: UIControlState.Normal)
             
+            if let isVibrate = slot4.objectAtIndex(2) as? Bool {
+                if isVibrate == true {
+                    self.isVibration4 = true
+                }
+            }
         }
         
         if self.isPurchase == true {
@@ -302,6 +351,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg5?.setImage(UIImage(named: slotImage5 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot5.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration5 = true
+                    }
+                }
             }
             
             let slotPath6: AnyObject? = userDefind?.objectForKey("slot6")
@@ -314,6 +368,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg6?.setImage(UIImage(named: slotImage6 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot6.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration6 = true
+                    }
+                }
             }
             
             let slotPath7: AnyObject? = userDefind?.objectForKey("slot7")
@@ -326,6 +385,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg7?.setImage(UIImage(named: slotImage7 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot7.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration7 = true
+                    }
+                }
             }
             
             let slotPath8: AnyObject? = userDefind?.objectForKey("slot8")
@@ -338,6 +402,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg8?.setImage(UIImage(named: slotImage8 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot8.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration8 = true
+                    }
+                }
             }
             
             let slotPath9: AnyObject? = userDefind?.objectForKey("slot9")
@@ -350,6 +419,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg9?.setImage(UIImage(named: slotImage9 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot9.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration9 = true
+                    }
+                }
             }
             
             let slotPath10: AnyObject? = userDefind?.objectForKey("slot10")
@@ -362,6 +436,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg10?.setImage(UIImage(named: slotImage10 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot10.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration10 = true
+                    }
+                }
             }
             
             let slotPath11: AnyObject? = userDefind?.objectForKey("slot11")
@@ -374,6 +453,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg11?.setImage(UIImage(named: slotImage11 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot11.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration11 = true
+                    }
+                }
             }
             
             let slotPath12: AnyObject? = userDefind?.objectForKey("slot12")
@@ -386,6 +470,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg12?.setImage(UIImage(named: slotImage12 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot12.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration12 = true
+                    }
+                }
             }
             
             let slotPath13: AnyObject? = userDefind?.objectForKey("slot13")
@@ -398,6 +487,12 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg13?.setImage(UIImage(named: slotImage13 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot13.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration13 = true
+                        
+                    }
+                }
             }
             
             let slotPath14: AnyObject? = userDefind?.objectForKey("slot14")
@@ -410,6 +505,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg14?.setImage(UIImage(named: slotImage14 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot14.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration14 = true
+                    }
+                }
             }
             
             let slotPath15: AnyObject? = userDefind?.objectForKey("slot15")
@@ -422,6 +522,11 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
                 watchImg15?.setImage(UIImage(named: slotImage15 as String), forState: UIControlState.Normal)
                 
+                if let isVibrate = slot15.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration15 = true
+                    }
+                }
             }
             
             let slotPath16: AnyObject? = userDefind?.objectForKey("slot16")
@@ -433,6 +538,12 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 var slotImage16 = slot16.objectAtIndex(1) as! NSString
                 
                 watchImg16?.setImage(UIImage(named: slotImage16 as String), forState: UIControlState.Normal)
+                
+                if let isVibrate = slot16.objectAtIndex(2) as? Bool {
+                    if isVibrate == true {
+                        self.isVibration16 = true
+                    }
+                }
                 
             }
         }else {
@@ -447,7 +558,7 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         }
     }
     
-    func settingUIPage(audioPath: String, imagePath: String, slotIndex: String, UIIndex: Int) {
+    func settingUIPage(audioPath: String, imagePath: String, isVibrate: Bool, UIIndex: Int) {
         
         println("Setting")
         
@@ -459,81 +570,148 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             watchAudio1 = sound_slot as String
             watchImg1?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration1 = true
+            }
+            
         }else if UIIndex == 2 {
             hasOptions2 = true
             watchAudio2 = audioPath as String
             watchImg2?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+           if isVibrate == true {
+                self.isVibration2 = true
+            }
+
         }else if UIIndex == 3 {
             hasOptions3 = true
             watchAudio3 = audioPath as String
             watchImg3?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration3 = true
+            }
+
         }else if UIIndex == 4 {
             hasOptions4 = true
             watchAudio4 = audioPath as String
             watchImg4?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+           if isVibrate == true {
+                self.isVibration4 = true
+            }
+
         }else if UIIndex == 5 {
             watchAudio5 = audioPath as String
             watchImg5?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration5 = true
+            }
+
         }else if UIIndex == 6 {
             hasOptions6 = true
             watchAudio6 = audioPath as String
             watchImg6?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+           if isVibrate == true {
+                self.isVibration6 = true
+            }
+
         }else if UIIndex == 7 {
             hasOptions7 = true
             watchAudio7 = audioPath as String
             watchImg7?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration7 = true
+            }
+
         }else if UIIndex == 8 {
             hasOptions8 = true
             watchAudio8 = audioPath as String
             watchImg8?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+           if isVibrate == true {
+                self.isVibration8 = true
+            }
+
         }else if UIIndex == 9 {
             hasOptions9 = true
             watchAudio9 = audioPath as String
             watchImg9?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration9 = true
+            }
+
         }else if UIIndex == 10 {
             hasOptions10 = true
             watchAudio10 = audioPath as String
             watchImg10?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration10 = true
+            }
+
         }else if UIIndex == 11 {
             hasOptions11 = true
             watchAudio11 = audioPath as String
             watchImg11?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration11 = true
+            }
+
         }else if UIIndex == 12 {
             hasOptions12 = true
             watchAudio12 = audioPath as String
             watchImg12?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration12 = true
+            }
+
         }else if UIIndex == 13 {
             hasOptions13 = true
             watchAudio13 = audioPath as String
             watchImg13?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration13 = true
+            }
+
         }else if UIIndex == 14 {
             hasOptions14 = true
             watchAudio14 = audioPath as String
             watchImg14?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration14 = true
+            }
+
         }else if UIIndex == 15 {
             hasOptions15 = true
             watchAudio15 = audioPath as String
             watchImg15?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
             
+            if isVibrate == true {
+                self.isVibration15 = true
+            }
+
         }else if UIIndex == 16 {
             hasOptions16 = true
             watchAudio16 = audioPath as String
             watchImg16?.setImage(UIImage(named: imagePath as String), forState: UIControlState.Normal)
+            
+            if isVibrate == true {
+                self.isVibration16 = true
+            }
+
         }
         
-        userDefind.setObject([sound_slot, imgUrl_slot], forKey: slotIndex)
+        let keySlot = "slot" + String(UIIndex)
+        
+        userDefind.setObject([sound_slot, imgUrl_slot, isVibrate], forKey: keySlot)
     }
 }

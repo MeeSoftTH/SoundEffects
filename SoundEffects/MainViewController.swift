@@ -58,13 +58,6 @@ class MainViewController: UIViewController, SKProductsRequestDelegate, SKPayment
         
     }
     
-    @IBAction func serviceTest(sender: UIBarButtonItem) {
-        
-        let testing = self.storyboard!.instantiateViewControllerWithIdentifier("testing") as! UIViewController
-        
-        self.presentViewController(testing, animated: true, completion: nil)
-    }
-    
     
     @IBAction func watchAction(sender: UIButton) {
         var isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
