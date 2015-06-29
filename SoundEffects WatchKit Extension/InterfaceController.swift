@@ -164,7 +164,7 @@ class InterfaceController: WKInterfaceController {
         let path = NSBundle.mainBundle().URLForResource(audioPath, withExtension: "mp3")!
         
         soundPlayer = AVAudioPlayer(contentsOfURL: path, error: nil)
-        soundPlayer.stop()
+        //soundPlayer.stop()
         soundPlayer.prepareToPlay()
         soundPlayer.volume = 1.0
         soundPlayer.play()

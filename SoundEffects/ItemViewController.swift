@@ -238,7 +238,7 @@ class ItemViewController: UIViewController {
             println("AVAudioPlayer error: \(err.localizedDescription)")
         } else {
             println("AVAudioPlayer Play: \(resourcePath)")
-            soundPlayer.stop()
+            //soundPlayer.stop()
             soundPlayer.prepareToPlay()
             soundPlayer.volume = 1.0
             soundPlayer.play()
