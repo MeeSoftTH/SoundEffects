@@ -332,9 +332,15 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
             
             label2?.text = "Remote Play require Apple Watch as remote. All of this setting will present in your Apple Watch"
             
+            label2?.font = UIFont.systemFontOfSize(12)
+            
             label3?.text = "Remote Play require Apple Watch as remote. All of this setting will present in your Apple Watch"
             
+            label3?.font = UIFont.systemFontOfSize(12)
+            
             label4?.text = "Remote Play require Apple Watch as remote. All of this setting will present in your Apple Watch"
+            
+            label4?.font = UIFont.systemFontOfSize(12)
             
             let unlockImage: String = "add_icon"
             
@@ -591,12 +597,20 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 }
                 
             }
+            
         }else {
+            
             label2?.text = "Full Version Only"
+            
+            label2?.font = UIFont.systemFontOfSize(16)
         
             label3?.text = "Full Version Only"
             
+            label3?.font = UIFont.systemFontOfSize(16)
+            
             label4?.text = "Full Version Only"
+            
+            label4?.font = UIFont.systemFontOfSize(16)
             
             let lockImage: String = "locked-icon"
         

@@ -123,6 +123,7 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func Action5(sender: UIButton) {
+        self.index = 5
         if isItemsAdd == true {
             showDialog(ActionSound5 , imagePath: img5)
         }else {AudioPlayer(ActionSound5)
