@@ -48,11 +48,10 @@ class MainViewController: UIViewController, SKProductsRequestDelegate, SKPayment
     
     @IBAction func playAction(sender: UIButton) {
         
-        var isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
-        
-        isItemsAdd = false
-        
         let PageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! UIViewController
+        
+        AppSetting.defaultVar.isAddItem = false
+
         
         self.navigationController!.pushViewController(PageViewController, animated: true)
         
@@ -60,10 +59,6 @@ class MainViewController: UIViewController, SKProductsRequestDelegate, SKPayment
     
     
     @IBAction func watchAction(sender: UIButton) {
-        var isItemsAdd: Bool = AppSetting.defaultVar.isAddItem
-        
-        isItemsAdd = true
-        
         let AddWatchViewController = self.storyboard!.instantiateViewControllerWithIdentifier("WatchViewController") as! UIViewController
         
         self.navigationController!.pushViewController(AddWatchViewController, animated: true)

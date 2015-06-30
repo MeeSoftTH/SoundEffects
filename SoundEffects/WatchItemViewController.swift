@@ -215,6 +215,7 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
     func openAddItemView() {
         
         AppSetting.defaultVar.isAddItem = true
+        
         AppSetting.defaultVar.addIndex = self.index
         
         let pageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
@@ -713,5 +714,7 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         let keySlot = "slot" + String(UIIndex)
         
         userDefind.setObject([sound_slot, imgUrl_slot, isVibrate], forKey: keySlot)
+        
+        AppSetting.defaultVar.isAddItem = false
     }
 }

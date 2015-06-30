@@ -77,6 +77,8 @@ class ItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        println("Is add items = \(isItemsAdd)")
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -282,10 +284,6 @@ class ItemViewController: UIViewController {
             var itemSlot = "slot" + String(AppSetting.defaultVar.addIndex)
             
             var vibrateIndex = self.index >= 13 ? true : false
-            
-            
-            
-            //println(self.delegate)
             
             AppSetting.defaultVar.controller!.settingUIPage(audioPath, imagePath: imagePath, isVibrate: vibrateIndex, UIIndex: AppSetting.defaultVar.addIndex)
             self.navigationController!.popViewControllerAnimated(true)
