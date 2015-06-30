@@ -44,10 +44,10 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var button16: WKInterfaceButton!
     
     
-    var ActionSound1: String!
-    var ActionSound2: String!
-    var ActionSound3: String!
-    var ActionSound4: String!
+    var ActionSound1: String! =  "audio1"
+    var ActionSound2: String! =  "audio2"
+    var ActionSound3: String! =  "audio3"
+    var ActionSound4: String! =  "audio4"
     
     var ActionSound5: String!
     var ActionSound6: String!
@@ -99,15 +99,12 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-        
         updateData()
-        
+        super.willActivate()
     }
     
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+        // This method is called when watch view controller is no longer visible        super.didDeactivate()
     }
     
     
@@ -175,17 +172,13 @@ class InterfaceController: WKInterfaceController {
         soundPlayer(ActionSound16, isVibration: isVibration16)
     }
     
-    @IBAction func refresh() {
-        updateData()
-    }
-    
     
     func soundPlayer(audioPath: String, isVibration: Bool) {
         
         let path = NSBundle.mainBundle().URLForResource(audioPath, withExtension: "mp3")!
         
         soundPlayer = AVAudioPlayer(contentsOfURL: path, error: nil)
-        //soundPlayer.stop()
+        soundPlayer.stop()
         soundPlayer.prepareToPlay()
         soundPlayer.volume = 1.0
         soundPlayer.play()

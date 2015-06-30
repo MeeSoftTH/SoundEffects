@@ -12,23 +12,13 @@
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="gBx-us-Yee">
                             <items>
-                                <group alignment="center" layout="vertical" id="KJG-un-6L9">
-                                    <items>
-                                        <button width="1" height="1" alignment="center" verticalAlignment="center" title="Refresh" id="mxZ-AO-seQ">
-                                            <fontDescription key="font" type="system" pointSize="10"/>
-                                            <connections>
-                                                <action selector="refresh" destination="AgC-eL-Hgc" id="cCt-yX-5dc"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="0.90000000000000002" height="0.90000000000000002" alignment="center" layout="vertical" id="HEd-ZK-Ziv">
+                                <group width="1" height="1" alignment="center" layout="vertical" id="HEd-ZK-Ziv">
                                     <items>
                                         <group width="1" height="0.50000000000000011" alignment="center" id="VUe-6M-f1Z">
                                             <items>
                                                 <group width="0.50000000000000011" alignment="left" id="e8k-fG-WiU">
                                                     <items>
-                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="Pvs-ze-m4z">
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="img0" id="Pvs-ze-m4z">
                                                             <connections>
                                                                 <action selector="Action1" destination="AgC-eL-Hgc" id="Ciy-MZ-yE8"/>
                                                             </connections>
@@ -37,7 +27,7 @@
                                                 </group>
                                                 <group width="0.50000000000000011" alignment="left" id="2Jt-6c-AeC">
                                                     <items>
-                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="GEn-Rg-dwe">
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="img2" id="GEn-Rg-dwe">
                                                             <connections>
                                                                 <action selector="Action2" destination="AgC-eL-Hgc" id="s3F-fX-LwW"/>
                                                             </connections>
@@ -50,7 +40,7 @@
                                             <items>
                                                 <group width="0.50000000000000011" alignment="left" id="p9n-uW-KQH">
                                                     <items>
-                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="h9T-gP-MVb">
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="img3" id="h9T-gP-MVb">
                                                             <connections>
                                                                 <action selector="Action3" destination="AgC-eL-Hgc" id="kKi-YS-WT4"/>
                                                             </connections>
@@ -59,7 +49,7 @@
                                                 </group>
                                                 <group width="0.50000000000000011" alignment="left" id="NPP-fu-nry">
                                                     <items>
-                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="jlP-Oi-LkH">
+                                                        <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="img4" id="jlP-Oi-LkH">
                                                             <connections>
                                                                 <action selector="Action4" destination="AgC-eL-Hgc" id="KUL-zf-5Pi"/>
                                                             </connections>
@@ -93,17 +83,7 @@
                             <items>
                                 <group width="1" height="1" alignment="left" hidden="YES" layout="vertical" id="A2R-In-fDE">
                                     <items>
-                                        <group alignment="left" layout="vertical" id="PsJ-k3-0lC">
-                                            <items>
-                                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="Refresh" id="Ca1-E1-B63">
-                                                    <fontDescription key="font" type="system" pointSize="10"/>
-                                                    <connections>
-                                                        <action selector="refresh" destination="AgC-eL-Hgc" id="Tli-RU-fFH"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
-                                        <group width="0.90000000000000002" height="0.90000000000000002" alignment="center" layout="vertical" id="fMX-QG-Ttg">
+                                        <group width="1" height="1" alignment="center" layout="vertical" id="fMX-QG-Ttg">
                                             <items>
                                                 <group width="1" height="0.50000000000000011" alignment="center" id="Abx-0J-Yh9">
                                                     <items>
@@ -185,17 +165,7 @@
                             <items>
                                 <group width="1" height="1" alignment="left" hidden="YES" layout="vertical" id="F0r-ZN-Vq7">
                                     <items>
-                                        <group alignment="center" layout="vertical" id="xE1-GK-pv3">
-                                            <items>
-                                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="Refresh" id="17i-5W-m3I">
-                                                    <fontDescription key="font" type="system" pointSize="10"/>
-                                                    <connections>
-                                                        <action selector="refresh" destination="AgC-eL-Hgc" id="CZ8-Hq-gZJ"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
-                                        <group width="0.90000000000000002" height="0.90000000000000002" alignment="center" layout="vertical" id="xpI-9C-mbN">
+                                        <group width="1" height="1" alignment="center" layout="vertical" id="xpI-9C-mbN">
                                             <items>
                                                 <group width="1" height="0.50000000000000011" alignment="center" id="tJb-Wj-r39">
                                                     <items>
@@ -300,17 +270,7 @@
                             <items>
                                 <group width="1" height="1" alignment="left" hidden="YES" layout="vertical" id="Rt4-Km-ouu">
                                     <items>
-                                        <group alignment="center" layout="vertical" id="Idr-qa-7aS">
-                                            <items>
-                                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="Refresh" id="A6g-EP-ase">
-                                                    <fontDescription key="font" type="system" pointSize="10"/>
-                                                    <connections>
-                                                        <action selector="refresh" destination="AgC-eL-Hgc" id="i4d-fY-uth"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                        </group>
-                                        <group width="0.90000000000000002" height="0.90000000000000002" alignment="center" layout="vertical" id="BgV-Wj-bXJ">
+                                        <group width="1" height="1" alignment="center" layout="vertical" id="BgV-Wj-bXJ">
                                             <items>
                                                 <group width="1" height="0.50000000000000011" alignment="center" id="wyT-LC-gtz">
                                                     <items>

@@ -247,7 +247,7 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         let resourcePath = NSBundle.mainBundle().URLForResource(path, withExtension: "mp3")!
         
         soundPlayer = AVAudioPlayer(contentsOfURL: resourcePath, error: nil)
-        //soundPlayer.stop()
+        soundPlayer.stop()
         soundPlayer.prepareToPlay()
         soundPlayer.volume = 1.0
         soundPlayer.play()
