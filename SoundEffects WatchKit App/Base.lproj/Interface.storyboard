@@ -135,9 +135,7 @@
                                 </group>
                                 <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="ZhA-ji-Ooa">
                                     <items>
-                                        <label width="1" alignment="center" text="Purchase" textAlignment="center" id="oDP-1A-ORo"/>
-                                        <label width="1" alignment="center" text="on phone" textAlignment="center" id="Sbd-UF-fLd"/>
-                                        <label width="1" alignment="center" text="to unlock." textAlignment="center" id="lld-g1-ybC"/>
+                                        <label width="1" alignment="center" text="Available in full version" textAlignment="center" numberOfLines="3" id="oDP-1A-ORo"/>
                                     </items>
                                 </group>
                             </items>
@@ -217,9 +215,7 @@
                                 </group>
                                 <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="pW4-Ss-Q4o">
                                     <items>
-                                        <label width="1" alignment="center" text="Purchase" textAlignment="center" id="cm5-gO-Sjw"/>
-                                        <label width="1" alignment="center" text="on phone" textAlignment="center" id="7Z3-E8-BW5"/>
-                                        <label width="1" alignment="center" text="to unlock." textAlignment="center" id="kVd-ax-t0G"/>
+                                        <label width="1" alignment="center" text="Available in full version" textAlignment="center" numberOfLines="3" id="cm5-gO-Sjw"/>
                                     </items>
                                 </group>
                             </items>
@@ -322,9 +318,7 @@
                                 </group>
                                 <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="GOr-Lj-cEK">
                                     <items>
-                                        <label width="1" alignment="center" text="Purchase" textAlignment="center" id="hjF-Os-yjf"/>
-                                        <label width="1" alignment="center" text="on phone" textAlignment="center" id="OBo-NK-UkF"/>
-                                        <label width="1" alignment="center" text="to unlock." textAlignment="center" id="M7b-uX-HkJ"/>
+                                        <label width="1" alignment="center" text="Available in full version" textAlignment="center" numberOfLines="3" id="hjF-Os-yjf"/>
                                     </items>
                                 </group>
                             </items>
