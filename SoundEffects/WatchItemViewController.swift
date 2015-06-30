@@ -23,14 +23,10 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
     var index: Int = 0
     
     
-    @IBOutlet weak var labelView2: UIView?
-    @IBOutlet weak var buttonView2: UIView?
     
-    @IBOutlet weak var labelView3: UIView?
-    @IBOutlet weak var buttonView3: UIView?
-    
-    @IBOutlet weak var labelView4: UIView?
-    @IBOutlet weak var buttonView4: UIView?
+    @IBOutlet weak var label2: UILabel?
+    @IBOutlet weak var label3: UILabel?
+    @IBOutlet weak var label4: UILabel?
     
     
     // Page1
@@ -334,13 +330,61 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         
         if self.isPurchase == true {
             
-            labelView2?.hidden = true
-            labelView3?.hidden = true
-            labelView4?.hidden = true
+            label2?.text = "Remote Play require Apple Watch as remote. All of this setting will present in your Apple Watch"
             
-            buttonView2?.hidden = false
-            buttonView3?.hidden = false
-            buttonView4?.hidden = false
+            label3?.text = "Remote Play require Apple Watch as remote. All of this setting will present in your Apple Watch"
+            
+            label4?.text = "Remote Play require Apple Watch as remote. All of this setting will present in your Apple Watch"
+            
+            let unlockImage: String = "add_icon"
+            
+            watchImg5?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg5?.enabled = true
+            
+            watchImg6?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg6?.enabled = true
+
+            
+            watchImg7?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg7?.enabled = true
+
+            
+            watchImg8?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg8?.enabled = true
+
+            
+            watchImg9?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg9?.enabled = true
+
+            
+            watchImg10?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg10?.enabled = true
+
+            
+            watchImg11?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg11?.enabled = true
+
+            
+            watchImg12?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg12?.enabled = true
+
+            
+            watchImg13?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg13?.enabled = true
+
+            
+            watchImg14?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg14?.enabled = true
+
+            
+            watchImg15?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg15?.enabled = true
+
+            
+            watchImg16?.setImage(UIImage(named: unlockImage as String), forState: UIControlState.Normal)
+            watchImg16?.enabled = true
+
+           
             
             let slotPath5: AnyObject? = userDefind?.objectForKey("slot5")
             if slotPath5 != nil {
@@ -548,13 +592,59 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
                 
             }
         }else {
-            labelView2?.hidden = false
-            labelView3?.hidden = false
-            labelView4?.hidden = false
+            label2?.text = "Full Version Only"
+        
+            label3?.text = "Full Version Only"
             
-            buttonView2?.hidden = true
-            buttonView3?.hidden = true
-            buttonView4?.hidden = true
+            label4?.text = "Full Version Only"
+            
+            let lockImage: String = "locked-icon"
+        
+            watchImg5?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg5?.enabled = false
+            
+            watchImg6?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg6?.enabled = false
+            
+            
+            watchImg7?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg7?.enabled = false
+            
+            
+            watchImg8?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg8?.enabled = false
+            
+            
+            watchImg9?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg9?.enabled = false
+            
+            
+            watchImg10?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg10?.enabled = false
+            
+            
+            watchImg11?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg11?.enabled = false
+            
+            
+            watchImg12?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg12?.enabled = false
+            
+            
+            watchImg13?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg13?.enabled = false
+            
+            
+            watchImg14?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg14?.enabled = false
+            
+            
+            watchImg15?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg15?.enabled = false
+            
+            
+            watchImg16?.setImage(UIImage(named: lockImage as String), forState: UIControlState.Normal)
+            watchImg16?.enabled = false
             
         }
     }
