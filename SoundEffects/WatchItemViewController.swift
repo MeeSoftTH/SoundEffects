@@ -215,7 +215,6 @@ class WatchItemViewController: UIViewController, SelectItemProtocol {
         AppSetting.defaultVar.addIndex = self.index
         
         let pageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-        
         AppSetting.defaultVar.controller = self
         
         self.navigationController!.pushViewController(pageViewController, animated: true)

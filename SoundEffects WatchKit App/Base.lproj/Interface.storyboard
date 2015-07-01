@@ -16,7 +16,7 @@
                                     <items>
                                         <group width="1" height="0.50000000000000011" alignment="center" id="VUe-6M-f1Z">
                                             <items>
-                                                <group width="0.50000000000000011" alignment="left" id="e8k-fG-WiU">
+                                                <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="e8k-fG-WiU">
                                                     <items>
                                                         <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="img0" id="Pvs-ze-m4z">
                                                             <connections>
@@ -25,7 +25,7 @@
                                                         </button>
                                                     </items>
                                                 </group>
-                                                <group width="0.50000000000000011" alignment="left" id="2Jt-6c-AeC">
+                                                <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="2Jt-6c-AeC">
                                                     <items>
                                                         <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" backgroundImage="img2" id="GEn-Rg-dwe">
                                                             <connections>
@@ -87,7 +87,7 @@
                                             <items>
                                                 <group width="1" height="0.50000000000000011" alignment="center" id="Abx-0J-Yh9">
                                                     <items>
-                                                        <group width="0.50000000000000011" alignment="left" id="vhL-cR-v5W">
+                                                        <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="vhL-cR-v5W">
                                                             <items>
                                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="nND-u7-845">
                                                                     <connections>
@@ -96,7 +96,7 @@
                                                                 </button>
                                                             </items>
                                                         </group>
-                                                        <group width="0.50000000000000011" alignment="left" id="rPs-Sw-bTn">
+                                                        <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="rPs-Sw-bTn">
                                                             <items>
                                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="SHR-vV-o3I">
                                                                     <connections>
@@ -167,7 +167,7 @@
                                             <items>
                                                 <group width="1" height="0.50000000000000011" alignment="center" id="tJb-Wj-r39">
                                                     <items>
-                                                        <group width="0.50000000000000011" alignment="left" id="qlc-lj-OvO">
+                                                        <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="qlc-lj-OvO">
                                                             <items>
                                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="RGA-U4-MPt">
                                                                     <connections>
@@ -176,7 +176,7 @@
                                                                 </button>
                                                             </items>
                                                         </group>
-                                                        <group width="0.50000000000000011" alignment="left" id="mU1-bL-9B1">
+                                                        <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="mU1-bL-9B1">
                                                             <items>
                                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="7zP-pu-Ev0">
                                                                     <connections>
@@ -270,7 +270,7 @@
                                             <items>
                                                 <group width="1" height="0.50000000000000011" alignment="center" id="wyT-LC-gtz">
                                                     <items>
-                                                        <group width="0.50000000000000011" alignment="left" id="Pef-pV-Eaa">
+                                                        <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="Pef-pV-Eaa">
                                                             <items>
                                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="hQE-vz-34S">
                                                                     <connections>
@@ -279,7 +279,7 @@
                                                                 </button>
                                                             </items>
                                                         </group>
-                                                        <group width="0.50000000000000011" alignment="left" id="3PR-7h-PYY">
+                                                        <group width="0.50000000000000011" alignment="left" verticalAlignment="bottom" id="3PR-7h-PYY">
                                                             <items>
                                                                 <button width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="defaultIcon" id="ifz-6r-xbw">
                                                                     <connections>
